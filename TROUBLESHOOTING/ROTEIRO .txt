@@ -1,0 +1,54 @@
+# ROTEIRO
+
+"O troubleshooting pode ser compreendido como uma espécie de diagrama de ações, um conjunto de medidas que orienta a resolução de problemas dentro do ambiente de TI.
+Em tradução, troubleshooting significa solução de problemas.”
+
+PROBLEMA: “ Um funcionário, ao ser demitido, danificou a infraestrutura funcional da empresa, deixando-a fora do ar. 
+Você e sua equipe, sendo chamados como consultores para resolverem os problemas, deverão colocar este mesmo ambiente no ar novamente.
+Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.”
+
+
+OBJETIVO:
+
+PREMISSAS - TÉCNICAS
+	- Rede:
+	- Realizar a cópia (backup) de todo arquivo de configuração a ser alterado
+	- Estado dos serviços que serão analisados
+	- LOG de Sistema
+
+CENÁRIO - PREPARAÇÃO DO AMBIENTE
+(MODELO OSI - 7 CAMADAS)
+
+	7 - APLICAÇÃO - Navegador / Apache2 / FTP
+
+	6 - APRESENTAÇÃO - Codificação
+
+	5 - SESSÃO - Autenticação
+
+	4 - TRANSPORTE - TCP/UDP/ICMP | Divisão da parte física para a parte lógica do serviço
+
+	3 - REDE (NET) - ROTEADOR (DOMÍNIO DE 	BROADCAST) | Conectar redes diferentes | Segmentação
+
+	2 - ENLACE (LINK LAYER/FRAME) | Enquadramento da informação | Organização de termos binários (com começo, meio e fim) - SWITCH (DOMÍNIO DE COLISÃO)
+
+	1 - FÍSICA | Wireless, Cabo | Energia elétrica convertida em 0s e 1s (binário) - HUB (REPETIDOR) / CONECTORIZAÇÕES
+
+FÍSICO (Virtualização - VirtualBox)
+
+	* Import das máquinas virtuais
+	* Configuração das interfaces de rede (NIC)
+	* Conexões de Switch
+
+LÓGICO (Sistema operacional)
+
+	* Configuração base
+		Hostname
+		Interface(s) de rede
+		Usuário/Grupos
+
+	* Serviços
+		ACESSO REMOTO
+		ROTEAMENTO/NAT
+		DNS
+		WEB
+		DHCP
