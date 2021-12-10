@@ -54,15 +54,15 @@ LÓGICO (Sistema operacional)
 		DHCP
 
 SRVLNX-NAIROBI
-FisicICO (Virtualizaﾃｧﾃ｣o - VirtualBox)
-        Import das mﾃ｡quinas virtuais
-        Configuraﾃｧﾃ｣o das interfaces de rede (NIC)
+FÍSICO (Virtualização - VirtualBox)
+        Importação das máquinas virtuais
+        Configuração das interfaces de rede (NIC)
                 A1 - NAT
                 A2 - Rede interna: LAN Segment
         Conexﾃｵes de Switch
                 LAN Segment
-Lﾃ敵ICO (Sistema operacional)
-        Configuraﾃｧﾃ｣o base
+LÓGICO (Sistema operacional)
+        Configuração base
                 Hostname:
                         SRVLNX-NAIROBI
                 Interface(s) de rede
@@ -72,62 +72,62 @@ Lﾃ敵ICO (Sistema operacional)
                         A1(NAT) - enp0s17
                                 DHCP
                                 #"editor" /etc/network/interfaces
-                Usuﾃ｡rio/Grupos
+                Usuário/Grupos
                         #cat /etc/passwd
                 Outra*
         
-        Serviﾃｧos
+        Serviços
                 ACESSO REMOTO (openssh-server)
-                        Nﾃ｣o existia instalaﾃｧﾃ｣o!
+                        Nﾃ｣o existia instalação!
                 ROTEAMENTO/NAT
                 DNS (bind9)
                         #Arquivo com o Resolver (DNS para consulta pelo equipamento em questﾃ｣o)
                         /etc/resolv.conf
-                        #Arquivo de declaraﾃｧﾃ｣o das zonas
+                        #Arquivo de declaração das zonas
                         /etc/bind/named.conf.local
                         #Arquivo de entrada da zona direta nairobi00.com.br
                         /etc/bind/db.nairobi00.com.br
                         #Arquivo de entrada da zona reverso nairobi00.com.br
                         /etc/bind/db.reverso.nairobi00.com.br
-                        #Configurar seguindo a boa prﾃ｡tica
+                        #Configurar 
                         /etc/bind/named.conf.options
                 
-                        Cﾃｳpia dos arquivos acima para o diretﾃｳrio /root/bkp/bind
+                        Cópia dos arquivos acima para o diretório /root/bkp/bind
                         
                         
                         
                 WEB (apache2)
-                        #Armazenamento da pﾃ｡gina existente
+                        #Armazenamento da página existente
                         /var/www/site                        
                         #Arquivos de configuraﾃｧﾃ｣o do Apache2
-                        #Pﾃ｡ginas disponﾃｭveis
+                        #Páginas disponíveis
                         /etc/apache2/sites-available
-                        #Pﾃ｡ginas disponﾃｭveis - Site.conf
+                        #Páginas disponﾃｭveis - Site.conf
                         /etc/apache2/sites-available/site.conf
-                        #Pﾃ｡ginas ativas
+                        #Páginas ativas
                         /etc/apache2/sites-enabled
-                        #Verificar a porta de funcionamento do serviﾃｧo HTTP
+                        #Verificar a porta de funcionamento do serviço HTTP
                         /etc/apache2/ports.conf
                         
 
 
 SRVWIN-RIO
-Fﾃ拘ICO (Virtualizaﾃｧﾃ｣o - VirtualBox)
-        Import das mﾃ｡quinas virtuais
-        Configuraﾃｧﾃ｣o das interfaces de rede (NIC)
+FÍSICO (Virtualização - VirtualBox)
+        Import das máquinas virtuais
+        Configuração das interfaces de rede (NIC)
                 A1 - LAN Segment
-        Conexﾃｵes de Switch
+        Conexões de Switch
                 LAN Segment
                 
 Lﾃ敵ICO (Sistema operacional)
-        Configuraﾃｧﾃ｣o base
+        Configuração base
                 Hostname
                         SRVWIN-RIO
                 Interface(s) de rede
-                Usuﾃ｡rio/Grupos
+                Usuário/Grupos
                 Outra*
         
-        Serviﾃｧos
+        Serviços
                 ACESSO REMOTO
                 DHCP
                         Dynamic Host Configuration Protocol
@@ -137,25 +137,25 @@ Lﾃ敵ICO (Sistema operacional)
                                 Escopo(Range)
                 
 CLTWIN-OSLO                
-Fﾃ拘ICO (Virtualizaﾃｧﾃ｣o - VirtualBox)
-        Import das mﾃ｡quinas virtuais
-        Configuraﾃｧﾃ｣o das interfaces de rede (NIC)
+FÍSICO (Virtualização - VirtualBox)
+        Import das máquinas virtuais
+        Configuração das interfaces de rede (NIC)
                 A1 - LAN Segment
-        Conexﾃｵes de Switch
+        Conexões de Switch
                 LAN Segment
                 
-Lﾃ敵ICO (Sistema operacional)
-        Configuraﾃｧﾃ｣o base
+LÓGICO (Sistema operacional)
+        Configuração base
                 Hostname
                         sysdm.cpl
                                 CLTWIN-OSLO
                 Interface(s) de rede
                         DHCP
-                Usuﾃ｡rio/Grupos
+                Usuário/Grupos
                         lusrmgr.msc
                 Outra*
         
-        Serviﾃｧos
+        Serviços
                 ACESSO REMOTO
 
 
