@@ -13,3 +13,11 @@ Este repositório contém conceitos abordados no 3º semestre do Curso Técnico 
 - Grafana
 - Zabbix
 - Cacti
+
+## Cursos realizados neste semestre
+
+Site | Curso
+---- | -----
+[SENAI - EAD](https://ead.sp.senai.br/) | Competências Socioemocionais (Soft Skills)
+[SENAI - EAD](https://ead.sp.senai.br/) | Desvendando a Indústria 4.0
+[SENAI - EAD](https://ead.sp.senai.br/) | Desvendando a Blockchain
