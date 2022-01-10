@@ -1,33 +1,33 @@
 # SCRUM
- *estrutura que aconselha as equipes a trabalharem juntas. O Scrum estimula as equipes a aprenderem a não trabalharem individualmente, a se organizarem devidamente, enquanto resolvem problemas e fracassos para a otimização.*
+ *Estrutura que aconselha as equipes a trabalharem juntas. O Scrum estimula as equipes a aprenderem a não trabalharem individualmente, a se organizarem devidamente, enquanto resolvem problemas e fracassos para a otimização.*
 
                       " AS RESPONSABILIDADES DE ENTREGAS SÃO DE TODOS"
-
-Organização de projetos
+ 
+### Organização de projetos
 
   * Product Backlog
   * Sprint Tasks
   * Daily Scrum
   * Compieted Features
 
- PILARES DO SCRUM
+ ### Pilares do ESCRUM
 
- Transparência: os aspectos do projeto devem ser exposto a todos participantes.
+ *Transparência: os aspectos do projeto devem ser exposto a todos participantes.*
 
- Inspeção: analisar cuidadosamente o modo de trabalho para encontrar melhorias.
+ *Inspeção: analisar cuidadosamente o modo de trabalho para encontrar melhorias.*
 
- Adaptação: os pontos que estejam desviando da padronização de qualidade do time ou estejam atrapalhando o progresso.
+ *Adaptação: os pontos que estejam desviando da padronização de qualidade do time ou estejam atrapalhando o progresso.*
 
 
-PÁPEIS DO SCRUM
+### Pápeis do SCRUM
 
- O scrum NÃO prescreve cargos ou hierarquias, mas é responsável pela entrega.
+ *O scrum **NÃO** prescreve cargos ou hierarquias, mas é responsável pela entrega.*
 
- SCRUM MASTER - trabalho para o time garantindo o cumprimento por todos, não apenas no time, mas com as organizações, servidor.                 
+ **SCRUM MASTER** - *trabalho para o time garantindo o cumprimento por todos, não apenas no time, mas com as organizações, servidor.*                
 
- PRODUCT OWNER - representante máximo dos desejos do cliente dentro do time SCRUM.
+ **PRODUCT OWNER** - *representante máximo dos desejos do cliente dentro do time SCRUM.*
 
- TIME - grupo profissional que trabalha no desenvolvimento do produto ou sistema. O ideal é que o time seja o mais multi-funcional
+ **TIME** - *grupo profissional que trabalha no desenvolvimento do produto ou sistema. O ideal é que o time seja o mais multi-funcional.*
 
     ASPECTOS
         Product Backlog - solução ao problema 
@@ -35,10 +35,11 @@ PÁPEIS DO SCRUM
         Incremento - alterações no projeto
         Definição de Pronto - O que realmente está pronto? O que foi desenvolvido, foi testado?
 
-INTRODUÇÃO Á UX
+### INTRODUÇÃO Á UX
 
-o que é?
-A experiência do usuário (UX) envolve o modo como qualquer usuário interage com o mundo ao seu redor: o que sente ao utilizar o serviço ou sistema.
+*o que é?*
+
+*A experiência do usuário (UX) envolve o modo como qualquer usuário interage com o mundo ao seu redor: o que sente ao utilizar o serviço ou sistema.*
 
 
         COMPORTAMENTO             APARÊNCIA 
@@ -49,28 +50,28 @@ A experiência do usuário (UX) envolve o modo como qualquer usuário interage c
          -Experiência
          -Objetivos
 
-Qual a diferença entre cliente e usuário?
+*Qual a diferença entre cliente e usuário?*
 
-  Cliente = solicitador do software
-   Usuário = utilizador
+  **Cliente** = *solicitador do software*
+  
+  **Usuário** = *utilizador*
 
 
 
-CERIMÔNIAS SCRUM
+### CERIMÔNIAS SCRUM
+       
 
-  SPRINT - entrega de valor ao cliente o mais rápido possível
-
-       SPRINT Planning - cerimônia de planejamento (discussões sobre o trabalho)
+       **SPRINT Planning** - cerimônia de planejamento (discussões sobre o trabalho)
               - Início do Ciclo
               - Determina: Objetivo e Escopo
               - Define o SPRINT Backlog
 
 
-       SPRINT Review - apresentação de trabalho relaizado x planejado mais os próximos passos
+       **SPRINT Review** - apresentação de trabalho relaizado x planejado mais os próximos passos
 
-       SPRINT Retrospective - cerimônia que acontece no último dia da SPRINT para analisar todos os passos.
+       **SPRINT Retrospective** - cerimônia que acontece no último dia da SPRINT para analisar todos os passos.
 
-       DAILY SCRUM é cerimônia de alinhamento para: Garantir o caminho certo
-                                                    Ocorre todos os dias
-                                                    Máximo de 15 minutos com TODOS
-                                                    SEMPRE mesmo local e horário
+       **DAILY SCRUM** - é cerimônia de alinhamento para: Garantir o caminho certo
+                                                        - Ocorre todos os dias
+                                                        - Máximo de 15 minutos com TODOS
+                                                        - SEMPRE mesmo local e horário
