@@ -8,16 +8,15 @@ Você e sua equipe, sendo chamados como consultores para resolverem os problemas
 Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.”
 
 
-OBJETIVO:
+#### CONFIGURAÇÃO DA REDE
+ 
 
- PREMISSAS - TÉCNICAS
-	- Rede:
 	- Realizar a cópia (backup) de todo arquivo de configuração a ser alterado
 	- Estado dos serviços que serão analisados
 	- LOG de Sistema
 
-CENÁRIO - PREPARAÇÃO DO AMBIENTE
-(MODELO OSI - 7 CAMADAS)
+#### CENÁRIO - PREPARAÇÃO DO AMBIENTE
+MODELO OSI - 7 CAMADAS
 
 	7 - APLICAÇÃO - Navegador / Apache2 / FTP
 
@@ -53,15 +52,22 @@ LÓGICO (Sistema operacional)
 		WEB
 		DHCP
 
-SRVLNX-NAIROBI
+#### SRVLNX-NAIROBI
+
 FÍSICO (Virtualização - VirtualBox)
-        Import das mﾃ｡quinas virtuais
+        
+	
+	Import das máquinas virtuais
         Configuração das interfaces de rede (NIC)
                 A1 - NAT
                 A2 - Rede interna: LAN Segment
         Conexões de Switch
                 LAN Segment
+				
+		
 LÓGICO (Sistema operacional)
+
+
         Configuração base
                 Hostname:
                         SRVLNX-NAIROBI
@@ -76,23 +82,23 @@ LÓGICO (Sistema operacional)
                         #cat /etc/passwd
                 Outra*
         
-        Serviços
+        SERVIÇOS
                 ACESSO REMOTO (openssh-server)
-                        Nﾃ｣o existia instalaﾃｧﾃ｣o!
+                        Não existia instalação!
                 ROTEAMENTO/NAT
                 DNS (bind9)
                         #Arquivo com o Resolver (DNS para consulta pelo equipamento em questﾃ｣o)
                         /etc/resolv.conf
-                        #Arquivo de declaraﾃｧﾃ｣o das zonas
+                        #Arquivo de declaração das zonas
                         /etc/bind/named.conf.local
                         #Arquivo de entrada da zona direta nairobi00.com.br
                         /etc/bind/db.nairobi00.com.br
                         #Arquivo de entrada da zona reverso nairobi00.com.br
                         /etc/bind/db.reverso.nairobi00.com.br
-                        #Configurar seguindo a boa prﾃ｡tica
+                        #Configurar seguindo a boa prática
                         /etc/bind/named.conf.options
                 
-                        Cﾃｳpia dos arquivos acima para o diretﾃｳrio /root/bkp/bind
+                        Cﾃｳpia dos arquivos acima para o diretório /root/bkp/bind
                         
                         
                         
@@ -106,57 +112,64 @@ LÓGICO (Sistema operacional)
                         /etc/apache2/sites-available/site.conf
                         #Pﾃ｡ginas ativas
                         /etc/apache2/sites-enabled
-                        #Verificar a porta de funcionamento do serviﾃｧo HTTP
+                        #Verificar a porta de funcionamento do serviço HTTP
                         /etc/apache2/ports.conf
                         
 
 
-SRVWIN-RIO
-Fﾃ拘ICO (Virtualizaﾃｧﾃ｣o - VirtualBox)
+#### SRVWIN-RIO
+FÍSICO (Virtualização - VirtualBox)
+
+
+
         Import das mﾃ｡quinas virtuais
-        Configuraﾃｧﾃ｣o das interfaces de rede (NIC)
+        Configuração das interfaces de rede (NIC)
                 A1 - LAN Segment
-        Conexﾃｵes de Switch
+        Conexões de Switch
                 LAN Segment
                 
-Lﾃ敵ICO (Sistema operacional)
-        Configuraﾃｧﾃ｣o base
+LÓGICO (Sistema operacional)
+
+        Configuração base
                 Hostname
                         SRVWIN-RIO
                 Interface(s) de rede
-                Usuﾃ｡rio/Grupos
+                Usuário/Grupos
                 Outra*
         
-        Serviﾃｧos
-                ACESSO REMOTO
+        SERVIÇOS
+                Acesso Remoto
                 DHCP
                         Dynamic Host Configuration Protocol
                                 REDE
-                                Mﾃ｡scara
+                                Máscara
                                 Gateway
                                 Escopo(Range)
                 
-CLTWIN-OSLO                
-Fﾃ拘ICO (Virtualizaﾃｧﾃ｣o - VirtualBox)
-        Import das mﾃ｡quinas virtuais
-        Configuraﾃｧﾃ｣o das interfaces de rede (NIC)
+#### CLTWIN-OSLO                
+FÍSICO (Virtualização - VirtualBox)
+
+
+        Import das máquinas virtuais
+        Configuração das interfaces de rede (NIC)
                 A1 - LAN Segment
-        Conexﾃｵes de Switch
+        Conexões de Switch
                 LAN Segment
                 
-Lﾃ敵ICO (Sistema operacional)
-        Configuraﾃｧﾃ｣o base
+LÓGICO (Sistema operacional)
+
+        Configuração base
                 Hostname
                         sysdm.cpl
                                 CLTWIN-OSLO
                 Interface(s) de rede
                         DHCP
-                Usuﾃ｡rio/Grupos
+                Usuário/Grupos
                         lusrmgr.msc
                 Outra*
         
-        Serviﾃｧos
-                ACESSO REMOTO
+        SERVIÇOS
+                Acesso Remoto
 
 
 
