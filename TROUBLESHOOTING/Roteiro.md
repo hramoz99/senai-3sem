@@ -1,11 +1,11 @@
 # ROTEIRO
 
- "O troubleshooting pode ser compreendido como uma espécie de diagrama de ações, um conjunto de medidas que orienta a resolução de problemas dentro do ambiente de TI.
-  Em tradução, troubleshooting significa solução de problemas.”
+ *"O troubleshooting pode ser compreendido como uma espécie de diagrama de ações, um conjunto de medidas que orienta a resolução de problemas dentro do ambiente de TI.
+  Em tradução, troubleshooting significa solução de problemas.”*
 
-PROBLEMA: “ Um funcionário, ao ser demitido, danificou a infraestrutura funcional da empresa, deixando-a fora do ar. 
+**PROBLEMA**: *“ Um funcionário, ao ser demitido, danificou a infraestrutura funcional da empresa, deixando-a fora do ar. 
 Você e sua equipe, sendo chamados como consultores para resolverem os problemas, deverão colocar este mesmo ambiente no ar novamente.
-Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.”
+Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.”*
 
 
 #### CONFIGURAÇÃO DA REDE
