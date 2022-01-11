@@ -1,8 +1,7 @@
-VPN - pfSense - Aula 21/09/21
+# VPN - PFSense - 21/09/21
 
-    Configuração do Cenário
-
-        * Importar CLI7WIN-TOQUIO (Nomear para "CLI7WIN-TOQUIO-2")
+ **CENÁRIO**
+ 
         > Placa de Rede - Modo bridge
 
             192.168.5.124/16
@@ -10,11 +9,11 @@ VPN - pfSense - Aula 21/09/21
             192.168.1.41 - DNS1
             192.168.1.33-DNS2
 
-    Curiosidade - liberar acesso remoto ao SRVDC-NAIROBI
+  *CURIOSIDADE - liberar acesso remoto*
 
         Firewall > NAT > Encaminhamento de Portas
 
-        Configuração:
+        CONFIGURAÇÃO:
 
             * Interface: WAN
             * Protocolo: TCP
@@ -28,9 +27,9 @@ VPN - pfSense - Aula 21/09/21
 
 ------------------------------------------
 
-CLI7WIN-TOQUIO
+**CLI7WIN-TOQUIO**
 
-    * VPN > OpenVPN > Wizards
+     VPN > OpenVPN > Wizards
 
         Type of Server: Local
         Descriptive name: vpn-senai | ca_vpn_senai
@@ -77,7 +76,7 @@ CLI7WIN-TOQUIO
 
 ------------------------------------------
 
-APÓS O DOWNLOAD DO ARQUIVO (openvpn-SRVFW-PFSENSE-UDP4-1194-tecnico-install-2.4.9-I601-Win7)
+**DEPOIS DO DOWNLOAD DO ARQUIVO (openvpn-SRVFW-PFSENSE-UDP4-1194-tecnico-install-2.4.9-I601-Win7)**
 
-    * Mova o arquivo do CLI7WIN-TOQUIO para a máquina local
-    * Após isso, mova o arquivo da máquina local para o CLI7WIN-TOQUIO2
+    ! Mova o arquivo do CLI7WIN-TOQUIO para a máquina local
+    ! Após isso, mova o arquivo da máquina local para o CLI7WIN-TOQUIO2
