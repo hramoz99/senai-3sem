@@ -11,7 +11,7 @@ Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.
 #### CONFIGURAÇÃO DA REDE
  
 
-	- Realizar a cópia (backup) de todo arquivo de configuração a ser alterado
+	- Realizar a cópia (backup) de todo arquivo de configuração
 	- Estado dos serviços que serão analisados
 	- LOG de Sistema
 
@@ -40,17 +40,17 @@ FÍSICO (Virtualização - VirtualBox)
 
 LÓGICO (Sistema operacional)
 
-	* Configuração base
-		Hostname
-		Interface(s) de rede
-		Usuário/Grupos
+	 CONFIGURAÇÃO BASE
+		 Hostname
+		 Interface(s) de rede
+		 Usuário/Grupos
 
-	* Serviços
-		ACESSO REMOTO
-		ROTEAMENTO/NAT
-		DNS
-		WEB
-		DHCP
+	 SERVIÇOS
+		 Acesso Remoto
+		 Roteamento/NAT
+		 DNS
+		 WEB
+		 DHCP
 
 #### SRVLNX-NAIROBI
 
@@ -98,19 +98,19 @@ LÓGICO (Sistema operacional)
                         #Configurar seguindo a boa prática
                         /etc/bind/named.conf.options
                 
-                        Cﾃｳpia dos arquivos acima para o diretório /root/bkp/bind
+                        Cópia dos arquivos acima para o diretório /root/bkp/bind
                         
                         
                         
                 WEB (apache2)
-                        #Armazenamento da pﾃ｡gina existente
+                        #Armazenamento da página existente
                         /var/www/site                        
-                        #Arquivos de configuraﾃｧﾃ｣o do Apache2
-                        #Pﾃ｡ginas disponﾃｭveis
+                        #Arquivos de configuração do Apache2
+                        #Páginas disponíveis
                         /etc/apache2/sites-available
-                        #Pﾃ｡ginas disponﾃｭveis - Site.conf
+                        #Páginas disponﾃｭveis - Site.conf
                         /etc/apache2/sites-available/site.conf
-                        #Pﾃ｡ginas ativas
+                        #Páginas ativas
                         /etc/apache2/sites-enabled
                         #Verificar a porta de funcionamento do serviço HTTP
                         /etc/apache2/ports.conf
@@ -122,7 +122,7 @@ FÍSICO (Virtualização - VirtualBox)
 
 
 
-        Import das mﾃ｡quinas virtuais
+        Import das máquinas virtuais
         Configuração das interfaces de rede (NIC)
                 A1 - LAN Segment
         Conexões de Switch
@@ -130,7 +130,7 @@ FÍSICO (Virtualização - VirtualBox)
                 
 LÓGICO (Sistema operacional)
 
-        Configuração base
+        CONFIGURAÇÃO BASE
                 Hostname
                         SRVWIN-RIO
                 Interface(s) de rede
@@ -158,7 +158,7 @@ FÍSICO (Virtualização - VirtualBox)
                 
 LÓGICO (Sistema operacional)
 
-        Configuração base
+        CONFIGURAÇÃO BASE
                 Hostname
                         sysdm.cpl
                                 CLTWIN-OSLO
