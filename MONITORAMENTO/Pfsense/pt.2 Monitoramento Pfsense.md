@@ -1,12 +1,13 @@
-Continuação -- PFSENSE - 17/09 (Continuação da aula do dia 16/09)
+# PFSENSE - 17/09 
 
-ORGANIZAÇÃO CENÁRIO
+### CENÁRIO
 
-    * Alteração do Adaptador1 em modo NAT para modo Bridge
-        Interface WAN - IP: 192.168.100.1xx (xx = ID da sessão do Anydesk)
-            Exemplo: 192.168.100.124
+        Alteração do Adaptador1: Modo Bridge
+        Interface WAN:
+            IP: 192.168.100.1xx (xx = ID da sessão do Anydesk)
+         Exemplo: 192.168.100.124
 
-        Sequência
+     Sequência
             2
             1
             n
@@ -19,7 +20,7 @@ ORGANIZAÇÃO CENÁRIO
 
 ------------------------------------
 
-DASHBOARD PFSENSE
+**DASHBOARD - PFSENSE**
 
     1) Criação de Grupos de IPs
         Firewall > Aliases > IP >  Add
@@ -33,12 +34,12 @@ DASHBOARD PFSENSE
     2) Criação de Grupos de Portas
         Firewall > Aliases > Portas >  Add
 
-        - Nome: Grupo_portas
-        - Descrição: Selecionando portas que vamos liberar
+        - Nome: Grupo_porta(s)
+        - Descrição: Selecionar porta(s) liberadas
         - Tipo: Porta(s)
         - Porta: 80 (HTTP), 53 (DNS), 20 (FTP), 21 (FTP_ATIVO), 22 (SSH), 25 (SMTP)
 
     3) Visualiação das regras
         Firewall > Regras
 
-        - Podemos copiar as regras, movimenta-las (para definição de prioridade)
+        
