@@ -35,7 +35,8 @@
    ### INSTALAÇÃO DO AGENTE - WINDOWS
 
     https://www.zabbix.com/download_agents?version=5.0+LTS&release=5.0.14&os=Windows&os_version=Any&hardware=amd64&encryption=No+encryption&packaging=Archive&show_legacy=0
-       1) Win> Any> amd64> 5.0 LTS> Sem criptografia> Arquivo
+      
+      1) Win> Any> amd64> 5.0 LTS> Sem criptografia> Arquivo
              Download - https://cdn.zabbix.com/zabbix/binaries/stable/5.0/5.0.14/zabbix_agent-5.0.14-windows-amd64.zip
 
           NOTA: 'Lembrar de inserir o disco para que tenha uma integração com o seu pc raíz'
