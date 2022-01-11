@@ -1,11 +1,11 @@
-TERMOS
+# TERMOS
 
-Monitorar = visibilidade - ambiente gerenciado
+**Monitorar = visibilidade - ambiente gerenciado**
 
     - Manutenção Proativa
     - Manutenção Reativa
 
-    Algumas ferramentas de monitoramento:
+    Ferramentas de monitoramento:
 
         * Dynatrace
         * Nagios
@@ -14,14 +14,15 @@ Monitorar = visibilidade - ambiente gerenciado
         * Cacti
         * ZABBIX
 
-GERENTE -> Administra outros dispositivos
-AGENTE -> Indivíduo monitorado
+**GERENTE -> Administra outros dispositivos**
+
+**AGENTE -> Indivíduo monitorado**
 
     Comunicação AGENTE <- GERENTE = Puxando
 
     Comunicação AGENTE -> GERENCIAMENTO = Trap
 
-SNMP (protocolo de gerenciamento de rede simples) = UDP / 161
+**SNMP (protocolo de gerenciamento de rede simples) = UDP / 161**
 
     HOST_A - SO - Memória - CPU - Disco - Consumo de Rede - Usuários logados
     hOST_B - SO - Memória - CPU - Disco - Consumo de Rede - Usuários logados
