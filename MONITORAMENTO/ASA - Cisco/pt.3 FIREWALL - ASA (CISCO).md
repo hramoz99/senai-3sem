@@ -1,13 +1,13 @@
-FIREWALL - ASA (CISCO) - 15/09
+# FIREWALL - ASA (CISCO) - 15/09
 
-  PADRÃO DE CONEXÃO - CISCO
+  *PADRÃO DE CONEXÃO - CISCO*
 
     Putty > Connection > SSH > Serial
 
 
 -------------------------------------------------
 
-PARÂMETROS
+### PARÂMETROS
 
     *  User mode - (>)
     * "Admin" Cisco - modo privilegiado (#)
@@ -28,43 +28,48 @@ PARÂMETROS
 
 -------------------------------------------------
 
-HABILITAR INTERFACE GRÁFICA - EXEMPLO
+### HABILITAR INTERFACE GRÁFICA - EXEMPLO
 
-1) Informar o caminho do sistema gráfico - ASDM
-2) Habilitar o servidor HTTP do ASA
-3) Permitir qual rede terá o acesso ao serviço HTTP
+     1) Informar o caminho do sistema gráfico - ASDM
+     2) Habilitar o servidor HTTP do ASA
+     3) Permitir qual rede terá o acesso ao serviço HTTP
 
     Nota: O dispositivo de gerenciamento do equipamento deve estar na mesma rede do firewall
         OBS: comando (no cmd) -> 'arp -a', mostra os IPs e seus endereços MAC
 
-# Configuração básica
+#### CONFIGURAÇÃO BÁSICA 
+```
 en
 conf t
 int g1/1
 ip add 10.10.0.6 255.255.255.248
 nameif inside
 no sh
+```
 
-# Informar o caminho do sistema gráfico - ASDM
+#### INFORMAR O CAMINHO DO SISTEMA GRÁFICO - ASDM 
+```
 asdm image flash:/asdm-761.bin
-
-# Habilitar o servidor HTTP do ASA
+```
+#### HABILITAR O SERVIDOR HTTP DO ASA 
+```
 http server enable
-
-# Permitir qual rede acessará o serviço HTTP
+```
+#### PERMITIR QUAL REDE TEM ACESSO AO SERVIDOR HTTP
+```
 http 10.10.0.0 255.255.255.248 inside
-
+```
 -------------------------------------------------
 
-TESTE
+### TESTE
 
     No navegador digite http://10.10.0.6
 
 -------------------------------------------------
 
-INSTALAÇÃO
+### INSTALAÇÃO
 
-  Nota: depois de acessar a URL na etapa anterior (TESTE)
+  *Nota: Depois de acessar a URL na etapa anterior - TESTE*
 
     1) Clique em'entrar' - Não existe usuário e admin
     2) Install ASDM Laucher (arquivo de 700KB)
@@ -74,15 +79,15 @@ INSTALAÇÃO
 
 -------------------------------------------------
 
-Cisco ASDM-IDM Launcher
+### Cisco ASDM-IDM Launcher
 
     IP: 10.10.0.6 > OK
 
 -------------------------------------------------
 
-INTERFACE GRÁFICA
+### INTERFACE GRÁFICA
 
-    * Após as alterações na interface gráfica deve-se aplicar (apply) as configurações e salvá-las (save) para que sejam 
-     aplicadas na linha de comando do ASA.
+  *Após as alterações na interface gráfica deve-se aplicar (apply) as configurações e salvá-las (save) para que sejam 
+  aplicadas na linha de comando do ASA.*
 
-    * Podemos definir objetos
+  
