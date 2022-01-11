@@ -1,6 +1,6 @@
-MONITORAMENTO DE HOSTS (RT / SW) - ITENS E INVENTÁRIO (23/08)
+# MONITORAMENTO DE HOSTS (RT / SW) - ITENS E INVENTÁRIO (23/08)
 
-    INSTALAÇÃO DO AGENTE - LINUX
+   ### INSTALAÇÃO DO AGENTE - LINUX
 
       1) No Painel de gerenciamento do Zabbix, vá em:
          Configuração> hosts> Criar host
@@ -32,9 +32,9 @@ MONITORAMENTO DE HOSTS (RT / SW) - ITENS E INVENTÁRIO (23/08)
 --------------------------------------------------------------
 
 
-   INSTALAÇÃO DO AGENTE - WINDOWS
+   ### INSTALAÇÃO DO AGENTE - WINDOWS
 
-       https://www.zabbix.com/download_agents?version=5.0+LTS&release=5.0.14&os=Windows&os_version=Any&hardware=amd64&encryption=No+encryption&packaging=Archive&show_legacy=0
+    https://www.zabbix.com/download_agents?version=5.0+LTS&release=5.0.14&os=Windows&os_version=Any&hardware=amd64&encryption=No+encryption&packaging=Archive&show_legacy=0
        1) Win> Any> amd64> 5.0 LTS> Sem criptografia> Arquivo
              Download - https://cdn.zabbix.com/zabbix/binaries/stable/5.0/5.0.14/zabbix_agent-5.0.14-windows-amd64.zip
 
