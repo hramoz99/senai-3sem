@@ -1,7 +1,7 @@
-MONITORAMENTO COM ZABBIX - INSTALAÇÃO (20/08)
+# MONITORAMENTO COM ZABBIX - INSTALAÇÃO (20/08)
 
 
- Instalar o Banco de Dados MySQL 5.7
+ ### Instalar o Banco de Dados MySQL 5.7
 
      Validador de chaves
        #apt install gnupg -y
@@ -37,7 +37,7 @@ MONITORAMENTO COM ZABBIX - INSTALAÇÃO (20/08)
                    Atualizar os pacotes
                      # apt update
 
-0                    Instalar o servidor Zabbix
+                 Instalar o servidor Zabbix
                        #apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent
 
              Configurar o banco de dados MySQL ao Zabbix
