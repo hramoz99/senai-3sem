@@ -1,8 +1,8 @@
-MONITORAMENTO COM CACTI (17/08) 
+# MONITORAMENTO COM CACTI (17/08) 
 
----------------------------------------
+______________________________________
 
-NAIROBI
+**NAIROBI**
 
     1) Clieque em 'Gerenciador de servidor'> Recursos> Adicionar recursos> Marque "Serviços SNMP"> Avançar> Instalar
 
@@ -25,7 +25,7 @@ NAIROBI
                 * Aceitar pacotes SNMP dos hosts > Adicionar > 172.31.0.251
 
 ---------------------------------------
-FIREWALL - REGRA DE ENTRADA
+**FIREWALL - REGRA DE ENTRADA**
 
     Firewall do Windows > Segurança Avançada > Funções de Entrada
 
@@ -36,8 +36,7 @@ FIREWALL - REGRA DE ENTRADA
         Nome = SNMP-Libera-161
 
 ---------------------------------------
-
-TÓQUIO
+**TÓQUIO**
 
     3) Criar um novo dispositivo no Cacti 
 
@@ -53,7 +52,7 @@ TÓQUIO
 
 ---------------------------------------
 
-BERLIM
+**BERLIM**
 
     1) 'apt update -y'
     2) Atualização do apt -y
@@ -72,7 +71,7 @@ BERLIM
 
 ---------------------------------------
 
-DENVER
+**DENVER**
 
     1) 'apt update -y'
     2) Atualização do apt -y
