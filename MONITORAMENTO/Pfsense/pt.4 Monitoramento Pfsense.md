@@ -9,9 +9,7 @@
             192.168.1.41 - DNS1
             192.168.1.33-DNS2
 
-  *CURIOSIDADE - liberar acesso remoto*
-
-        Firewall > NAT > Encaminhamento de Portas
+          Firewall > NAT > Encaminhamento de Portas
 
         CONFIGURAÇÃO:
 
