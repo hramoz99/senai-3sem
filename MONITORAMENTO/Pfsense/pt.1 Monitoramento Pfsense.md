@@ -1,6 +1,6 @@
-PFSENSE INTRODUÇÃO - 16/09
+# PFSENSE INTRODUÇÃO - 16/09
 
-ORGANIZAÇÃO CENÁRIO
+### ORGANIZAÇÃO CENÁRIO
 
     * Importar uma nova máquina para instalarmos o pfense
         Nome: SRVFW-BERLIM-PFSENSE
@@ -21,7 +21,7 @@ ORGANIZAÇÃO CENÁRIO
 
 -----------------------------------------
 
-INSTALAÇÃO PFSENSE
+**INSTALAÇÃO - PFSENSE**
 
     - Deixe a execução acontecer
         Clique em "accept" > OK
@@ -38,7 +38,7 @@ INSTALAÇÃO PFSENSE
 
 -----------------------------------------
 
-MANUSEIO
+**MANUSEIO**
 
     1) Sequência - Definição IP placa de rede
         2
@@ -57,7 +57,7 @@ MANUSEIO
 
 -----------------------------------------
 
-ACESSO SSH e HTTP AO PFSENSE
+**ACESSO SSH e HTTP - PFSENSE**
 
     1) No CLI7WIN, teste o ping para 10.10.0.6
 
@@ -89,7 +89,7 @@ ACESSO SSH e HTTP AO PFSENSE
         
 -----------------------------------------
 
-DASHBOARD PFSENSE
+**DASHBOARD - PFSENSE**
 
     * "Chave" nos mostra as informações que queremos colocar sobre o template
     * Ícone de "mais", adiciona outros templates
@@ -111,7 +111,7 @@ DASHBOARD PFSENSE
 
 -----------------------------------------
 
-FAÇA O TESTE
+**TESTE**
 
     1) Ligue o SRVMON-MOSCOU
 
@@ -123,7 +123,7 @@ FAÇA O TESTE
 
 -----------------------------------------
 
-CRIAÇÃO DE GRUPOS E USUÁRIOS
+**CRIAÇÃO DE GRUPOS E USUÁRIOS**
 
     1) Criação de grupos
         System > User Manager > Group
