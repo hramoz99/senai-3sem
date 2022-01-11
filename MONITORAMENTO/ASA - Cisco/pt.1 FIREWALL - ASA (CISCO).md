@@ -1,13 +1,14 @@
-FIREWALL - ASA (CISCO) - 13/09
+# FIREWALL - ASA (CISCO) - 13/09
 
     ASDM - Interface gráfica (via web) para configuração do ASA
 
-Tipos de firewall
-
+#### TIPOS DE FIREWALL
+```
     - IPtables > ferramenta da linha de comando (Linux)
     - Windows > firewall do Windows, norton, AVG, Macaffe
+```
 
-Lógica do Cisco ASA
+#### CISCO ASA - LÓGICA
 
     - Regras de entrada
     - Regras de saída
@@ -18,19 +19,19 @@ Lógica do Cisco ASA
 
 --------------------------------
 
-OBSERVAÇÕES 
-
+#### OBSERVAÇÕES 
+```
     * Senha de primeiro acesso no terminal - não existe (apenas aperte 'enter')
     * Ao utilizar classe cheia (A, B ou C) para a distribuição dos IPs, não é obrigatório colocar a máscara
     * Comando 'sh run' funciona em qualquer modo/menu da console
     * ASA - por padrão possui a política de modo "DROP" -> no security-level
         ! Necessário a definição de um nome e um nível para cada segurança
 
-    INSEGURO = 0 (internet)
+   INSEGURO = 0 (internet)
     .
     .
     .
-    SEGURO = 100 (local/LAN)
+   SEGURO = 100 (local/LAN)
 
     * Níveis mais altos --> níveis mais baixos (OK)
     * Níveis mais baixos --> níveis mais altos (Falha)
@@ -57,16 +58,16 @@ OBSERVAÇÕES
 
     * Comando 'sh int ip brief'
         Apresenta os IPs atrelados a cada interface
+```        
         
---------------------------------
+# CENÁRIO
 
-              CENÁRIO
+  *IP dos PCs -> segundo IP válido*
 
-    IP dos PCs -> segundo IP válido
+  *Script - CISCO ASA*
 
-          Script - CISCO ASA
-
-# Configuração das interfaces
+#### CONFIGURAÇÃO DAS INTERFACES 
+```
 en
 conf t 
 int g1/1
@@ -81,38 +82,47 @@ int g1/3
 nameif c
 ip add 192.168.1.1
 no sh
+```
 
-# Definiçao dos niveis de segurança das interfaces - Teste de Ping
+#### DEFINIÇÃO DOS NÍVEIS DE SEGURANÇA DAS INTERFACES - TESTE DE PING 
+```
 int g1/1
 security-level 0
 int g1/2
 security-level 0
 int g1/3
 security-level 0
+```
 
-# Definir zona intermediária - 'DMZ' (aplicar mais camada de segurançaa na rede)
+#### DEFINIR ZONA INTERMEDIÁRIA - 'DMZ' (ATRIBUIR CAMADA DE SEGURANÇA)
+```
 int g1/1
 security-level 0
 int g1/2
 security-level 50
 int g1/3
 security-level 100
+```
 
-# Ligar placa de rede - Gerenciamento
+#### LIGAR PLACA DE REDE - GERENCIAMENTO 
+```
 interface management 1/1
 nameif gerencia
 security-level 0
 ip add 172.16.0.1
 no sh
+```
 
-# Criação do acesso SSH
-exit
+#### CRIAÇÃO DO ACESSO SSH 
+```
 username admin password Senai@132
 ssh 172.16.0.0 255.255.0.0 gerencia
 aaa authentication ssh console LOCAL
 ssh timeout 60
+```
 
-# Permitir ping da Internet para DMZ
+#### PERMITIR PING DA INTERNET PARA DMZ 
+```
 access-list T1 extend permit icmp host 192.168.10.2 host 192.168.20.2
 access-group T1 in interface a
 
@@ -126,6 +136,9 @@ no access-list T1 extend permit icmp host 192.168.10.2 host 192.168.1.2
 access-list T1 extend permit icmp any any
 access-group T1 in interface a
 access-group T1 in interface b
+```
 
-# Salvar as configurações
+#### SALVAR AS CONFIGURAÇÕES 
+```
 write memory
+```
