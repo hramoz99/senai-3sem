@@ -28,7 +28,7 @@ _________________________________________________________________
     1) Configurações > Plug-ins> Zabbix> Habilitar
     2) Configurações> Fonte de dados> Adicionar fonte de dados> Zabbix
         
-    Definições
+    DEFINIÇÕES
             URL: http://172.31.0.250/zabbix/api_jsonrpc.php
             Nome de usuário: Admin
             Senha: zabbix
