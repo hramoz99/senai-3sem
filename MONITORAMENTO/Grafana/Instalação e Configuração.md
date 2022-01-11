@@ -1,10 +1,11 @@
-INSTALAÇÃO E CONFIGURAÇÃO (26/08)
+# INSTALAÇÃO E CONFIGURAÇÃO (26/08)
 
-GRAFANA produz gráficos por meio da base de dados fornecidos pelas ferramentas de monitoramento
+*GRAFANA produz gráficos por meio da base de dados fornecidos pelas ferramentas de monitoramento*
+
        .Zabbix
        .Cacti
 
-INSTALAÇÃO GRAFANA
+**INSTALAÇÃO GRAFANA**
 
     1) wget -q -O - https://packages.grafana.com/gpg.key | apt-key add -
     2) echo "deb https://packages.grafana.com/oss/deb stable main" | tee -a /etc/apt/sources.list.d/grafana.list
@@ -20,9 +21,9 @@ INSTALAÇÃO GRAFANA
     9) plug-ins grafana-cli instalam alexanderzobnin-zabbix-app
     10) systemctl reiniciar grafana-server
 
----------------------------------------------------------------------
+_________________________________________________________________
 
-GRAFANA
+**GRAFANA**
 
     1) Configurações > Plug-ins> Zabbix> Habilitar
     2) Configurações> Fonte de dados> Adicionar fonte de dados> Zabbix
@@ -34,9 +35,9 @@ GRAFANA
         !Salvar -> "Zabbix API versão 5.0.14"
     3) Logout no Grafana -> Botão de ajuda> Sair
 
-----------------------------------------------------------------------
+__________________________________________________________________
 
-PAINEL 
+**PAINEL**
 
     1) +> Criar> PAINEL
        Salvar e definir o NOME
