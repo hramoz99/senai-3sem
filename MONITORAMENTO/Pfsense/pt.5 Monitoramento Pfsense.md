@@ -1,17 +1,17 @@
-Correção VPN - pfSense - Aula 23-09-21
+# PfSense - Aula 23-09-21
+_________________________________________________
 
-CLI7WIN2-TOQUIO
+**CLI7WIN2-TÓQUIO**
 
-    * Baixe o arquivo https://swupdate.openvpn.org/community/releases/tap-windows-9.21.2.exe
+     Baixar o arquivo https://swupdate.openvpn.org/community/releases/tap-windows-9.21.2.exe
 
-----------------------------------------------------
 
-CLI7WIN-TOQUIO
+**CLI7WIN-TÓQUIO**
 
-    * Apague os certificados e as regras de segurança relacionadas a VPN (OpenVPN)
-        Por questões de organização, apague o usuário bem como o certificado atrelado a ele
+           Apagar os certificados e as regras de segurança relacionadas a VPN (OpenVPN)
+          (Por questões de organização, apague o usuário e o certificado atrelado a ele)
 
-    * Crie uma nova vpn
+      * Criar uma nova VPN
         VPN > OpenVPN > Wizards
 
         <> Create a New Certificate Authority (CA) Certificate
@@ -49,8 +49,8 @@ CLI7WIN-TOQUIO
                             - Firewall Rule
                             - OpenVPN rule
 
-    * Crie um usuário
-        System > User Manager > Users
+       * Criar um usuário
+           System > User Manager > Users
 
             <> Edit
                 Username: manha
@@ -63,32 +63,31 @@ CLI7WIN-TOQUIO
                         Key length: 2048bit
                         Lifetime: 365
 
-    * Baixe o cliente VPN
+    * Baixar o cliente VPN
             OpenVPN > Client Export > OpenVPN Clients
 
                 <> Export
                     Legacy Windows Installers (2.4.9-Ix01): openvpn-SRVFW-PFSENSE-UDP4-1194-manha-install-2.4.9-I601-Win7
 
-    * Mova para o CLI7WIN2-TOQUIO
+    
 
 ----------------------------------------------------
 
-CLI7WIN2-TOQUIO
+**CLI7WIN2-TÓQUIO**
 
     * Execute o arquivo 'openvpn-SRVFW-PFSENSE-UDP4-1194-manha-install-2.4.9-I601-Win7'
         Siga o fluxo natural da instalação
 
     * Execute o arquivo 'tap-windows-9.21.2'
         
-    * Clique em Iniciar > TAP-Windows > Utilities > Add a new TAP virtual ethernet...
-        Teste novamente a conexão vpn
+    * Clique em Iniciar > TAP-Windows > Utilities > Add a new TAP virtual ethernet
 
             <> OpenVPN GUI
                 Conectar 
                 - User:
                 - Senha:
 
-    * Veja que agora um novo adaptador aparecerá nas Conexões de Rede
+    * Novo adaptador aparecerá nas Conexões de Rede
 
     * Essa informação pode ser visualizada em
         
@@ -110,7 +109,7 @@ CLI7WIN2-TOQUIO
 
 ----------------------------------------------------
 
-COMPARTILHAMENTO DISCO SRVDC-NAIROBI
+**COMPARTILHAMENTO DISCO**
 
     * Windows Explorer - SRVDC-NAIROBI
 
