@@ -1,28 +1,30 @@
-MONITORAMENTO COM ZABBIX - (19/08)
+# MONITORAMENTO COM ZABBIX - (19/08)
 
- INSTALAÇÃO DO SERVIDOR DE MONITORAMENTO 
-            "SRVMON-MOSCOU"
+ **INSTALAÇÃO DO SERVIDOR DE MONITORAMENTO**
 
 
 ----------------------------------------------------------------------------
 
 
-PREMISSAS TÉCNICAS
-   Rede: 172.31.0.0/24
+### PREMISSAS TÉCNICAS
+    Rede: 172.31.0.0/24
 
 
-VIRTUALIZADOR - VirtualBox
+**VIRTUALIZADOR - VirtualBox**
 
     Importação da máquina virtual: 'Debian 10.7 Base.ova'
     Configuração da Interfaces de Rede: 'Adaptador 1 - Rede Interna Rede_SRV'
            
 
-Sistema Operacional
-    Nome: SRVMON-MOSCOU
+**SISTEMA OPERACIONAL**
+```
+     Nome: SRVMON-MOSCOU
             #hostnamectl set-hostname SRMON-MOSCOU
             #bash
+```
 
-    Interface de rede:
+**INTERFACE DE REDE**
+
         #ip a
         # vim.tiny / etc / network / interfaces
 
@@ -33,19 +35,23 @@ Sistema Operacional
              máscara de rede 255.255.255.0
              gateway 172.31.0.254
 
-RESTART do Serviço
+**RESTART DO SERVIÇO**
+
             # / etc / init.d / networking restart
             #service networking restart
             #systemctl restart networking.service
 
 
-Verificação do GATEWAY
-            #ip route
+**Verificação do GATEWAY**
+
+      #ip route
 
 
-Teste de Cominicação
-            *ping para o gateway
-            *ping para a internet
+**Teste de Cominicação**
+
+         ping para o gateway
+            
+         ping para a internet
 
         DNS - RESOLVER
         ! APONTAR PARA OS SERVIDORES DO CENÁRIO
@@ -76,16 +82,19 @@ Teste de Cominicação
                                    
                            PermitRootLogin sim
 
-Serviços Específicos
-        Adicionar Interface Secundária - Comunicação com o Windows
-            VirtualBox - ativar adaptador2
-            Placa de rede - Exclusiva de hospedeiro (somente host)
+**Serviços Específicos**
+        
+    Adicionar Interface Secundária - Comunicação com o Windows
+    VirtualBox - ativar adaptador2
+            
+    Placa de rede - Exclusiva de hospedeiro (somente host)
 
         Inteface Linux
-            #vim / etc / network / interfaces
+            # vim / etc / network / interfaces
                 
               enp0s8
                     auto enp0s8
                     iface enp0s8 dhcp
-        ZABBIX
+                    
+         ZABBIX
             zabbix.org
