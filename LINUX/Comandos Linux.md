@@ -1,8 +1,8 @@
 # LINUX
 ```
-  [usuário]@[nome da máquina]: ~# **(root)**
+  [usuário]@[nome da máquina]: ~# (root)
   
-  [usuário]@[nome da máquina]: ~$ **(usuário)**
+  [usuário]@[nome da máquina]: ~$ (usuário)
 ```
     
 
@@ -159,7 +159,7 @@ chmod [permissao] [pasta/arquivo]
 
 
 
-     **Permissões**
+     Permissões
 
     d     rwx        rwx      rwx
        U[suario]   G[rupo]   O[utros]
@@ -193,12 +193,12 @@ chmod [permissao] [pasta/arquivo]
 ```
 ls -lR
     
-    *Arquivo com inicial d = diretório
-    *Arquivo com inicial l = link
-    *Arquivo com inicial c = caractér
-    *Arquivo com inicial b = dispositivo de bloco
-    *Arquivo com inicial - = arquivo simples
-    *Arquivo com inicial s = comunicação do SO com um pc
+    * Arquivo com inicial d = diretório
+    * Arquivo com inicial l = link
+    * Arquivo com inicial c = caractér
+    * Arquivo com inicial b = dispositivo de bloco
+    * Arquivo com inicial - = arquivo simples
+    * Arquivo com inicial s = comunicação do SO com um pc
 ```
 #### LISTAR OS DIRETÓRIOS E DIRETÓRIOS OCULTOS
 ```
@@ -208,7 +208,7 @@ ls -la
 #### EDITORES DE TEXTO PARA O TERMINAL
 ```
     
-    **nano**
+    nano
 
         Pesquisar: Ctrl+W
         Copiar = Alt+6
@@ -220,7 +220,7 @@ ls -la
 
         Desfazer = Alt+U
 
-    **vim** (Versão otimizada do 'vi')
+    vim (Versão otimizada do 'vi')
 
         : = Inserir comando
         i = Entrar no modo de Inserção
