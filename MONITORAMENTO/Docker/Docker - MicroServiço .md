@@ -1,14 +1,14 @@
-MICROSERVIÇO - 24/09/21
+# MICROSERVIÇO - 24/09/21
 
-CENÁRIO
+### CENÁRIO
 
-  Serviço Necessário -> Conteinerização -- Docker
+     Serviço Necessário -> Conteinerização -- Docker
     
 -----------------------------------------------------------------------------
 
-DEBIAN 10 VM 
+**DEBIAN 10 VM** 
 
-    *Alterar a placa de rede
+     Alterar a placa de rede
         
           nano /etc/network/interfaces
 
@@ -21,21 +21,21 @@ DEBIAN 10 VM
         
            'systemctl restart networking.service'
 
-    *Alterar o nameserver
-         echo 'nameserver 4.2.2.2' > /etc/resolv.conf
+     Alterar o nameserver
+       echo 'nameserver 4.2.2.2' > /etc/resolv.conf
 
-    *Instalar o SSH
-        'apt install openssh-server'
+     Instalar o SSH
+      'apt install openssh-server'
 
-    *Atualizar o Debian
-        'apt update'
+     Atualizar o Debian
+      'apt update'
 
-    *Aplicar as atualizações
-        'apt upgrade'
+     Aplicar as atualizações
+       'apt upgrade'
 
 -----------------------------------------------------------------------------
 
-DOCKER
+**DOCKER**
 
     <> Passo a Passo 
          instalação - https://docs.docker.com/engine/install/debian/
