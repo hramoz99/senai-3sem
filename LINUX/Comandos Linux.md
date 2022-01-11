@@ -1,131 +1,162 @@
 # LINUX
-
+```
   [usuário]@[nome da máquina]: ~# **(root)**
+  
   [usuário]@[nome da máquina]: ~$ **(usuário)**
-
+```
     
-**COMANDOS**
 
-! APRESENTAÇÃO DO USUÁRIO LOGADO 
+### COMANDOS
+
+#### APRESENTAÇÃO DO USUÁRIO LOGADO 
+```
 whoami
+```
 
-
-! INFORMAÇÕES DE PROCESSAMENTO
+#### INFORMAÇÕES DE PROCESSAMENTO
+```
 who -u
+```
 
-
-! ENTRAR COM USUÁRIO ROOT
+#### ENTRAR COM USUÁRIO ROOT
+```
 sudo su -
+```
 
 
-! MOVIMENTAÇÃO ENTRE PASTAS/ARQUIVOS
+#### MOVIMENTAÇÃO ENTRE PASTAS/ARQUIVOS
+```
 cd [pasta]
  
     *control a = vai para o inicio da linha
     *control e = vai para o fim da linha 
     *control l = clear
     *control d = exit
+```
 
-
-! VERIFICAR O DIRETÓRIO ATUAL 
+#### VERIFICAR O DIRETÓRIO ATUAL 
+```
 pwd
+```
 
-
-! LIMPAR A TELA 
+#### LIMPAR A TELA 
+```
 clear ou ctrl + l
+```
 
-
-! CRIAR PASTAS
+#### CRIAR PASTAS
+```
 mkdir [nome_da_pasta]
+```
 
-
-! CRIAR PASTA E SUB-PASTAS SIMULTANEAMENTE
+#### CRIAR PASTA E SUB-PASTAS SIMULTANEAMENTE
+```
 mkdir -p [pasta]/[sub_pasta]
+```
 
-
-! APAGAR ARQUIVOS 
+#### APAGAR ARQUIVOS 
+```
 rm [nome_do_arquivo] 
+```
 
-
-! APAGAR PASTAs
+#### APAGAR PASTA
+```
 rm -r [nome_da_pasta]
+```
 
-
-! VISUALIZAR ARQUIVOS 
+#### VISUALIZAR ARQUIVOS 
+```
 cat [caminho]
+```
 
-
-! PARÂMETRO DE BUSCA DE ARQUIVOS - **find**
+#### PARÂMETRO DE BUSCA DE ARQUIVOS - **find**
+```
 find [diretório] -name <nome_do_arquivo_ou_pasta>
       
         EX: find /etc/-name.conf
+```
 
-
-! COPIAR ARQUIVOS 
+#### COPIAR ARQUIVOS 
+```
 cp <arquivo_de_origem> <arquivo_de_destino>
+```
 
-
-! COPIAR PASTAS
+#### COPIAR PASTAS
+```
 cp -r <arquivo_de_origem> <arquivo_de_destino>
+```
 
-
-! MOVER ARQUIVOS E PASTAS 
+#### MOVER ARQUIVOS E PASTAS 
+```
 mv <pasta_caminho> <pasta_destino>
+```
 
-
-! ADICIONAR USUÁRIO
+#### ADICIONAR USUÁRIO
+```
 adduser [nome_do_usuário]
 UID - Identificação numérica única do Usuário
+```
 
-
-! DELETAR USUÁRIO
+#### DELETAR USUÁRIO
+```
 deluser [nome_do_usuário]
+```
 
-
-! ADICIONAR GRUPO 
+#### ADICIONAR GRUPO 
+```
 addgroup [nome_do_grupo]
 GID - Identificação numérica única do Grupo
+```
 
-
-! DELETAR GRUPO
+#### DELETAR GRUPO
+```
 delgroup [nome_do_grupo]
+```
 
-
-! TROCAR A SENHA DE UM USUÁRIO
+#### TROCAR A SENHA DE UM USUÁRIO
+```
 passwd
+```
 
-
-! SEPARAÇÃO DE USUÁRIO POR GRUPO
+#### SEPARAÇÃO DE USUÁRIO POR GRUPO
+```
 adduser [usuario] [grupo] 
 deluser [usuario] [grupo] 
+```
 
-
-! EXIBIR AS ÚLTIMAS 10 LINHAS DE UM ARQUIVO
+#### EXIBIR AS ÚLTIMAS 10 LINHAS DE UM ARQUIVO
+```
 tail
+```
 
-
-! EXIBIR AS ÚLTIMAS LINHAS DE UM ARQUIVO EM TEMPO REAL
+#### EXIBIR AS ÚLTIMAS LINHAS DE UM ARQUIVO EM TEMPO REAL
+```
 tail -f 
+```
 
-
-! FILTRAR INFRMAÇÕES ESPECÍFICAS DE UM ARQUIVO 
+#### FILTRAR INFRMAÇÕES ESPECÍFICAS DE UM ARQUIVO 
+```
 grep (junto com |)
+```
 
-
-! TROCAR O USUÁRIO DONO DA PASTA/ARQUIVO
+#### TROCAR O USUÁRIO DONO DA PASTA/ARQUIVO
+```
 chown [usuario] [pasta/arquivo]
 
  OBS: Para trocar usuário e grupo dona da pasta ao mesmo tempo **chown usuario:grupo [pasta/arquivo]
+```
 
-
-! TROCAR O GRUPO DONO DA PASTA/ARQUIVO
+#### TROCAR O GRUPO DONO DA PASTA/ARQUIVO
+```
 chgrp [grupo] [pasta/arquivo]
 
-OBS: Para trocar os grupos donos de uma vez use **chgrp -R**
+ OBS: Para trocar os grupos donos de uma vez use **chgrp -R**
+```
 
-
-! TROCAR AS PERMISSÕES DE UMA PASTA/ARQUIVO 
+#### TROCAR AS PERMISSÕES DE UMA PASTA/ARQUIVO 
+```
 chmod [permissao] [pasta/arquivo]
+
 
 
      **Permissões**
@@ -157,8 +188,9 @@ chmod [permissao] [pasta/arquivo]
                 6           110            rw-
                 7           111            rwx
 	       ---------------------------------------
-
-! LISTAR OS DIRETÓRIOS E SUBDIRETÓRIOS
+```
+#### LISTAR OS DIRETÓRIOS E SUBDIRETÓRIOS
+```
 ls -lR
     
     *Arquivo com inicial d = diretório
@@ -167,13 +199,14 @@ ls -lR
     *Arquivo com inicial b = dispositivo de bloco
     *Arquivo com inicial - = arquivo simples
     *Arquivo com inicial s = comunicação do SO com um pc
-
-
-! LISTAR OS DIRETÓRIOS E DIRETÓRIOS OCULTOS
+```
+#### LISTAR OS DIRETÓRIOS E DIRETÓRIOS OCULTOS
+```
 ls -la
+```
 
-
-! EDITORES DE TEXTO PARA O TERMINAL
+#### EDITORES DE TEXTO PARA O TERMINAL
+```
     
     **nano**
 
@@ -202,122 +235,152 @@ ls -la
          H = Cursor vai para a primeira linha do arquivo
          dd = Deleta a linha 
          set nu = Numerar as linhas
-        
+```        
    
 
-! NOME DAS INTERFACES 
+#### NOME DAS INTERFACES 
+```
 lo - Loopback
 enp0s3 - Interface de Rede (Padrão antigo - eth0)
+```
 
-
-! VISUALIZAR INFORMAÇÕES DE REDE 
+#### VISUALIZAR INFORMAÇÕES DE REDE 
+```
 ip add
 ifconfig (instalar apt-get install "net-tools")
+```
 
-
-! LIMPAR E SOLICITAR UM ENDEREÇO IP NOVO PARA O DHCP
+#### LIMPAR E SOLICITAR UM ENDEREÇO IP NOVO PARA O DHCP
+```
 ip add flush dev <nome_da_interface>
    
   Exemplo: ip add flush dev enp0s3
+```
 
+### LIGAR E DESLIGAR UMA INTERFACE ESPÉCIFICA
 
-! LIGAR E DESLIGAR UMA INTERFACE ESPÉCIFICA
-
-! DESLIGAR UMA INTERFACE 
+#### DESLIGAR UMA INTERFACE 
+```
 ifdown [nome_da_interface]
+```
 
-! LIGAR UMA INTERFACE 
+#### LIGAR UMA INTERFACE 
+```
 ifup [nome_da_interface]
 ```
 
-! VISUALIZAR OS DISCOS EXISTENTES
+#### VISUALIZAR OS DISCOS EXISTENTES
+```
 fdisk -l
+```
 
-
-! VISUALIZAR OS DISCOS EM EXECUÇÃO 
+#### VISUALIZAR OS DISCOS EM EXECUÇÃO
+```
 df -h
+```
 
-
-! CRIAR ARQUIVOS VAZIOS
+#### CRIAR ARQUIVOS VAZIOS
+```
 touch [nome_do_arquivo]
     
   EX: touch /mnt/disco2G/arquivo2.txt
 
-
-! DELISGAR A MÁQUINA 
+```
+#### DELISGAR A MÁQUINA 
+```
 init 0 
+```
 
-
-! DEFINIR HORÁRIO PARA A MÁQUINA DESLIGAR 
+#### DEFINIR HORÁRIO PARA A MÁQUINA DESLIGAR 
+```
 Shutdown -h [horário] 
+```
 
-
-! REINICIAR A MÁQUINA 
+#### REINICIAR A MÁQUINA 
+```
 reboot
-	    
-  
-! VISUALIZAR UMA VARIÁVEL 
+```
+#### VISUALIZAR UMA VARIÁVEL 
+```
 echo $[nome_da_variável]
+```
 
 
-! VISUALIZAR TODAS VARIÁVEIS 
+#### VISUALIZAR TODAS VARIÁVEIS
+```
 set 
+```
 
-
-! ABREVIAÇÃO DE COMANDOS 
+#### ABREVIAÇÃO DE COMANDOS 
+```
 alias 
   EXEMPLO = comando completo [iptables -t nat -nL]
             abreviado [alias nat = "iptables -t nat -nL"]
+```
 
-
-! INFORME OS 16 COMANDOS SELECIOANDOS ANTERIORMENTE 
+#### INFORME OS 16 COMANDOS SELECIOANDOS ANTERIORMENTE
+```
 fc -l
+```
 
-
-! INFORME OS COMANDOS SELECIONADOS ANTERIORMENTE
+#### INFORME OS COMANDOS SELECIONADOS ANTERIORMENTE
+```
 history [valor]
+```
 
-
-! VERSÃO DO KERNEL
+#### VERSÃO DO KERNEL
+```
 uname -a
+```
 
 
-! EXPLICAÇÃO A FUNÇÃO DO COMANDO 
+#### EXPLICAÇÃO A FUNÇÃO DO COMANDO 
+```
 help [comando] 
+```
 
-
-! EXPLORAÇÃO AMPLA DA PALAVRA CHAVE 
+#### EXPLORAÇÃO AMPLA DA PALAVRA CHAVE 
+```
 apropos [palavra_chave]
+```
 
-
-! EXPLORAÇÃO ESPECÍFICA DA PALAVRA CHAVE 
+#### EXPLORAÇÃO ESPECÍFICA DA PALAVRA CHAVE 
+```
 whatis <palavra_chave>
+```
 
+#### MANUAL DO COMANDO 
+```
+man [comando]
+```
 
-! MANUAL DO COMANDO 
- man [comando]
-
-
-! MANUAL DO ARQUIVO DE CONFIGURAÇÃO 
+#### MANUAL DO ARQUIVO DE CONFIGURAÇÃO 
+```
 man [seção] [comando]
+```
 
-
-! CONSULTA DE COMANDOS
+#### CONSULTA DE COMANDOS
+```
 xman 
-
+```
  
-! PASTA/MANUAL DO COMANDO 
+#### PASTA/MANUAL DO COMANDO 
+```
 whereis [comando] 
-
+```
      
-! CRIA NOVOS ARQUIVOS 
+#### CRIA NOVOS ARQUIVOS 
+```
 touch [nome_do_arquivo]
-   
+```   
 
-! CARACTERÍSTICAS DE UM ARQUIVO 
+#### CARACTERÍSTICAS DE UM ARQUIVO 
+```
 stat <nome_do_arquivo.extensão>
+```
 
-! EMPACOTADOR DE ARQUIVOS
+#### EMPACOTADOR DE ARQUIVOS
+```
 tar [opções] <dispositivo/arquivo> <arquivo1> <arquivo2>
  
      Opções
@@ -328,10 +391,10 @@ tar [opções] <dispositivo/arquivo> <arquivo1> <arquivo2>
          *-v ou -verbose - exibi todo o processo de empacotamento/desempacotamento
          *-t ou -list    - visualizar o conteúdo do pacote
          *-x ou -extract - desempacota o arquivo ou extrai o conteúdo de um pacote tar
+```
 
-
-! COMPACTADOR DE ARQUIVOS 
-
+#### COMPACTADOR DE ARQUIVOS 
+```
  gzip [opções] <arquivo>
  
      Opções
@@ -342,34 +405,43 @@ tar [opções] <dispositivo/arquivo> <arquivo1> <arquivo2>
          *-t ou -test        - testa a integridade do arquivo
          *-v ou -verbose     - exibi o processo de compactação/descompactação
          *-<nivel> ou -fast  - tamanho da compactação
-             
+   ```          
   
-! LISTAR TODOS PROCESSOS 
+#### LISTAR TODOS PROCESSOS 
+```
 top ou htop
+```
 
-! PARAR PROCESSO 
+#### PARAR PROCESSO 
+```
 Ctrl+Z
+```
 
-
-! VOLTAR OS PROCESSOS *PARADOS*
+#### VOLTAR OS PROCESSOS *PARADOS*
+```
 fg [número_do_processo]
+```
 
-
-! VISUALIZAR PROCESSOS *PARARDO*
+#### VISUALIZAR PROCESSOS *PARARDO*
+```
 jobs
+```
 
-
-! MATAR QUALQUER PROCESSO 
+#### MATAR QUALQUER PROCESSO 
+```
 kill [número_do_processo]
+```
 
-
-! CRIAR PROCESSOS/PRIORIDADE
+#### CRIAR PROCESSOS/PRIORIDADE
+```
 nice
+```
 
 
-! ALTERAR PROCESSOS/PRIORIDADE 
+#### ALTERAR PROCESSOS/PRIORIDADE 
+```
 renice
-
+```
 
 
 
