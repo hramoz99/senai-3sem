@@ -11,7 +11,7 @@
 
 --------------------------------------------------
 
-**VERIFICAÇÃO - CLIXP e SRVFW-BERLIM**
+**VERIFICAÇÃO - CLIXP & SRVFW-BERLIM**
 
     1) Iniciar as 3 máquinas
 
@@ -98,45 +98,45 @@ ________________________________________________________________________________
         # following line enables the CGI configuration for this host only
         # after it has been globally disabled with "a2disconf".
 
-    7) Reiniciar serviço com 
-             systemctl restart apache2.service
+    7) Reiniciar o serviço  
+             'systemctl restart apache2.service'
  
-                    Verifique o status do serviço
-                          systemctl status apache2.service
+                    ! Verificar o status do serviço
+                          'systemctl status apache2.service'
 
 
     8) Criação de um diretório 
              mkdir /var/www/html/site
 
-    9) Edite o arquivo com nano ou vim /var/www/html/site/index.html
+    9) Editar o arquivo 'nano ou vim /var/www/html/site/index.html'
 
         <html>Site da Escola SENAI de Informatica - SEU NOME<html>
 
-    10) Reinicie o serviço apache2 com 
-                systemctl restart apache2.service
+    10) Reiniciar o serviço apache2 
+                'systemctl restart apache2.service'
 
-                        Verifique o status do serviço
-                           systemctl status apache2.service'
+                        ! Verificar o status do serviço
+                              'systemctl status apache2.service'
 
-    11) DIGITE o comando  "a2ensite site.conf" - habilita a página na internet
+    11) DIGITAR o comando  "a2ensite site.conf" - habilitar a página na internet
 
-    12) DESABILITE o site padrão com 
+    12) DESABILITE o site padrão 
                  "a2dissite 000-default.conf"
 
-    13) Reinicie o serviço apache2 com 
+    13) Reiniciar o serviço apache2 
                   'systemctl restart apache2.service'
 
     14) TESTE:
         abra o navegador do CLIXP e insira o IP 172.31.0.253
 
-    INFORMAÇÕES DE LOG
+ **INFORMAÇÕES DE LOG**
 
         cat /var/log/apache2/error.site.log (Os erros do site aparecerão aqui)
         cat /var/log/apache2/access.site.log (Auditoria do site)
 
 --------------------------------------------------
 
-MATERIAL DE APOIO
+**MATERIAL DE APOIO**
 
     https://www.youtube.com/watch?v=ACGuo26MswI 
 
