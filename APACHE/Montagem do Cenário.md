@@ -87,22 +87,22 @@ _____________________________________________
 
     4) Digite o comando 'ip a'
 
-        Teste de conexão: "apt update"
+       ! Teste de conexão: "apt update"
 
-    5) Atualize os pacotes
+    5) Atualizar os pacotes
                     apt update -y
  
-    6) Altere o nome da máquina 
+    6) Alterar o nome da máquina 
                   hostnamectl set-hostname SRVFW-BERLIM
 
-    7) Compartilhe o acesso a internet com toda rede interna
+    7) Compartilhar o acesso a internet com toda rede interna
 
-        INSTALE
+        <> INSTALE
 
             apt install vim
             apt install openssh-server -y
 
-        VERIFIQUE OS STATUS
+        <> VERIFIQUE OS STATUS
 
             systemctl status ssh.service
 
@@ -110,7 +110,7 @@ _____________________________________________
 
 ### IMPORTA UMA NOVA VM - WXPProSP3
 
-  1) Troque as Especificações de tela
+  1) Modificar as Especificações de tela
 
          TELA - 128 MB de memória
               - Controladora gráfica VMSVGA
@@ -121,9 +121,9 @@ _____________________________________________
                 ADAPTADOR 2 (Rede interna | REDE_INTERNA)
 
 
-    2) Logue no Servidor (Senha: Senai@132)
+    2) Logar no Servidor (Senha: Senai@132)
 
-    3) Altere as configurações da placa de rede com
+    3) Alterar as configurações da placa de rede com
 
         Windows + R > ncpa.cpl
 
@@ -135,20 +135,20 @@ _____________________________________________
 
             DNS: 8.8.8.8
 
-    4) Adicione um novo disco óptico ao Servidor
+    4) Adicionar um novo disco óptico no Servidor
 
-        - Desligue a máquina
-                Configurações > Armazenamento > Adicionar novo disco óptico > Deixar vazio
+        - Desligar a máquina
+               <> Configurações > Armazenamento > Adicionar novo disco óptico > Deixar vazio
 
-    5) Quando a máquina estiver inicializando (tela modo normal e não em modo escalonado)
+    5) Ao inicializar a máquina mudar de modo escalonado para modo normal
 
         Clique em Dispositivo > Inserir imagem de CD...
 
-    6) Acesse My Computer < WinXP >
+    6) Acesse 'My Computer' < WinXP >
 
         Clique em "VirtualBox Guest Additions"
 
-        - Siga a instalação normalmente (com 'next')
+        - Siga a instalação normalmente ('next')
         - Confirme a opção de reboot
 
 
