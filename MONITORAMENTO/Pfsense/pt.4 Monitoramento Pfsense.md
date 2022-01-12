@@ -11,7 +11,7 @@
 
           Firewall > NAT > Encaminhamento de Portas
 
-        CONFIGURAÇÃO:
+       <> CONFIGURAÇÃO:
 
             * Interface: WAN
             * Protocolo: TCP
