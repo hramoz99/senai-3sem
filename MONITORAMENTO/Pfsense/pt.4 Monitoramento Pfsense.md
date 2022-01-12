@@ -2,7 +2,7 @@
 
  **CENÁRIO**
  
-        > Placa de Rede - Modo bridge
+       <> Placa de Rede - Modo bridge
 
             192.168.5.124/16
             192.168.1.1 - GW
@@ -59,9 +59,9 @@
 
             Nota: versão - 2.4.5 DEPRECATED (system > update)
 
-    * Criar um usuário (técnico) e um grupo (acesso_externo)
+    <> Criar um usuário (técnico) e um grupo (acesso_externo)
     
-    * Atrelar o certficado ao usuário
+    <> Atrelar o certficado ao usuário
 
             System > User Manager> Users > Edit
                 Add (certificate)
@@ -74,7 +74,7 @@
 
 ------------------------------------------
 
-**DEPOIS DO DOWNLOAD DO ARQUIVO (openvpn-SRVFW-PFSENSE-UDP4-1194-tecnico-install-2.4.9-I601-Win7)**
+**DEPOIS DO DOWNLOAD DO ARQUIVO - (openvpn-SRVFW-PFSENSE-UDP4-1194-tecnico-install-2.4.9-I601-Win7)**
 
     ! Mova o arquivo do CLI7WIN-TOQUIO para a máquina local
     ! Após isso, mova o arquivo da máquina local para o CLI7WIN-TOQUIO2
