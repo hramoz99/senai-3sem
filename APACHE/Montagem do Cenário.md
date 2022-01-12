@@ -117,7 +117,8 @@ _____________________________________________
 
          ÁUDIO - Desabilite o áudio
 
-        - REDE  ADAPTADOR 1 (NAT)
+        * REDE  ADAPTADOR 1 (NAT)
+        
                 ADAPTADOR 2 (Rede interna | REDE_INTERNA)
 
 
