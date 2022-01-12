@@ -1,6 +1,6 @@
-CENÁRIO
+# CENÁRIO
 
-
+```
  * Criação de um arquivo de script para o firewall - Local para adicionar as declarações de políticas e regras
 	#touch firewall
 	
@@ -41,13 +41,14 @@ CENÁRIO
 		
 	Habilitar para inicialização automática
 		#systemctl enable firewall.service
-		
- COMANDOS 
- ! Listar conteúdo da tabela filter
+```
+
+## COMANDOS 
+ * Listar conteúdo da tabela filter
 	iptables -L
 	
- ! Listar conteúdo da tabela filter sem resolução de nome (n) e apresentar a linha de cada regra em sua cadeia (--line-numbers)
+ * Listar conteúdo da tabela filter sem resolução de nome (n) e apresentar a linha de cada regra em sua cadeia (--line-numbers)
 	iptables -L -nv --line-numbers
 	
- ! Deletar a regra da linha 2 da cadeia INPUT
+ * Deletar a regra da linha 2 da cadeia INPUT
 	iptables -D INPUT 2
