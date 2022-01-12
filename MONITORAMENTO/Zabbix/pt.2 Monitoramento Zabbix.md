@@ -21,12 +21,12 @@
 
            Instalação do servidor
                #apt install mysql-server
-               ! Criação da senha do banco de dados: *******
+               ! Senha do banco de dados: *******
 
                 Validar o status do serviço
                 #systemctl status mysql.service
 
-           Próximas etapas: Site 'zabbix.org'
+          Próximas etapas: Site 'zabbix.org'
 
                Baixar o arquivo do repositório do Zabbix
                  #wget https://repo.zabbix.com/zabbix/5.0/debian/pool/main/z/zabbix-release/zabbix-release_5.0-1+buster_all.deb
