@@ -44,13 +44,13 @@ enp0s3 - Interface de Rede [Padrão antigo era eth0]
 /etc/network/interfaces
 
 
-    **Configurar IP Estático**
+    <> Configurar IP Estático
 
         auto [nome-da-interface]
         iface [nome-da-interface] inet static
             address [endereco-ip]/[máscara]
 
-        Outras possibilidades de parêmetros: gateway, broadcast, nameserver.
+     <> Outras parêmetros: gateway, broadcast, nameserver.
 
          auto [nome-da-interface]
          iface [nome-da-interface] inet static
