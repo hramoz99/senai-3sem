@@ -1,14 +1,14 @@
-SEGURANÇA E FIREWALL (30/08)
+# SEGURANÇA E FIREWALL (30/08)
 
 
-Por que é preciso segurança?
+*Por que é preciso segurança?*
 
     * Evolução da tecnologia;
     * Aumento do uso de redes e interligação das aplicações;
     * Diminuição do nível de conhecimento para a execução de um ataque avançado;
     * Aumento da complexidade para administração de infraestrutura de computadores.
 
-Princípios básicos de segurança da informação
+*Princípios básicos de segurança da informação*
 
     Confidencialidade -> propriedade que limita o acesso a informação a entidades legítimas que seja autorizadas
     pelo proprietário da informação.
@@ -20,8 +20,9 @@ Princípios básicos de segurança da informação
     Autenticidade -> garantia da origem da informação
 
     Legalidade -> leis de cada país.
+ _____________________________________________________________________________________________________________
 
-AMEAÇAS	
+**AMEAÇAS**	
 
     Físicas
         - Desastres Naturais
@@ -32,7 +33,7 @@ AMEAÇAS
         - Acessos remoto à rede
         - Violação de senhas
 
-Ataques
+**ATAQUES**
 
     Interno (70% dos esforços)
         - Funcionários insatisfeitos
@@ -44,7 +45,7 @@ Ataques
         - Concorrentes
         - Espionagem
 
-Mecanismos de segurança
+**MECANISMO DE SEGURANÇA**
 
     Controles Físicos
         - Portas
@@ -57,7 +58,7 @@ Mecanismos de segurança
         - Firewall
         - Anti DDoS
  
-Serviços de segurança
+**SERVIÇOS DE SEGURANÇA**
 
     * Criação de Políticas de Segurança (ACLs);
     * Endurecimento de Servidores;
@@ -67,7 +68,7 @@ Serviços de segurança
     * Treinamento de Colaboradores;
     * Auditoria.
 
-> Padrões e Normas
-> Organizações de segurança de rede
-> Certificações
-> CyberThreat Realtime
+*  Padrões e Normas
+*  Organizações de segurança de rede
+*  Certificações
+*  CyberThreat Realtime
