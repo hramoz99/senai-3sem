@@ -1,48 +1,51 @@
- MONTAGEM DO CENÁRIO 
+ # MONTAGEM DO CENÁRIO 
 
-     Importação de duas MV Linux 10: SRVFW-BERLIM e CLIXP-TOQUIO
+ > Importação de duas MV Linux 10 
 
-     Conceitos Estudados:
+  **CONCEITOS ESTUDADOS**
 
-          . Operação de máquinas virtuais
-	  . Operação de interfaces de rede virtuais
-          . Acesso à Internet
-          . Grupos e Usuários
+   * Operação de máquinas virtuais
+   * Operação de interfaces de redes virtuais
+   * Acesso à Internet
+   *  Grupos e Usuários
+ _______________________________________________
 
-PASSO A PASSO
+### PASSO A PASSO
 
- 1. Importe uma imagem de máquina no virtualbox
-    Arquivo > Importar > PASTA DA ISO > Debian 10.7 Base.ova
+ 1. Importar uma imagem de Máquina no virtualbox
+ 
+          Arquivo > Importar > PASTA DA ISO > Debian 10.7 Base.ova
 
-                    Clique em PRÓXIMO
+   > Clique em PRÓXIMO
 
  2. Alterar o nome da máquina
    EX: SRVFW-BERLIM
 
  
- 3. Desmarque a opção de placa de rede
+ 3. 'Desmarcar a opção de placa de rede'
 
-             Clique em IMPORTAR
+   > Clique em IMPORTAR
+_____________________________________________	     
 
 
-CONFGURAÇÃO DAS VMs
+**CONFGURAÇÃO DAS VMs**
 
-      1) Troque as Especificações de tela
+      1) Modifique as Especificações de tela
 
          TELA - 128 MB de memória
               - Controladora gráfica VMSVGA
 
-         ÁUDIO - Desabilite o áudio
+         ÁUDIO - Desabilitar
 
         - REDE  ADAPTADOR 1 (NAT)
                 ADAPTADOR 2 (Rede interna | REDE_INTERNA)
  
-ACESSO
+**ACESSO**
 
     User: *****
     Senha: ****
 
-TERMINAL
+**TERMINAL**
 
     1) Visualizar as placas de rede 'ip a'
 
@@ -75,17 +78,16 @@ TERMINAL
    
               cat /etc/network/interfaces
 
-    3) Reinicie o serviço de rede
+    3) Reiniciar os serviços de rede
            
               systemctl restart networking.service'
 
-       Verificar-se o status do serviço *systemctl status networking.service*
+       ! Verificar status do servidor 
+             *systemctl status networking.services
 
-        * Em caso de erro, acesse 'journalctl -xe'
+    4) Digite o comando 'ip a'
 
-    4) Repita o comando "ip a"
-
-        Testar a conexão com o comando "apt update"
+        Teste de conexão: "apt update"
 
     5) Atualize os pacotes
                     apt update -y
@@ -106,7 +108,7 @@ TERMINAL
 
 ----------------------------------------------------------------------------------
 
-IMPORTA UMA NOVA VM - WXPProSP3
+### IMPORTA UMA NOVA VM - WXPProSP3
 
   1) Troque as Especificações de tela
 
