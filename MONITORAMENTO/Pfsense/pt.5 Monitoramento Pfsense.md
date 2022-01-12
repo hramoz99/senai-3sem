@@ -11,7 +11,7 @@ _________________________________________________
            Apagar os certificados e as regras de segurança relacionadas a VPN (OpenVPN)
           (Por questões de organização, apague o usuário e o certificado atrelado a ele)
 
-      * Criar uma nova VPN
+      ! Criar uma nova VPN
         VPN > OpenVPN > Wizards
 
         <> Create a New Certificate Authority (CA) Certificate
@@ -49,7 +49,7 @@ _________________________________________________
                             - Firewall Rule
                             - OpenVPN rule
 
-       * Criar um usuário
+       ! Criar um usuário
            System > User Manager > Users
 
             <> Edit
@@ -63,7 +63,7 @@ _________________________________________________
                         Key length: 2048bit
                         Lifetime: 365
 
-    * Baixar o cliente VPN
+    ! Baixar o cliente VPN
             OpenVPN > Client Export > OpenVPN Clients
 
                 <> Export
@@ -85,16 +85,16 @@ _________________________________________________
                 - User:
                 - Senha:
 
-    * Novo adaptador aparecerá nas Conexões de Rede
+    ! Novo adaptador aparecerá nas Conexões de Rede
 
-    * Essa informação pode ser visualizada em
+    ! Essa informação pode ser visualizada em
         
         <> cmd > ipconfig
 
         <> pfsense
             Status > OpenVPN
 
-    * Windows + R > cmd (entre como administrador)
+    ! Windows + R > cmd (entre como administrador)
 
         <> ipconfig
             route -p add 172.31.0.0 mask 255.255.255.0 10.20.100.2 if 4
@@ -102,7 +102,7 @@ _________________________________________________
             ping 172.31.0.254
             ping 172.31.0.251
 
-    * Acesse o cacti (SRVMON-HELSINQUE) pelo navegador
+    ! Acesse o cacti (SRVMON-HELSINQUE) pelo navegador
         172.31.0.251/cacti
 
 ----------------------------------------------------
