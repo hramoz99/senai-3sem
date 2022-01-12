@@ -1,47 +1,48 @@
-Introdução IPtables
+# Introdução IPtables
 
-    DEFINIÇÃO
+ > **DEFINIÇÃO**
 
-        * Firewall é uma solução de segurança baseada em um conjunto de regras ou instruções. 
+        <> Firewall é uma solução de segurança baseada em um conjunto de regras ou instruções. 
       (Analisa o tráfego de rede para determinar quais operações de transmissão ou recepção de dados podem ser executadas.)
 
-        * "Parede de fogo" (tradução literal do nome).
+        <> "Parede de fogo" (tradução literal do nome).
 
-        * Objetivo: bloqueio de tráfego de dados indesejados e liberação de acesso bem-vindo.
+        <> Objetivo: bloqueio de tráfego de dados indesejados e liberação de acesso bem-vindo.
 
-    TIPOS DE FIREWALL
+ ### TIPOS DE FIREWALL
 
-        * Filtragem de pacotes | Funciona até a camada 4
+        <> Filtragem de pacotes | Funciona até a camada 4
 
-        * Firewall de aplicação ou proxy de serviços | Funciona até a camada 7
+        <> Firewall de aplicação ou proxy de serviços | Funciona até a camada 7
 
-       Filtragem de pacotes 
+  **Filtragem de pacotes** 
 
             * Firewall que toma decisões baseadas nos parâmetros do pacote: porta, endereço de origem / destino, estado da 
             conexão..
             * O firewall pode negar o pacote (DROP) ou deixa-lo passar (ACEPPT).
 
-       Firewall de Aplicação ou Proxy de Serviços (Proxy Services)
+  **Firewall de Aplicação ou Proxy de Serviços (Proxy Services)**
 
             * Firewall que analisa o conteúdo do pacote para tomar suas decisões de filtragem.
             * Firewall do tipo intrusivo - analisa todo o conteúdo que passar e permite um controle relacionado 
             com o conteúdo do tráfego.
 
-IPTABLES
+### IPTABLES
 
-    * Funciona por meio da comparação de regras.
+    <> Funciona por meio da comparação de regras.
 
-    * Firewalls restritivos - o pacote é bloqueado e registrado ao administrador do sistema.
+    <> Firewalls restritivos - o pacote é bloqueado e registrado ao administrador do sistema.
 
-   SINTAXE
-
+   **SINTAXE**
+  
         iptables [-t tabela] [opção] [cadeia] [dados] -j [ação]
         aplicativo> tabela> opção> mecanismo> condicional> pulo> ação
 
-TABELA
+### TABELA
 
-    FILTER
-    * Tabela padrão, usada no tráfego de dados comum. 
+   **FILTER**
+   
+  *Tabela padrão, usada no tráfego de dados comum.* 
 
           ! Contém 3 chains padrões:
      
@@ -51,9 +52,10 @@ TABELA
                   para outra interface de rede ou outra máquina.
 
 
-   NAT
-   * Usada para concentrar o fluxo de varias conexões, saindo para
-     uma única. 
+   **NAT**
+   
+   *Usada para concentrar o fluxo de varias conexões, saindo para
+    uma única.* 
    
            ! Contém 3 chains padrões:
 
@@ -70,9 +72,11 @@ TABELA
                  ser modificados após o tratamento de roteamento. É a chain
                  ideal para realização de SNAT e IP Masquerading
 
-    MANGLE
-    * Utilizada para alterações especiais de pacotes (como modificar o
-      tipo de serviço (TOS)).
+  **MANGLE**
+  
+  *Utilizada para alterações especiais de pacotes (como modificar o
+   tipo de serviço (TOS).*
+   
 
 		 --> INPUT entrada.
 		 --> FORWARD repasse.
@@ -80,7 +84,7 @@ TABELA
 		     modificados logo que chegam.
 
   
-          Parâmetros:
+     Parâmetros
                   - P Policy (Define uma regra
 		  - N New (Criar nova Chain)
                   - E rEname (Renomeia a Chain Criada por N)
