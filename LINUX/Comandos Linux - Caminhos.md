@@ -1,6 +1,11 @@
 # LINUX
-## Caminhos
+```
+  [usuário]@[nome da máquina]: ~# (root)
+  
+  [usuário]@[nome da máquina]: ~$ (usuário)
+```
 
+## Caminhos
 #### ARQUIVO QUE ARMANZENA O NOME DO COMPUTADOR
 ```
 /etc/hostname
