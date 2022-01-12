@@ -1,29 +1,28 @@
-AULA 04 - MELHORIAS NO CENÁRIO 1 
+# OTIMIZAÇÃO DO CENÁRIO 1 
 
-    SRVFW-BERLIM
+ **SRVFW-BERLIM**
 
-    * Instalar o openssh
-    * Instalar o vim
-    * Acessar o nano ou vim /etc/network/interfaces
+ * Instalar openssh E vim
+ * Acessar 'vim /etc/network/interfaces'
 
         Alterar o IP para 10.10.0.6
         Máscara: 255.255.255.248
 
-    1) Reinicie as configurações de rede com
+    <>  Reiniciar as configurações de rede:
 
-        systemctl restart networking.service
+            systemctl restart networking.service
 
-    2) Verificar o ssh (veja se está ativ0)
+    <> Verificar se o acesso SSH está ativ0
 
-        systemctl status ssh.service
+            systemctl status ssh.service
 
 -----------------------------------------------
 
-    ACESSE O WINXP
+ **ACESSO - WINXP**
 
-    1) Depois de adicionar um novo disco (Virtualbox)
+    1) Adicionar um novo disco (Virtualbox)
 
-        Altere as configurações de rede
+    2) Alterar as configurações de rede
           <
             IP: 10.10.0.1
             MASK: 255.255.255.248
@@ -31,36 +30,34 @@ AULA 04 - MELHORIAS NO CENÁRIO 1
                           >
             *Teste de ping com GW*
 
-   OBS: O ping para a internet falhará. 
+  >  OBS: O ping para a internet falhará. 
    
-   COMO ARRUMAR:
+   **ARRUMAR CONFIGURAÇÃO**
 
-    2) Altere as informações para bi-direcional (Arrasta e Solta da Área de trabalho compartilhada)
+    3) Alterar as informações para bi-direcional [Arraste para a Área de trabalho compartilhada]
 
 -----------------------------------------------
 
-    ACESSE O SRVFW-TOQUIO
+**ACESSO - SRVFW-TOQUIO**
 
-    1) Escreva o comando
-
+    1) Digitar o comando
           echo 1 > /proc/sys/net/ipv4/ip_forward
 
-    2) Coloque o comado
-    
+    2) Digitar o comado    
           iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
 
 -----------------------------------------------
 
-    ACESSE O WINXP
+**ACESSO - WINXP**
 
 
-    1) Faça o teste de ping com o dns do google
+    1) Teste de ping - DNS do google
 
     2) Baixar o Putty (32bit)
 
           https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
-    3) Acessar o SRVFW-BERLIM pelo protocolo SSH
+    3) Acessar a máquina virtual pelo putty
 
         Name: SRVFW-BERLIM
         IP: 10.10.0.6
@@ -68,16 +65,15 @@ AULA 04 - MELHORIAS NO CENÁRIO 1
               User: aluno
               Senha: Senai@132
 
+___________________________________________________________________
 
+   **EM CASOS DE PROBLEMAS**
 
-    EM CASOS DE PROBLEMAS
-
-        * Verificar se o usuário ALUNO existe
-               
+        ! Verificar se o usuário existe
                  cat /etc/passwd | grep aluno
 
 
-        * Mude a senha do aluno (opcional)
+        *! Modificar a senha do usuário (opcional)
 
                passwd aluno
 
@@ -89,24 +85,23 @@ AULA 04 - MELHORIAS NO CENÁRIO 1
         su -
         Senha: Senai@132
 
-    5) Altere o nome do SRV
+    5) Alterar o nome do servidor 
+         hostnamectl set-hostname [nome]
 
-         hostnamectl set-hostname SRVFW-BERLIM
-
-    6) Crie um arquivo .txt  
+    6) Criar arquivo.txt  
 
         #!/bin/bash
         echo 1 > /proc/sys/net/ipv4/ip_forward
         iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
     
-    7) Digite *nano firewall.sh* 
-       Insira as informações devidas
+    7) Digitar *nano firewall.sh* 
+       Insira as informações
 
         #!/bin/bash
         echo 1 > /proc/sys/net/ipv4/ip_forward
         iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
 
-    8) Execute com
+    8) Executar 
 
         chmod +x firewall.sh
         ./firewall.sh
@@ -115,48 +110,36 @@ AULA 04 - MELHORIAS NO CENÁRIO 1
 
 ____________________________________________________________________________________
 
-    DESLIGUE OS SERVIDORES
-
-
-_____________________________________________________________________________________
-
-
-
-    IMPORTAÇÃO DE UMA NOVA MÁQUINA
+**IMPORTAÇÃO DE UMA NOVA MÁQUINA**
    
-    SRVWEB-DENVER
+  **SRVWEB-DENVER**
 
-    1) Crie um grupo no virtualbox
 
-        Botão direito sobre o SRVFW-BERLIM > Criar Grupo
-        
-        Nome: CENARIO_1
-
-    2) Adicione uma nova placa de rede no SRVFW-BERLIM
+    1) Adicionar uma nova placa de rede na máquina virtual
 
         Rede Interna > REDE_SRV
 
-    3) Importe um novo Debian 10.7
+    2) Importe um novo Debian 10.7
 
         Nome: SRVWEB-DENVER < Desmarque a placa de rede >
 
-    4) configurar o SRVWEB-DENVER
+    3) configurar a outra MV
 
          TELA - 128 MB de memória
               - Controladora gráfica VMSVGA
 
-         ÁUDIO - Desabilite o áudio
+         ÁUDIO - Desabilitar
 
         - REDE - ADAPTADOR 2 (Rede interna | REDE_SRV)
 
-       
-      
 
-    5) Iniciar o servidor BERLIM - ele que irá fornecer acesso a internet - 
-       Iniciar o servidor TÓQUIO - ele fornece conectividade com Putty -
-       Iniciar o servidor DENVER - servidor que será acessado
+ *Servidor BERLIM - fornece acesso a internet*
+ 
+ *Servidor TÓQUIO - fornece conectividade com Putty*
+ 
+ *Servidor DENVER - host acessado*
 
-    6) Abra o Putty com o CLIXP-TOQUIO
+    4) Abrir o Putty com o CLIXP-TÓQUIO
 
         Logar com:
          <
@@ -167,28 +150,27 @@ ________________________________________________________________________________
             Senai@132
                        >
 
-    7) Execute o comando ./firewall.sh
+    5) Executar o comando ./firewall.sh
 
 __________________________________________________________________________________
 
-    ACESSAR O SRVWEB-DENVER
+**ACESSO - SRVWEB-DENVER**
 
     1) Logar com:
 
         root
         Senai@132
 
-    2) Mude o nome da máquina
+    2) Configurar o nome da máquina
 
         hostnamectl set-hostname SRVWEB-DENVER
 
         OBS: De um LOGOU para mudar o nome
 
-    3) Ver os endereços de IP com
-
+    3) Verificar os endereços de IP com
         ip a
 
-    4) Altere o arquivo nano /etc/networks/interface
+    4) Alterar o arquivo 'nano /etc/networks/interface'
 
         ALTERAÇÃO
         # This file describes the network interfaces available in your systemctl
@@ -207,15 +189,14 @@ ________________________________________________________________________________
             netmask 255.255.255.0
             gateway 172.31.0.254
 
-    5) Reincie a interface 
-
+    5) Reinciar a interface 
           systemctl restart networking.service
 
-    6) Acesse o <CLIXP-TOQUIO>
+    6) Acessar <CLIXP-TOQUIO>
 
-    7) Insira o comando nano /etc/networks/interface
+    7) Insirir o comando 'nano /etc/networks/interface'
 
-        Adicione as seguintes características
+        Adicionar características
 
             # The third network interface
             auto enp0s9
@@ -223,30 +204,22 @@ ________________________________________________________________________________
                 address 172.31.0.254
                 netmask 255.255.255.0
 
-    8) Suba a interface de rede 
-
+    8) Conectar a interface de rede 
        ifup enp0s9
 
-    9) Veja se a nova placa de rede está ativa
-        
-       ip a
+       ! Faça o teste de ping para 172.31.0.253*
 
-       *Faça o teste de ping para 172.31.0.253*
+    9) SRVWEB-DENVER
 
-    10) No SRVWEB-DENVER
+        Testar o ping por IPv4 - on
+        Testar o ping pelo DNS - off
 
-        Testar o ping por IPv4 - funciona
-        Testar o ping pelo DNS - falha
-
-        CORREÇÃO
-        acesse o arquivo nano /etc/resolv.conf e configure com as informações
+      ! CORREÇÃO
+        acessar o arquivo 'nano /etc/resolv.conf e configure com as informações'
 
             domain localdomain
             search localdomain
             nameserver 8.8.8.8
 
-        Repita o teste de ping pelo DNS
-
-    11) Instale os seguintes pacotes
-
+    10) Instalar os pacotes
         apt install vim openssh-server -y
