@@ -1,6 +1,6 @@
-﻿PERSONALIZANDO (25/08))
+# PERSONALIZANDO (25/08))
 
-INVENTÁRIO
+### INVENTÁRIO
 
     Criação de um novo item : 
         Configuração> Hosts> SRVFW-BERLIM (ou outro dispositivo)> Itens> Criar item)
@@ -31,7 +31,7 @@ INVENTÁRIO
 
 -------------------------------------------------- ------------
 
-FILTRO DE INFORMAÇÕES - Como saber se o usuário final alterou o DNS?
+**FILTRO DE INFORMAÇÕES - Como saber se o usuário final alterou o DNS?**
 
     Visualição do DNS - RESOLVER
         cat /etc/resolv.conf
@@ -55,7 +55,7 @@ FILTRO DE INFORMAÇÕES - Como saber se o usuário final alterou o DNS?
 
 -------------------------------------------------- ------------
 
-VIZUALIÇÃO DAS INFORMAÇÕES 
+**VIZUALIÇÃO DAS INFORMAÇÕES** 
 
     Monitoramento> Dados mais recentes
 
@@ -63,7 +63,7 @@ VIZUALIÇÃO DAS INFORMAÇÕES
 
 -------------------------------------------------- ------------
 
-VERIFICAÇÃO DO APACHE - SRVWEB-DENVER
+**VERIFICAÇÃO DO APACHE - SRVWEB-DENVER**
 
     1) Item de Criação de "Verificação Apache2"
         net.tcp.service [serviço, <ip>, <port>]
@@ -99,14 +99,14 @@ VERIFICAÇÃO DO APACHE - SRVWEB-DENVER
 
 -------------------------------------------------- ------------
 
-BIBLIOTECA ITIL
+**BIBLIOTECA ITIL**
 
     Incidentes eventuais em um curto período de tempo pode se tornar um problema
         EXEMPLO: Apache caiu três vezes no mesmo dia
 
 -------------------------------------------------- ------------
 
-GIRAR
+**GIRAR**
 
     Rotação de log
         Syslog1 - até 100MB, enviar uma informação para Syslog2
@@ -118,8 +118,9 @@ GIRAR
 
 -------------------------------------------------- ------------
 
-AÇÕES - ZABBIX
-    Configuração> Ações> Criar ações
+**AÇÕES - ZABBIX**
+
+**Configuração> Ações> Criar ações**
 
         Nome: Reiniciar o serviço WEB
         Doença  
@@ -131,7 +132,7 @@ AÇÕES - ZABBIX
             Script personalizado - agente Zabbix
                 sudo / bin / systemctl restart apache2.service
 
-PERMISSÃO AO USUÁRIO DO ZABBIX 
+**PERMISSÃO AO USUÁRIO DO ZABBIX** 
 
     #apt update
     #apt install sudo
@@ -150,7 +151,7 @@ PERMISSÃO AO USUÁRIO DO ZABBIX
                         Descomentar e trocar 0 por 1
     #systemctl restart zabbix_agent.service
 
-TESTE ESSA AUTOMAÇÃO
+**TESTE ESSA AUTOMAÇÃO**
 
     1) Parar o apache2 
         'systemctl stop apache2.service'
@@ -161,7 +162,7 @@ TESTE ESSA AUTOMAÇÃO
     3) Patch - mensagem que o serviço encerrou
         * É nesse momento que nossa automação resolverá este problema
 
-CURIOSIDADE
+**CURIOSIDADE**
 
 	* https://techexpert.tips/pt-br/zabbix-pt-br/zabbix-monitorar-arquivo-de-log-no-linux/   
 	* https://www.zabbix.com/documentation/current/pt/manual/config/items/itemtypes/log_items
