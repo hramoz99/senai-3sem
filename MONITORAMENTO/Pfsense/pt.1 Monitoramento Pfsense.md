@@ -1,13 +1,13 @@
 # PFSENSE INTRODUÇÃO - 16/09
 
-### ORGANIZAÇÃO CENÁRIO
+### CENÁRIO
 
-    * Importar uma nova máquina para instalarmos o pfense
+    <> Importar uma nova máquina para instalarmos o pfense
         Nome: SRVFW-BERLIM-PFSENSE
         Tipo: BSD
         Tamanha: 20GB (VDI)
 
-    * Configurações
+    <> Configurações
         - Geral > Desativar disquete
         - 32MB de vídeo
         - 1500MB de RAM
@@ -23,16 +23,16 @@
 
 **INSTALAÇÃO - PFSENSE**
 
-    - Deixe a execução acontecer
+    - Execução 
         Clique em "accept" > OK
 
     - Opção de teclado = Brazilian (accent keys)
-        Continue
 
     - Configuração de disco = Enter
     
-    - Fazer mais coisas (manuais) = não
-        Reboot na máquina
+    - Configurar  Manualmente = NÃO
+    
+    - Reboot na máquina
 
     - Remova o disco
 
