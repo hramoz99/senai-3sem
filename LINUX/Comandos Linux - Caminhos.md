@@ -163,7 +163,7 @@ apt-cache search [nome_do_pacote]
 aptitude search [nome_do_pacote]
 ```
 
-#### INSTALAR PACOTES, ATUALIZAR E PROCURAR PACOTES DISPONIVEIS
+#### INSTALAR, ATUALIZAR E PROCURAR PACOTES DISPONIVEIS
 ```
 apt-get remove [nome_do_pacote] --purge
 ```
