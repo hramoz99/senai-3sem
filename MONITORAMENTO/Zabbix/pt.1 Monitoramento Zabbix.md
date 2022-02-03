@@ -13,7 +13,7 @@
 **VIRTUALIZADOR - VirtualBox**
 
     Importação da máquina virtual: 'Debian 10.7 Base.ova'
-    Configuração da Interfaces de Rede: 'Adaptador 1 - Rede Interna Rede_SRV'
+    Configuração das Interfaces de Rede: 'Adaptador 1 - Rede Interna Rede_SRV'
            
 
 **SISTEMA OPERACIONAL**
