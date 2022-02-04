@@ -66,7 +66,7 @@ enp0s3 - Interface de Rede [Padrão antigo era eth0]
 
 ```
 
-#### LOG DE ERROS NOS SERVIÇOS LINUX
+#### LOG DE ERROS - LINUX
 ```
 journalctl -xe
 ```
@@ -107,12 +107,7 @@ mkfs -t ext3 /dev/xvdf1
 mkdir /mnt/novo-disco
 ```
 
-#### FINALIZAÇÃO
-```
-mount /dev/xvdf1 /mnt/novo-disco
-```
-
-#### CRIAR UM ARQUIVO PARA VIZUALIÇÃO DE BACKUP 
+#### CRIAR UM ARQUIVO PARA VIZUALIZAÇÃO DE BACKUP 
 ```
 nano /mnt/novo-disco/arquivo.txt
 ```
