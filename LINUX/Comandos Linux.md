@@ -8,23 +8,23 @@
 
 ### COMANDOS
 
-#### APRESENTAÇÃO DO USUÁRIO LOGADO 
+#### Apresentação do usuário logado 
 ```
 whoami
 ```
 
-#### INFORMAÇÕES DE PROCESSAMENTO
+#### Informação de processamento 
 ```
 who -u
 ```
 
-#### ENTRAR COM USUÁRIO ROOT
+#### Entrar com usuário ROOT
 ```
 sudo su -
 ```
 
 
-#### MOVIMENTAÇÃO ENTRE PASTAS/ARQUIVOS
+#### Movimentação entre pastas/arquivos
 ```
 cd [pasta]
  
@@ -34,126 +34,126 @@ cd [pasta]
     *control d = exit
 ```
 
-#### VERIFICAR O DIRETÓRIO ATUAL 
+#### Verificar o diretório atual
 ```
 pwd
 ```
 
-#### LIMPAR A TELA 
+#### Limpar a tela 
 ```
 clear ou ctrl + l
 ```
 
-#### CRIAR PASTAS
+#### Criar pastas
 ```
 mkdir [nome_da_pasta]
 ```
 
-#### CRIAR PASTA E SUB-PASTAS SIMULTANEAMENTE
+#### Criar pasta e sub-pastas SIMULTANEAMENTE
 ```
 mkdir -p [pasta]/[sub_pasta]
 ```
 
-#### APAGAR ARQUIVOS 
+#### Apagar arquivos 
 ```
 rm [nome_do_arquivo] 
 ```
 
-#### APAGAR PASTA
+#### Apagar pasta
 ```
 rm -r [nome_da_pasta]
 ```
 
-#### VISUALIZAR ARQUIVOS 
+#### Visualizar arquivos 
 ```
 cat [caminho]
 ```
 
-#### PARÂMETRO DE BUSCA DE ARQUIVOS - **find**
+#### Parâmetro de busca de arquivos - **find**
 ```
 find [diretório] -name <nome_do_arquivo_ou_pasta>
       
         EX: find /etc/-name.conf
 ```
 
-#### COPIAR ARQUIVOS 
+#### Copiar arquivos 
 ```
 cp <arquivo_de_origem> <arquivo_de_destino>
 ```
 
-#### COPIAR PASTAS
+#### Copiar pastas 
 ```
 cp -r <arquivo_de_origem> <arquivo_de_destino>
 ```
 
-#### MOVER ARQUIVOS E PASTAS 
+#### Mover arquivos e pastas 
 ```
 mv <pasta_caminho> <pasta_destino>
 ```
 
-#### ADICIONAR USUÁRIO
+#### Adicionar usuário 
 ```
 adduser [nome_do_usuário]
 UID - Identificação numérica única do Usuário
 ```
 
-#### DELETAR USUÁRIO
+#### Deletar usuário 
 ```
 deluser [nome_do_usuário]
 ```
 
-#### ADICIONAR GRUPO 
+#### Adicionar grupo 
 ```
 addgroup [nome_do_grupo]
 GID - Identificação numérica única do Grupo
 ```
 
-#### DELETAR GRUPO
+#### Deletar grupo
 ```
 delgroup [nome_do_grupo]
 ```
 
-#### TROCAR A SENHA DE UM USUÁRIO
+#### Trocar a senha de um usuário
 ```
 passwd
 ```
 
-#### SEPARAÇÃO DE USUÁRIO POR GRUPO
+#### Separação de usuário por grupo
 ```
 adduser [usuario] [grupo] 
 deluser [usuario] [grupo] 
 ```
 
-#### EXIBIR AS ÚLTIMAS 10 LINHAS DE UM ARQUIVO
+#### Exibir as últimas 10 linhas de um arquivo
 ```
 tail
 ```
 
-#### EXIBIR AS ÚLTIMAS LINHAS DE UM ARQUIVO EM TEMPO REAL
+#### Exibir as últimas linhas de um arquivo em tempo real 
 ```
 tail -f 
 ```
 
-#### FILTRAR INFRMAÇÕES ESPECÍFICAS DE UM ARQUIVO 
+#### Filtrar informações específicas de um arquivo
 ```
 grep (junto com |)
 ```
 
-#### TROCAR O USUÁRIO DONO DA PASTA/ARQUIVO
+#### Trocar o usuário DONO da pasta/arquivo
 ```
 chown [usuario] [pasta/arquivo]
 
  OBS: Para trocar usuário e grupo dona da pasta ao mesmo tempo **chown usuario:grupo [pasta/arquivo]
 ```
 
-#### TROCAR O GRUPO DONO DA PASTA/ARQUIVO
+#### Trocar o grupo DONO da pasta/arquivo
 ```
 chgrp [grupo] [pasta/arquivo]
 
  OBS: Para trocar os grupos donos de uma vez use **chgrp -R**
 ```
 
-#### TROCAR AS PERMISSÕES DE UMA PASTA/ARQUIVO 
+#### Trocar as permissões de uma pasta/arquivo 
 ```
 chmod [permissao] [pasta/arquivo]
 
@@ -189,7 +189,7 @@ chmod [permissao] [pasta/arquivo]
                 7           111            rwx
 	       ---------------------------------------
 ```
-#### LISTAR OS DIRETÓRIOS E SUBDIRETÓRIOS
+#### Listar os diretórios e subdiretórios 
 ```
 ls -lR
     
@@ -200,12 +200,12 @@ ls -lR
     * Arquivo com inicial - = arquivo simples
     * Arquivo com inicial s = comunicação do SO com um pc
 ```
-#### LISTAR OS DIRETÓRIOS E DIRETÓRIOS OCULTOS
+#### Listar os diretórios e diretórios ocultos
 ```
 ls -la
 ```
 
-#### EDITORES DE TEXTO PARA O TERMINAL
+#### Editores de texto para o terminal
 ```
     
     nano
@@ -238,19 +238,19 @@ ls -la
 ```        
    
 
-#### NOME DAS INTERFACES 
+#### Nome das interfaces 
 ```
 lo - Loopback
 enp0s3 - Interface de Rede (Padrão antigo - eth0)
 ```
 
-#### VISUALIZAR INFORMAÇÕES DE REDE 
+#### Visualizar informações de rede 
 ```
 ip add
 ifconfig (instalar apt-get install "net-tools")
 ```
 
-#### LIMPAR E SOLICITAR UM ENDEREÇO IP NOVO PARA O DHCP
+#### Limpar e solicitar um endereço IP novo para o DHCP
 ```
 ip add flush dev <nome_da_interface>
    
@@ -259,127 +259,127 @@ ip add flush dev <nome_da_interface>
 
 ### LIGAR E DESLIGAR UMA INTERFACE ESPÉCIFICA
 
-#### DESLIGAR UMA INTERFACE 
+#### Desligar uma interface 
 ```
 ifdown [nome_da_interface]
 ```
 
-#### LIGAR UMA INTERFACE 
+#### Ligar uma interface 
 ```
 ifup [nome_da_interface]
 ```
 
-#### VISUALIZAR OS DISCOS EXISTENTES
+#### Visualizar os discos existentes 
 ```
 fdisk -l
 ```
 
-#### VISUALIZAR OS DISCOS EM EXECUÇÃO
+#### Visualizar os discos em execução 
 ```
 df -h
 ```
 
-#### CRIAR ARQUIVOS VAZIOS
+#### Criar arquivos vazios 
 ```
 touch [nome_do_arquivo]
     
   EX: touch /mnt/disco2G/arquivo2.txt
 
 ```
-#### DELISGAR A MÁQUINA 
+#### Desligar a máquina 
 ```
 init 0 
 ```
 
-#### DEFINIR HORÁRIO PARA A MÁQUINA DESLIGAR 
+#### Defnir horário para a MÁQUINA desligar 
 ```
 Shutdown -h [horário] 
 ```
 
-#### REINICIAR A MÁQUINA 
+#### Reiniciar a MÁQUINA 
 ```
 reboot
 ```
-#### VISUALIZAR UMA VARIÁVEL 
+#### Visualizar uma variável
 ```
 echo $[nome_da_variável]
 ```
 
 
-#### VISUALIZAR TODAS VARIÁVEIS
+#### Visualizar todas variáveis 
 ```
 set 
 ```
 
-#### ABREVIAÇÃO DE COMANDOS 
+#### Abreviação de comandos 
 ```
 alias 
   EXEMPLO = comando completo [iptables -t nat -nL]
             abreviado [alias nat = "iptables -t nat -nL"]
 ```
 
-#### INFORME OS 16 COMANDOS SELECIOANDOS ANTERIORMENTE
+#### Informe os 16 comandos selecionados ANTERIORMENTE
 ```
 fc -l
 ```
 
-#### INFORME OS COMANDOS SELECIONADOS ANTERIORMENTE
+#### Informe os comandos selecionados ANTERIORMENTE 
 ```
 history [valor]
 ```
 
-#### VERSÃO DO KERNEL
+#### Versão do KERNEL
 ```
 uname -a
 ```
 
 
-#### EXPLICAÇÃO A FUNÇÃO DO COMANDO 
+#### Explicação a função do comando 
 ```
 help [comando] 
 ```
 
-#### EXPLORAÇÃO AMPLA DA PALAVRA CHAVE 
+#### Explorador amplo da palavra chave 
 ```
 apropos [palavra_chave]
 ```
 
-#### EXPLORAÇÃO ESPECÍFICA DA PALAVRA CHAVE 
+#### Exploração específica da palavra chave 
 ```
 whatis <palavra_chave>
 ```
 
-#### MANUAL DO COMANDO 
+#### Manual do comando 
 ```
 man [comando]
 ```
 
-#### MANUAL DO ARQUIVO DE CONFIGURAÇÃO 
+#### Manual do aruqivo de configuração 
 ```
 man [seção] [comando]
 ```
 
-#### CONSULTA DE COMANDOS
+#### Consulta de comandos 
 ```
 xman 
 ```
  
-#### PASTA/MANUAL DO COMANDO 
+#### Pasta/Manual do Comando
 ```
 whereis [comando] 
 ```
      
-#### CRIA NOVOS ARQUIVOS 
+#### Cria novos arquivos 
 ```
 touch [nome_do_arquivo]
 ```   
 
-#### CARACTERÍSTICAS DE UM ARQUIVO 
+#### Características de um arquivo
 ```
 stat <nome_do_arquivo.extensão>
 ```
 
-#### EMPACOTADOR DE ARQUIVOS
+#### Empacotador de arquivos 
 ```
 tar [opções] <dispositivo/arquivo> <arquivo1> <arquivo2>
  
@@ -393,7 +393,7 @@ tar [opções] <dispositivo/arquivo> <arquivo1> <arquivo2>
          *-x ou -extract - desempacota o arquivo ou extrai o conteúdo de um pacote tar
 ```
 
-#### COMPACTADOR DE ARQUIVOS 
+#### Compactador de arquivos 
 ```
  gzip [opções] <arquivo>
  
@@ -407,38 +407,38 @@ tar [opções] <dispositivo/arquivo> <arquivo1> <arquivo2>
          *-<nivel> ou -fast  - tamanho da compactação
    ```          
   
-#### LISTAR TODOS PROCESSOS 
+#### Listar todos processos
 ```
 top ou htop
 ```
 
-#### PARAR PROCESSO 
+#### Parar processos
 ```
 Ctrl+Z
 ```
 
-#### VOLTAR OS PROCESSOS *PARADOS*
+#### Voltar os processos *PARADOS*
 ```
 fg [número_do_processo]
 ```
 
-#### VISUALIZAR PROCESSOS *PARARDO*
+#### Visualizar processos *PARARDO*
 ```
 jobs
 ```
 
-#### MATAR QUALQUER PROCESSO 
+#### Matar qualquer processo 
 ```
 kill [número_do_processo]
 ```
 
-#### CRIAR PROCESSOS/PRIORIDADE
+#### Criar processos/prioridade
 ```
 nice
 ```
 
 
-#### ALTERAR PROCESSOS/PRIORIDADE 
+#### Alterar processos/prioridade
 ```
 renice
 ```
