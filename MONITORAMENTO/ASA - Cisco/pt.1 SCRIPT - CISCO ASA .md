@@ -4,7 +4,7 @@ __________________________________________________
               IP dos PCs -> segundo IP válido
               
 ___________________________________________________
-#### CONFIGURAÇÃO DAS INTERFACES
+#### Configuração das interfaces
 ```
 en
 conf t 
@@ -21,7 +21,7 @@ nameif c
 ip add 192.168.1.1
 no sh
 ```
-#### DEFINIÇÃO DOS NÍVEIS DE SEGURANÇA DAS INTERFCES
+#### Definição dos níveis de segurança das interfaces
 ```
 int g1/1
 security-level 0
@@ -31,7 +31,7 @@ int g1/3
 security-level 0
 ```
 
-#### DEFINIR ZONA INTERMEDIÁRIA - 'DMZ' 
+#### Definir ZONA INTERMEDIÁRIA - 'DMZ' 
 ```
 int g1/1
 security-level 0
@@ -41,7 +41,7 @@ int g1/3
 security-level 100
 ```
 
-#### LIGAR A PLACA DE REDE - GERENCIAMENTO 
+#### Ligar a placa de Rede - GERENCIAMENTO 
 ```
 interface management 1/1
 nameif gerencia
@@ -50,7 +50,7 @@ ip add 172.16.0.1
 no sh
 ```
 
-#### CRIAÇÃO DO ACESSO SSH
+#### Criação do Acesso SSH
 ```
 username admin password Senai@132
 ssh 172.16.0.0 255.255.0.0 gerencia
@@ -58,18 +58,18 @@ aaa authentication ssh console LOCAL
 ssh timeout 60
 ```
 
-#### PERMITIR PING DA INTERNET - COM 'DMZ' 
+#### Permitir PING da INTERNET - 'DMZ' 
 ```
 access-list T1 extend permit icmp host 192.168.10.2 host 192.168.20.2
 access-group T1 in interface a
 ```
 
-#### PERMITIR PING DA INTERNET COM LOCAL-LAN 
+#### Permitir PING da INTERNET LOCAL - LAN
 ```
 access-list T1 extend permit icmp host 192.168.10.2 host 192.168.1.2
 ```
 
-#### APAGAR AS REGRAS PARA A LIBERAÇÃO DE ICMP PARA TODA REDE  
+#### Apagar as regras para a liberação de ICMP para toda rede  
 ```
 no access-list T1 extend permit icmp host 192.168.10.2 host 192.168.20.2
 no access-list T1 extend permit icmp host 192.168.10.2 host 192.168.1.2
@@ -79,7 +79,7 @@ access-group T1 in interface a
 access-group T1 in interface b
 ```
 
-#### SALVAR AS CONFIGURAÇÕES  
+#### Salvar as configurações 
 ```
 write memory
 ```
