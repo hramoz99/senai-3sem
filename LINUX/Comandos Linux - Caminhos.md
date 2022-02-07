@@ -6,46 +6,46 @@
 ```
 
 ## Caminhos
-#### ARQUIVO QUE ARMANZENA O NOME DO COMPUTADOR
+#### Arquivo que armazena o nome do Computador 
 ```
 /etc/hostname
 ``` 
 
-#### ARQUIVO QUE CONTÉM OS USUÁRIOS DO LINUX
+#### Arquivo que contém os usuários LINUX 
 ```
 /etc/passwd
 ```
 
 
-#### ARQUIVO QUE CONTÉM OS GRUPOS 
+#### Arquivos que contém os grupos
 ```
 /etc/group
 ```
 
 
-#### ARQUIVO QUE CONTÉM OS USUÁRIOS
+#### Arquivo que contém os usuários 
 ```
 /etc/shadow 
 ```
 
 
-#### ARQUIVO DE ARMAZENAMENTO DOS LOGS DO SISTEMA
+#### Arquivo de armazenamento dos LOGs do sistema
 ```
 /var/log/syslog 
 ```
 
-#### ARQUIVO DE ARMAZENAMENTO DE AUTENTICAÇÃO DE USUÁRIOS
+#### Arquivo de armazenamento de autenticação de usuários 
 ```
 /var/log/auth.log
 ```
 
-#### NOME DAS INTERFACES
+#### Nome das interfaces
 ```
 lo - Loopback
 enp0s3 - Interface de Rede [Padrão antigo era eth0]
 ```
 
-#### ARQUIVO QUE CONTÉM AS CONFIGURAÇÕES DAS INTERFACES DE REDE
+#### Arquivo que contém as configurações das interfaces de REDE
 ```
 /etc/network/interfaces
 
@@ -66,12 +66,12 @@ enp0s3 - Interface de Rede [Padrão antigo era eth0]
 
 ```
 
-#### LOG DE ERROS - LINUX
+#### LOG de Erros
 ```
 journalctl -xe
 ```
 
-#### HABILITAÇÃO DO APACHE- BootStraping (automatização)
+#### Habilitação do Apache - BootStraping (automatização)
 ```
 #!/bin/bash
 yum -y install httpd
@@ -80,85 +80,85 @@ systemctl start httpd
 echo '<html><h1>Senai Informática e AWS a parceria do futuro! </h1></html>' > /var/www/html/index.html
 ```
 
-#### EDITAR O APACHE 
+#### Editar o APACHE 
 ```
 vim ou nano /var/www/html/index.html  
 ```
 
-#### ADICIONAR NOVAS CHAVES SSH
+#### Adicionar novas Chaves SSH
 ```
 vim ou nano /home/ec2-user/.ssh/authorized_keys
 ```
 
-#### CRIAR UMA PARTIÇÃO NO DISCO
+#### Criare uma nova partição no DISCO 
 ```
 fdisk /dev/xvdf
 
 n> p> enter> enter> enter> w
 ```
 
-#### FORMATAÇÃO DE PARTIÇÃO 
+#### Formatação de partição 
 ```
 mkfs -t ext3 /dev/xvdf1
 ```
 
-#### CRIAR UM DIRETÓRIO PARA A NOVA PARTIÇÃO 
+#### Criar um diretório para a nova partição
 ```
 mkdir /mnt/novo-disco
 ```
 
-#### CRIAR UM ARQUIVO PARA VIZUALIZAÇÃO DE BACKUP 
+#### Criar um arquivo para vizualização de BACKUP 
 ```
 nano /mnt/novo-disco/arquivo.txt
 ```
 
-#### CRIAR UM PONTO DE MONTAGEM 
+#### Criar um ponto de montagem
 ```
 mkdir /mnt/disco2G
 ```
 
-#### MONTAR A PARTIÇÃO NO DIRETÓRIO CRIADO
+#### Montar a partição no diretório adicionado
 ```
 mount /dev/xvdf1 /mnt/disco2G
 ```
 
-#### CRIAR ARQUIVOS VAZIOS
+#### Criar arquivos vazios
 ```
 touch /mnt/disco2G/arquivo2.txt (exemplo)
 ```
 
-#### RESTAURAR BACKUP
+#### Restaurar o Backup
 ```
 cp -a /mnt/disco2G/* /mnt/novo-disco30G/
 ```
 
-#### INSTALAR PACOTES
+#### Instalar pacotes
 ```
 apt install [nome_do_pacote]
 ```
 
-#### ATUALIZAR PACOTES  
+#### Atualizar pacotes  
 ```
 apt upgrade
 ```
 
-#### ATUALIZAR PASTAS E ARQUIVOS
+#### Atualizar pastas e arquivos 
 ```
 apt update
 ```
 
-#### PROCURAR ARQUIVOS
+#### Procurar arquivos 
 ```
 apt-cache search [nome_do_pacote]
 ```
 
 
-#### VERIFICAR SE O PACOTE ESTÁ INSTALADO 
+#### Verificar se o pacotes está instalado 
 ```
 aptitude search [nome_do_pacote]
 ```
 
-#### INSTALAR, ATUALIZAR E PROCURAR PACOTES DISPONIVEIS
+#### Instalar, atualizar e procurar pacotes disponíveis 
 ```
 apt-get remove [nome_do_pacote] --purge
 ```
