@@ -2,7 +2,7 @@
 
  **SRVFW-BERLIM**
 
- * Instalar openssh E vim
+ * Instalar openssh & vim
  * Acessar 'vim /etc/network/interfaces'
 
         Alterar o IP para 10.10.0.6
