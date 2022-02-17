@@ -42,12 +42,12 @@
 
     1) Sequência - Definição IP placa de rede
         2
-        2
-        10.10.0.6
-        29
-        enter
-        enter
-        n
+         2
+          10.10.0.6
+           29
+            enter
+             enter
+              n
         y
         enter
 
