@@ -10,7 +10,7 @@
 ### PARÂMETROS
 
     *  User mode - (>)
-    * "Admin" Cisco - modo privilegiado (#)
+    * 'Admin' Cisco - modo privilegiado (#)
 
     - ? (listagem dos comandos disponíveis)
     
