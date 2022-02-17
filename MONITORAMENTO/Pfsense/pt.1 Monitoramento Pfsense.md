@@ -38,25 +38,6 @@
 
 -----------------------------------------
 
-**MANUSEIO**
-
-    1) Sequência - Definição IP placa de rede
-        2
-         2
-          10.10.0.6
-           29
-            enter
-             enter
-              n
-        y
-        enter
-
-    2) Sequência - habilitar SSH
-        14
-        y
-
------------------------------------------
-
 **ACESSO SSH e HTTP - PFSENSE**
 
     1) No CLI7WIN, teste o ping para 10.10.0.6
