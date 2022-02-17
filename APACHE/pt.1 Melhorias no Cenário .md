@@ -215,7 +215,7 @@ ________________________________________________________________________________
         Testar o ping pelo DNS - off
 
       ! CORREÇÃO
-        acessar o arquivo 'nano /etc/resolv.conf e configure com as informações'
+        acessar o arquivo 'nano /etc/resolv.conf e configure as informações'
 
             domain localdomain
             search localdomain
