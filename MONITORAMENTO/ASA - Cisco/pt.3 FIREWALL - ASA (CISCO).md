@@ -51,7 +51,7 @@ no sh
 ```
 asdm image flash:/asdm-761.bin
 ```
-#### HABILITAR O SERVIDOR HTTP DO ASA 
+#### HABILITAR O SERVIDOR HTTP - ASA 
 ```
 http server enable
 ```
