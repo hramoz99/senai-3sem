@@ -3,7 +3,7 @@
 
 *Por que é preciso segurança?*
 
-    * Evolução da tecnologia;
+    * Novas tecnologias;
     * Aumento do uso de redes e interligação das aplicações;
     * Diminuição do nível de conhecimento para a execução de um ataque avançado;
     * Aumento da complexidade para administração de infraestrutura de computadores.
