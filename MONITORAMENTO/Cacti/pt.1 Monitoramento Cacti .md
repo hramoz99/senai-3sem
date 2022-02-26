@@ -122,8 +122,6 @@ ____________________________________________
 
 -----------------------------------------------
 
-#### CLIXP-TÓQUIO
-
     22) Endereço Web 172.31.0.251/cacti
         
         * Nome do usuário: admin
@@ -153,7 +151,7 @@ ____________________________________________
 
 -----------------------------------------------
 
-#### Instalação do pacote SNMP**
+### Instalação do pacote SNMP
 
     25) Painel de Controle > Programas padrão > Add or Remove Programs > Add/Remove Windows Components (lado esq da tela) > Management and Monitoring Tools > Next
 
@@ -163,7 +161,7 @@ ____________________________________________
 
 -----------------------------------------------
 
-#### Configuração do pacote SNMP**
+### Configuração do pacote SNMP
 
     30) Windows + R > services.msc 
 
