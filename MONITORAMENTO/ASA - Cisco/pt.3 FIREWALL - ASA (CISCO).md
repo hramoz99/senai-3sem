@@ -7,7 +7,7 @@
 
 -------------------------------------------------
 
-### `PARÂMETROS`
+### PARÂMETROS
 
     *  User mode - (>)
     * 'Admin' Cisco - modo privilegiado (#)
@@ -29,6 +29,10 @@
 -------------------------------------------------
 
 ### HABILITAR INTERFACE GRÁFICA - EXEMPLO
+ ### `INTERFACE GRÁFICA`
+
+  *Após as alterações na interface gráfica deve-se aplicar (apply) as configurações e salvá-las (save) para que sejam 
+  implantadas na linha de comando do ASA.*
 
      1) Informar o caminho do sistema gráfico - ASDM
      2) Habilitar o servidor HTTP do ASA
@@ -61,13 +65,13 @@ http 10.10.0.0 255.255.255.248 inside
 ```
 -------------------------------------------------
 
-### TESTE
+#### TESTE
 
     No navegador digite http://10.10.0.6
 
 -------------------------------------------------
 
-### INSTALAÇÃO
+#### INSTALAÇÃO
 
   *Nota: Depois de acessar a URL na etapa anterior - TESTE*
 
@@ -79,15 +83,10 @@ http 10.10.0.0 255.255.255.248 inside
 
 -------------------------------------------------
 
-### Cisco ASDM-IDM Launcher
+#### CISCO ASDM-IDM Launcher
 
     IP: 10.10.0.6 > OK
 
--------------------------------------------------
 
-### INTERFACE GRÁFICA
-
-  *Após as alterações na interface gráfica deve-se aplicar (apply) as configurações e salvá-las (save) para que sejam 
-  aplicadas na linha de comando do ASA.*
 
   
