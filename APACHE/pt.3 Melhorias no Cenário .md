@@ -1,16 +1,16 @@
 # OTIMIZAÇÃO DI CENÁRIO pt.2
 
-## PROCESSOS
+**DNS**
+   
+   * Foward
+   * Nome -> IP
+   * Zona Direta e Zona reversa
+
+**PROCESSOS**
 
   * TÓQUIO
   * BERLIM
   * DENVER
-
-**DNS**
-
-   * Nome -> IP
-   * Zona Direta e Zona reversa
-   * Foward
 
 ----------------------------------------------
 
@@ -27,7 +27,7 @@ __________________________________________________________________________
 __________________________________________________________________________
 
 **SRVWEB-DENVER**
-
+```  
     1) Acessar a máquina "Denver" por SSH
 
     2) Instalar o serviço de DNS 
@@ -35,8 +35,7 @@ __________________________________________________________________________
                    
 
     3) Alterar o arquivo 
-           'nano ou vim /etc/bind/named.conf.local'
-```     
+           'nano ou vim /etc/bind/named.conf.local'  
 //
 // Do any local configuration here
 //
@@ -54,7 +53,7 @@ zone "0.31.172.in-addr.arpa" {
         type master;
         file "/etc/bind/db.0.31.172";
 };
-```  
+
 
     4) Digitar o comando 'named-checkconf' para verificar se há erros no arquivo de configuração bind
 
@@ -64,7 +63,6 @@ zone "0.31.172.in-addr.arpa" {
     6) Alterar o arquivo 
                  'nano ou vim /etc/bind/db.projetos.lin.br'
 
-```
 ;
 ; BIND zone file projetos.lin.br
 ;
@@ -83,7 +81,7 @@ SRVFW-BERLIM    IN      A       172.31.0.254
 SRVWEB-DENVER   IN      A       172.31.0.253
 WWW             IN      CNAME   projetos.lin.br
 @               IN      AAAA    ::1
-```
+
 
     7) Digitar o comando 
                   'cp -vbf /etc/bind/db.127 /etc/bind/db.0.31.172'
@@ -92,7 +90,7 @@ WWW             IN      CNAME   projetos.lin.br
                   'nano ou vim /etc/bind/db.0.31.172'
         
       ! Verificar o status emita *named-checkconf*
-```
+
 ;
 ; BIND reverse ile projetos.lin.br
 ;
@@ -108,13 +106,11 @@ $TTL    604800
 0.254   IN      PTR     projetos.lin.br.
 0.254   IN      PTR     SRVFW-BERLIM.projetos.lin.br
 0.253   IN      PTR     SRVWEB-DENVER.projetos.lin.br
-```
+
     
     9) Digitar o comando 
-                 'nano ou vim /etc/bind/named.conf.options'
- 
-                
-```
+                 'nano ou vim /etc/bind/named.conf.options'           
+         
 acl goodclients {
         10.10.0.0/29;
         172.31.0.0/24;
@@ -163,6 +159,7 @@ options {
 domain projetos.lin.br
 search projetos.lin.br
 nameserver 172.31.0.253
+
 
     12) Reiniciar o DNS 
              'systemctl restart bind9.service'
@@ -236,6 +233,6 @@ ______________________________________________________________________________
         
         Dispositivo > Área de Transferência Compartilhada > Bi-direcional
 
-  > NOTA: sair do modo escalonado: Ctrl (direito) + C
+  > OB: sair do modo escalonado: Ctrl (direito) + C
 
     11)  Desligue a máquina.
