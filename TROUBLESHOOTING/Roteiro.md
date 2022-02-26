@@ -32,13 +32,13 @@ Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.
 
 	1 - FÍSICA | Wireless, Cabo | Energia elétrica convertida em 0s e 1s (binário) - HUB (REPETIDOR) / CONECTORIZAÇÕES
 
-**FÍSICO (Virtualização - VirtualBox)**
+**FÍSICO**
 
 	* Import das máquinas virtuais
 	* Configuração das interfaces de rede (NIC)
 	* Conexões de Switch
 
-**LÓGICO (Sistema operacional)**
+**LÓGICO**
 
 	 CONFIGURAÇÃO BASE
 		 Hostname
@@ -54,7 +54,7 @@ Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.
 
 #### SRVLNX-NAIROBI
 
-**FÍSICO (Virtualização - VirtualBox)**
+**FÍSICO**
         
 	
 	Import das máquinas virtuais
@@ -65,7 +65,7 @@ Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.
                 LAN Segment
 				
 		
-**LÓGICO (Sistema operacional)**
+**LÓGICO**
 
 
         Configuração base
@@ -118,7 +118,7 @@ Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.
 
 
 #### SRVWIN-RIO
-**FÍSICO (Virtualização - VirtualBox)**
+**FÍSICO**
 
 
 
@@ -128,7 +128,7 @@ Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.
         Conexões de Switch
                 LAN Segment
                 
-**LÓGICO (Sistema operacional)**
+**LÓGICO**
 
         CONFIGURAÇÃO BASE
                 Hostname
@@ -147,7 +147,7 @@ Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.
                                 Escopo(Range)
                 
 #### CLTWIN-OSLO                
-**FÍSICO (Virtualização - VirtualBox)**
+**FÍSICO**
 
 
         Import das máquinas virtuais
@@ -156,7 +156,7 @@ Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.
         Conexões de Switch
                 LAN Segment
                 
-**LÓGICO (Sistema operacional)**
+**LÓGICO**
 
         CONFIGURAÇÃO BASE
                 Hostname
