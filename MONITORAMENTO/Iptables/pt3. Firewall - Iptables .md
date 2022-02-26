@@ -2,7 +2,7 @@
     https://cybermap.kaspersky.com/
     https://www.digitalattackmap.com/
 
-*NOTA: Por padrão as configurações do IPtables são gravados na memória RAM* 
+**Por padrão as configurações do IPtables são gravados na memória RAM**
      
      Arquivo criado "./firewall.sh" 
 
@@ -101,7 +101,7 @@
 
 -----------------------------------------------
 
-# BOTÃO DE PÂNICo 
+# BOTÃO DE PÂNICO
 ## LIMPAR TODAS AS CONDIÇÕES 
 
 
@@ -211,18 +211,18 @@
 
 -----------------------------------------------
 
-ARQUIVO DE FIREWALL
+**ARQUIVO DE FIREWALL**
 
     19) Origem /etc/init.d
 
 -----------------------------------------------
 
-DESAFIO
+#### `DESAFIO`
 
  * LIBERAR O ACESSO SSH DO FIREWALL
  * LIBERAR O ICMP PARA TODA REDE
 
-SOLUÇÃO
+#### `SOLUÇÃO`
     
 #### LIBERAR SSH DO FIREWALL
     iptables -A INPUT -p tcp --dport 22 -j ACEITAR
