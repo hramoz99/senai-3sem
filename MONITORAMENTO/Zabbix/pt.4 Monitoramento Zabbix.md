@@ -55,7 +55,7 @@
 
 -------------------------------------------------- ------------
 
-**VIZUALIÇÃO DAS INFORMAÇÕES** 
+**VISUALIÇÃO DAS INFORMAÇÕES** 
 
     Monitoramento> Dados mais recentes
 
