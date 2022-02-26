@@ -233,6 +233,6 @@ ______________________________________________________________________________
         
         Dispositivo > Área de Transferência Compartilhada > Bi-direcional
 
-  > OB: sair do modo escalonado: Ctrl (direito) + C
+  > Sair do modo escalonado: Ctrl  + C
 
     11)  Desligue a máquina.
