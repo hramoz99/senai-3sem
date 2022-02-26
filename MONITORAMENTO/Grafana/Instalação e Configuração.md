@@ -2,8 +2,9 @@
 
 *GRAFANA produz gráficos por meio da base de dados fornecidos pelas ferramentas de monitoramento*
 
-       .Zabbix
-       .Cacti
+  - Zabbix
+  
+  - Cacti
 
 **INSTALAÇÃO GRAFANA**
 
