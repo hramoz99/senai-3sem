@@ -8,15 +8,15 @@ Você e sua equipe, sendo chamados como consultores para resolverem os problemas
 Assim, auxiliando na diminuição do prejuízo desta empresa que os contrataram.”*
 
 
-#### CONFIGURAÇÃO DA REDE
+### CONFIGURAÇÃO DA REDE
  
 
 	- Realizar a cópia (backup) de todo arquivo de configuração
 	- Estado dos serviços que serão analisados
 	- LOG de Sistema
 
-#### CENÁRIO - PREPARAÇÃO DO AMBIENTE
-MODELO OSI - 7 CAMADAS
+### CENÁRIO - PREPARAÇÃO DO AMBIENTE
+### `MODELO OSI`
 
 	7 - APLICAÇÃO - Navegador / Apache2 / FTP
 
@@ -32,13 +32,13 @@ MODELO OSI - 7 CAMADAS
 
 	1 - FÍSICA | Wireless, Cabo | Energia elétrica convertida em 0s e 1s (binário) - HUB (REPETIDOR) / CONECTORIZAÇÕES
 
-FÍSICO (Virtualização - VirtualBox)
+**FÍSICO (Virtualização - VirtualBox)**
 
 	* Import das máquinas virtuais
 	* Configuração das interfaces de rede (NIC)
 	* Conexões de Switch
 
-LÓGICO (Sistema operacional)
+**LÓGICO (Sistema operacional)**
 
 	 CONFIGURAÇÃO BASE
 		 Hostname
@@ -54,7 +54,7 @@ LÓGICO (Sistema operacional)
 
 #### SRVLNX-NAIROBI
 
-FÍSICO (Virtualização - VirtualBox)
+**FÍSICO (Virtualização - VirtualBox)**
         
 	
 	Import das máquinas virtuais
@@ -65,7 +65,7 @@ FÍSICO (Virtualização - VirtualBox)
                 LAN Segment
 				
 		
-LÓGICO (Sistema operacional)
+**LÓGICO (Sistema operacional)**
 
 
         Configuração base
@@ -118,7 +118,7 @@ LÓGICO (Sistema operacional)
 
 
 #### SRVWIN-RIO
-FÍSICO (Virtualização - VirtualBox)
+**FÍSICO (Virtualização - VirtualBox)**
 
 
 
@@ -128,7 +128,7 @@ FÍSICO (Virtualização - VirtualBox)
         Conexões de Switch
                 LAN Segment
                 
-LÓGICO (Sistema operacional)
+**LÓGICO (Sistema operacional)**
 
         CONFIGURAÇÃO BASE
                 Hostname
@@ -147,7 +147,7 @@ LÓGICO (Sistema operacional)
                                 Escopo(Range)
                 
 #### CLTWIN-OSLO                
-FÍSICO (Virtualização - VirtualBox)
+**FÍSICO (Virtualização - VirtualBox)**
 
 
         Import das máquinas virtuais
@@ -156,7 +156,7 @@ FÍSICO (Virtualização - VirtualBox)
         Conexões de Switch
                 LAN Segment
                 
-LÓGICO (Sistema operacional)
+**LÓGICO (Sistema operacional)**
 
         CONFIGURAÇÃO BASE
                 Hostname
@@ -174,5 +174,5 @@ LÓGICO (Sistema operacional)
 
 
 
-Caminhos importantes:
-/etc/network/interfaces
+*Caminhos importantes:*
+> /etc/network/interfaces
