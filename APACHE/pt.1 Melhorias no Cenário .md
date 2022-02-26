@@ -12,7 +12,7 @@
 
             systemctl restart networking.service
 
-    <> Verificar se o acesso SSH está ativ0
+    <> Verificar se o acesso SSH está ativo
 
             systemctl status ssh.service
 
@@ -30,9 +30,9 @@
                           >
             *Teste de ping com GW*
 
-  >  OBS: O ping para a internet falhará. 
+  >  NOTA: O ping para a internet falhará. 
    
-   **ARRUMAR CONFIGURAÇÃO**
+   **ALTERAR CONFIGURAÇÃO**
 
     3) Alterar as informações para bi-direcional [Arraste para a Área de trabalho compartilhada]
 
