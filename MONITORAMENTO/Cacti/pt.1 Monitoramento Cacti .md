@@ -122,7 +122,7 @@ ____________________________________________
 
 -----------------------------------------------
 
-**CLIXP-TOQUIO**
+#### CLIXP-TÓQUIO
 
     22) Endereço Web 172.31.0.251/cacti
         
@@ -131,7 +131,7 @@ ____________________________________________
 
 -----------------------------------------------
 
-CACTI 
+### CACTI 
 
     23) Create Device > + 
 
@@ -153,7 +153,7 @@ CACTI
 
 -----------------------------------------------
 
-**CLIXP-TOQUIO - Instalação do pacote SNMP**
+#### Instalação do pacote SNMP**
 
     25) Painel de Controle > Programas padrão > Add or Remove Programs > Add/Remove Windows Components (lado esq da tela) > Management and Monitoring Tools > Next
 
@@ -163,7 +163,7 @@ CACTI
 
 -----------------------------------------------
 
-**CLIXP-TOQUIO - Configuração do pacote SNMP**
+#### Configuração do pacote SNMP**
 
     30) Windows + R > services.msc 
 
