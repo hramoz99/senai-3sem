@@ -1,4 +1,4 @@
-AULA 53 - Add Storage na EC2 - (24/05)
+Adicionado Storage na EC2
 
 GERAR UM NOVO DISCO DENTRO DE UMA INSTÂNCIA EXISTENTE:
 
@@ -61,5 +61,5 @@ LINUX
     * Finalização
     sudo mount /dev/xvdf1 /mnt/novo-disco
 
-    * Criar um arquivo para vermos se o backup deu certo
+    * Criar um arquivo para verificar o backup 
     nano /mnt/novo-disco/arquivo.txt
