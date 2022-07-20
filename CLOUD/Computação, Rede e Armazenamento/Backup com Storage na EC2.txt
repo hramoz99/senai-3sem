@@ -1,4 +1,4 @@
-AULA 54 - Backup com Storage na EC2 - (25/05)
+Backup com Storage na EC2
 
 AWS
 
@@ -6,17 +6,17 @@ AWS
 
     * Atrele a instância em um volume existente 
 
-    * A Zona de Disponibilidade pode ser definido através das configurações de instância (etapa 3)
+    * A Zona de Disponibilidade pode ser definido através das configurações de instância
     OBS: Essas informações são observadas nas parte de Sub-rede
 
     * Atach o volume de backup a sua instância
 
-    * O volume é associado apenas uma instância --> Relação 1:1
+    * O volume é associado apenas a uma instância --> Relação 1:1
 
 LINUX 
 
-    * Filtro para buscar os discos que minha máquina possui
-    fdisk -l |grep "Disk /"
+    * Filtro para buscar os discos que a máquina possui
+    fdisk -l |grep Disk /
     ou
     fdisk -l |grep Disk
 
@@ -27,7 +27,7 @@ LINUX
     * Criar um ponto de montagem 
     mkdir /mnt/disco2G
 
-    * Montar a partição nesse diretório que criei 
+    * Montar a partição dentro do diretório de criação 
     mount /dev/xvdf1 /mnt/disco2G
 
     * Criar arquivos vazios
@@ -36,4 +36,4 @@ LINUX
     * Restaurar backup
     cp -a /mnt/disco2G/* /mnt/novo-disco30G/
     OBS: o "-a" mantém as informações do arquivo original
-    OBS: o "*" significa tudo o que possui no /mnt/disco2G/* 
+    OBS: o "*" significa que tudo está no /mnt/disco2G/* 
