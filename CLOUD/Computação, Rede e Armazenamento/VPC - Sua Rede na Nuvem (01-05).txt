@@ -1,6 +1,4 @@
-AULA 58 - VPC - Sua Rede na Nuvem (01/05) - CONTINUAÇÃO
-
-OBSERVAÇÕES
+VPC - Sua Rede na Nuvem
 
     * Para testar sua VPC, execute uma instância (com as informações de rede e sub-rede)
 
