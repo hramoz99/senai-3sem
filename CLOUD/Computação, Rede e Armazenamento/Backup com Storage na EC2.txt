@@ -9,7 +9,7 @@ AWS
     * A Zona de Disponibilidade pode ser definido através das configurações de instância
     OBS: Essas informações são observadas nas parte de Sub-rede
 
-    * Atach o volume de backup a sua instância
+    * Atachar o volume de backup a sua instância
 
     * O volume é associado apenas a uma instância --> Relação 1:1
 
