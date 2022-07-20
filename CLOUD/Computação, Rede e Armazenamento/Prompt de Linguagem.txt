@@ -17,13 +17,15 @@ Disco SSD ou magnetico - O que muda é a Velocidade - IOPS I/O (Input/Output)(Da
 
 Grupos de segurança:
 Os grupos de segurança da AWS (SGs) são associados às instâncias do Amazon EC2 e fornecem segurança no nível de protocolo e acesso à porta.
-*Um grupo de segurança funciona da mesma maneira que um firewall.
-*Ele contém um conjunto de regras que filtram o tráfego que entra e sai de uma instância do Amazon EC2.
-Por padrão, todo o tráfego não local é bloqueado.
-Por exemplo, os servidores da web geralmente permitem acesso ao tráfego público na porta 80 (HTTP) e / ou na porta 443 (HTTPS).
+  * Um grupo de segurança funciona da mesma maneira que um firewall.
+  * Ele contém um conjunto de regras que filtram o tráfego que entra e sai de uma instância do Amazon EC2.
+
+   Por padrão, todo o tráfego externo é bloqueado.
+   Por exemplo, os servidores da web geralmente permitem acesso ao tráfego público na porta 80 (HTTP) e / ou na porta 443 (HTTPS).
 
 Par de Chaves: Um par de chaves consiste em uma chave pública que a AWS armazena e um arquivo de chave privada que você armazena.
-Juntos, eles permitem que você se conecte à sua instância com segurança. 
+Juntos, eles permitem que você se conecte à sua instância com segurança.
+
 Para AMIs do Windows, o arquivo de chave privada é necessário para obter a senha usada para efetuar login em sua instância. 
 Para AMIs do Linux, o arquivo de chave privada permite que você faça SSH com segurança em sua instância.
 
@@ -34,12 +36,13 @@ No entanto, a instância irá reter:
 *Quaisquer endereços Elastic IP
 *Qualquer endereço IPv6
 
-Virtualization type: Linux AMIs usam um dos dois tipos de virtualização — paravirtual (PV) ou máquina virtual de hardware (HVM). 
+Virtualization type: Linux AMIs usam um dos tipos de virtualização — paravirtual (PV) ou máquina virtual de hardware (HVM). 
 Você não pode redimensionar uma instância que foi iniciada de um PV AMI para um tipo de instância que seja apenas HVM. 
 Verifique o tipo de instância na guia instance Description em Virtualization.
-Architecture: Amazon Machine Images (AMIs) são específicas para a arquitetura do processador, portanto,
-você deve selecionar um tipo de instância com a mesma arquitetura de processador do tipo de instância atual.
 
-Snapshot - Copio / Foto do seu ambiente atual
+Architecture: Amazon Machine Images (AMIs) são específicas para o modelo do processador, portanto,
+é necessário selecionar um tipo de instância com o mesmo modelo do processador do tipo de instância atual.
 
-SSH Ex: root@IP_do_Servidor - é solicitado a senha
+Snapshot - Copia / Foto do seu ambiente atual
+
+
