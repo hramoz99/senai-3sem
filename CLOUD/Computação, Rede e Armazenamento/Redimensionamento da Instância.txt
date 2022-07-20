@@ -1,6 +1,6 @@
-AULA 51 - EC2 Redimensionamento da Instância (20/05)
+EC2 Redimensionamento da Instância
 
-INSTÂNCIA => Uma parte de CPU, memória, processamento (de uma máquina maior na AWS) => "Computador"
+INSTÂNCIA => CPU, memória, processamento (máquina maior na AWS) => "Computador"
 
     * Hospedar sites
     * Marketplace
@@ -40,6 +40,6 @@ LINUX
 
 ALTERAÇÕES NA INSTÂNCIA DO EC2
 
-    1°) Interromper Instância (após selecioná-la) --> Ações --> Configurações de instância --> Alterar tipo de Instância
-    2°) Iniciar Instância (após selecioná-la)
+    1°) Interromper Instância --> Ações --> Configurações de instância --> Alterar tipo de Instância
+    2°) Iniciar Instância 
 
