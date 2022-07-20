@@ -1,8 +1,8 @@
-﻿AULA 64- ACESSO REMOTO RDP (10/06)
+ACESSO REMOTO RDP
 
 SALVAR ESTADO DA CONEXÃO 
 
-    * Salve o estado de conexão remota (Área de Trabalho Remota), assim como no Putty
+    * Salve o estado de conexão remota (Área de Trabalho Remota)
     - Crie um atalho para seu servidor
 
 RDP - Acesso remoto via RDP (Remote Desktop Protocol)
