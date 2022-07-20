@@ -1,9 +1,8 @@
-AULA 49 - EC2 - BootStraping - HTTP - ACL (18-05)
+AWS EC2 - BootStraping - HTTP - ACL
 
-Criar uma máquina virtual = executar instâncias
+Criar uma máquina virtual
 
-    AMI da Amazon = Máquina virtual pronta (I2 micro)
-    instâncias = Máquinas
+    AMI da Amazon = Máquina virtual pronta (T2.micro)
 
 Habilitação de Apache - BootStraping (automatização)
 
