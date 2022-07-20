@@ -1,6 +1,6 @@
-AULA 48 - INTRODUÇÃO A NUVEM E AO AMBIENTE AWS Educate (17-05)
+AMBIENTE NA NUVEM
 
-CURIOSIDADE: A AWS oferece mais de 2000 serviços!
+A AWS oferece mais de 2000 serviços!
 
 * IAM = Identity and Access Management (Criação e armazenamento de usuários)
 
@@ -8,7 +8,7 @@ CURIOSIDADE: A AWS oferece mais de 2000 serviços!
 
 * EC2 = Elastic Compute Cloud (EC2) - criação de máquinas virtuais
 
-* AWS Lambda = Programação
+* AWS Lambda = serviço sem servidor
 
 * AWS Elastic Beanstalk = criação de máquinas automatizadas
 
@@ -16,17 +16,12 @@ CURIOSIDADE: A AWS oferece mais de 2000 serviços!
 
 * ELB = Elastic Load Balancing = Balanceamento de carga (internet)
 
-* Amazon CloudWatch = Desligar a máquina após um determinado tempo
+* Amazon CloudWatch = Monitoramento / Desligar a máquina após um determinado tempo
 
 * Auto Scaling = capacidade de clonar máquinas
 
-MÓDULOS: 5,6 e 7 (O que veremos no SENAI)
-- Redes e entrga de conteúdo, Computação e armazenamento
-
-CERTIFICADO - AWS Cloud Practitioner 
-
-PROGRAM ALEXA: https://www.codecademy.com/learn/learn-alexa?g_network=g&g_device=c&g_adid=444172385479&g_keyword=create%20your%20own%20alexa%20skill&g_acctid=243-039-7011&g_adtype=search&g_adgroupid=106123913987&g_keywordid=kwd-437254348482&g_campaign=ROW+Career+Path%3A+Pro+-+Exact&g_campaignid=10074200774&utm_id=t_kwd-437254348482:ag_106123913987:cp_10074200774:n_g:d_c&utm_term=create%20your%20own%20alexa%20skill&utm_campaign=ROW%20Career%20Path%3A%20Pro%20-%20Exact&utm_source=google&utm_medium=paid-search&ut
-
+MÓDULOS: 5, 6 e 7 
+- Redes e entrega de conteúdo, Computação e armazenamento
 
 ==================================================================================================
 
@@ -55,11 +50,11 @@ Infraestrutura como software
 Modelo de computação em nuvem
 
 
-    * São flexíveis/
+    * São flexíveis
 
-    * Podem mudar com mais rapidez, facilidade e economia do que as soluções de hardware
+    * Rapidez, facilidade e economia
 
-    * Eliminam as tarefas monolíticas de trabalho pesado (instalações são mais rápidas e eficazes)
+    * Eliminam as tarefas de instalações e compra de hardaware físico
 
 
 Modelos de serviço em nuvem
