@@ -1,11 +1,11 @@
-AULA 52 - Segurança em uma instância EC2 - (21/05)
+Segurança na instância EC2 
 
 SECURITY GROUP
 
-    Um grupo de segurança é um conjunto de regras de firewall que controla o tráfego da sua instância. Nesta página, você pode adicionar 
-    regras para permitir que tráfegos específicos cheguem até a sua instância. Por exemplo, se você quiser configurar um servidor Web e 
-    permitir que tráfego da Internet chegue até a sua instância, adicione regras que permitam acesso irrestrito às portas HTTP e HTTPS. 
-    Você pode criar um novo grupo de segurança ou selecionar um dos existentes abaixo
+    Um grupo de segurança é um conjunto de regras de firewall que controla o tráfego de sua instância. Nesta página, você pode adicionar 
+    regras para permitir que tráfegos específicos cheguem ou não a sua instância. Por exemplo, se você quiser configurar um servidor Web e 
+    permitir que tráfego da Internet, adicione regras que permitam acesso irrestrito às portas HTTP e HTTPS. Você pode criar um novo grupo 
+    de segurança ou selecionar um dos existentes abaixo
 
 LINUX
 
@@ -20,18 +20,15 @@ LINUX
     Exemplo: ls -la /home/ec2-user
 
     Diretórios começam com
-    d (no começo das permissões)
-    Exemplo: drmx
+    d = Exemplo: drmx
 
     * Criptografia da chave
-    Deve ser sem espaços, contínua
+    Deve ser sem espaços e contínua
 
     * Adicionar novas chaves ssh
     sudo vi /home/ec2-user/.ssh/authorized_keys
-    OBS: Após a chave criptografada, adicione o mesmo nome de usuário que foi utilizado no par de chaves da AWS
-
-    Vi
-    - tecla "o" começa uma nova linha (abaixo de todas)
+    OBS: adicione o mesmo nome de usuário que foi utilizado no par de chaves da AWS
+    
 
     Reiniciar o ssh
     sudo systemctl restart sshd
