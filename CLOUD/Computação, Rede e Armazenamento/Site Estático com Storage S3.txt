@@ -1,15 +1,15 @@
-AULA 57  - Site Estático com Storage S3 - (28-05)
+Site Estático com Storage S3
 
-OBS: O site estático virá em .zip, para descompactá-lo basta clicar botão direito --> Extrair tudo
-O processo inverso também é verdade. Para compactar, basta selecionar a pasta (botão direito) --> enviar para --> pasta compactada
+O site estático virá .zip, para descompactá-lo basta clicar botão direito --> Extrair tudo
+Para compactar, basta selecionar a pasta (botão direito) --> enviar para --> pasta compactada
 
-index.htm
+index.html
 
     Normalmente é o local onde os ativos da aplicação web (site) é direcionado
 
 BUCKET
 
-    É aqui que nosso site será hospedado!!
+    Local da hospedagem do site!!!
 
     * Crie uma bucket (no serviço Amazon S3)
     * Permita o acesso a bucket e do objeto (Desmarcar a opção "bloquear todo o acesso público)
@@ -20,14 +20,14 @@ BUCKET
 
     * Acessar o site (como arquivo)
 
-        Clique na sua bucket (Amazon S3 --> lcmc23), selecione o arquivo 'index.html'
-        https://lcmc23.s3.amazonaws.com/index.html
+        Clique na sua bucket (Amazon S3 --> hramoz99), selecione o arquivo 'index.html'
+        https://hramoz99.s3.amazonaws.com/index.html
 
         Note, que neste caso o site só funcionará com o final 'index.html'
 
     * Acessar o site (sem o final 'index.html')
 
-        Edite a isso nas propriedades (Amazon S3 --> lcmc23 --> Editar hospedagem de site estático)
+        Edite a isso nas propriedades (Amazon S3 --> hramoz99 --> Editar hospedagem de site estático)
 
         - Hospedagem de site estático: ativar
 
