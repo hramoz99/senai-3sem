@@ -61,6 +61,8 @@ ZONA REVERSA E PRIMÁRIA
             - Windows + R > cmd
             - ping arquivos.senai.edu.local
 
+
+
 ENTREGA
 
     1) Windows + R
