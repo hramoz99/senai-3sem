@@ -1,8 +1,6 @@
-﻿AULA 66 CONTINUAÇÃO - CRIAR USUÁRIO COM ACESSO RDS (15/06)
+CRIAR USUÁRIO COM ACESSO RDS
 
 COLOCAR UM SERVIDOR EM UM DOMÍNIO 
-
-    OBS: poderíamos poupar tempo, se tivéssemos feito um Snapshot do Windows Server "zerado"
 
     1) Execute uma nova instância para ser um servidor de arquivos no domínio senai.edu
 
@@ -34,7 +32,7 @@ COLOCAR UM SERVIDOR EM UM DOMÍNIO
 
     5) IMPORTANTE!
 
-        O DNS desse servidor "apontará" para o DNS do servidor de DNS - Domínio senai.edu.local (o primeiro servidor que nós subimos - seu IP é 192.168.0.10)! 
+        O DNS desse servidor "apontará" para o DNS do servidor de DNS - Domínio senai.edu.local (o primeiro servidor - seu IP é 192.168.0.10)! 
     
     - Windows + R
     - ncpa.cpl
@@ -45,7 +43,7 @@ COLOCAR UM SERVIDOR EM UM DOMÍNIO
 
         LEMBRE DE QUE AMBAS INSTÂNCIAS DEVEM ESTAR LIGADAS - EXECUTANDO!
 
-    10) Note, que se o contrário for feito (ping do 192.168.0.10 para o 192.168.0.20), o processo falhará! Como resolver isso?
+    10) Note que se o contrário for feito (ping do 192.168.0.10 para o 192.168.0.20), o processo falhará! Como resolver isso?
 
     - WinServer não consegue pingar o WinArq
 
@@ -88,4 +86,4 @@ COLOCAR UM SERVIDOR EM UM DOMÍNIO
 
     AGORA FUNCIONARÁ! 
 
-Nota: não esqueça de trocar a instância para t2.micro
+
