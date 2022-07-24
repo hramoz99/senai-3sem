@@ -1,4 +1,4 @@
-AULA 66 - CRIAR USUÁRIO COM ACESSO RDS (14/06)
+CRIAR USUÁRIO COM ACESSO RDS
 
 ACTIVE DIRECTORY - AD
 
@@ -14,9 +14,8 @@ ACTIVE DIRECTORY - AD
         
         2) Clique em 'copiar'
         NOTA: Cuidado ao escrever o nome de login, as informações devem ser sem espaço!
-        EX: lucascabral ou lucas.cabral 
 
-        3) Defina sua senha, marcando a caixa 'Senha nunca expira'
+        3) Defina sua senha marcando a caixa 'Senha nunca expira'
 
     * QUAIS USUÁRIOS ESTÃO LOGADOS NA SESSÃO REMOTA?
 
@@ -25,9 +24,9 @@ ACTIVE DIRECTORY - AD
 
     * VER INFORMAÇÕES DO USUÁRIO
 
-        1) No AD, clique com o botão direito do mouse sobre o usuário
+        1) No AD - clique com o botão direito do mouse sobre o usuário
         Clique em 'Propriedades'
-        OBS: Você consegue desabilitar a conta do usuário, trocar sua senha, etc
+        OBS: Você consegue desabilitar a conta do usuário, trocar sua senha
 
     * CRIAR UM USUÁRIO "DO ZERO" NO AD
 
@@ -36,11 +35,11 @@ ACTIVE DIRECTORY - AD
         2) Clique em 'Novo'
         Selecione 'Usuários'
 
-        3) Defina sua senha, marcando também a caixa 'Senha nunca expira' 
+        3) Defina sua senha marcando a caixa 'Senha nunca expira' 
 
         4) Permita que esse novo usuário acesso o Servidor remotamente
 
-        TENTE FAZER O LOGIN... INFELIZMENTE FALHARÁ! ALTERE A POLÍTICA - GPO
+        TENTE FAZER O LOGIN (FALHA)! ALTERE A POLÍTICA - GPO
 
         5) Aperte Windows + PauseBreak
         pesquise 'secpol.msc'
@@ -61,5 +60,5 @@ ACTIVE DIRECTORY - AD
 
 !!!IMPORTANTE!!!
 
-    * Para instalar ("subir") serviços pesados, use uma instância t2.medium
+    * Para instalar serviços pesados, use uma instância t2.medium
     Após isso, volte para instância t2.micro (isso economiza seus créditos, o que é muito importante)
