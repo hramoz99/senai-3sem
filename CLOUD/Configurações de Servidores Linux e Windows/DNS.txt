@@ -1,8 +1,8 @@
-AULA 73 - EXERCICIO DE DNS (24/06)
+EXERCICIO DE DNS
 
 O QUE SÃO ENCAMINHADORES? 
 
-    O redirecionamento está atrelado em "passar" a responsabilidade de encontrar os nomes de domínio para outros servidores
+    O redirecionamento está atrelado em transmitir a responsabilidade de encontrar os nomes de domínio para outros servidores
     EX: 8.8.8.8 (DNS do Google)
 
     Root - Servidores externos (não temos acesso)
@@ -28,7 +28,7 @@ ZONA REVERSA E PRIMÁRIA
         3) Clique com o botão direito em 'Zonas de Pesquisa Inversa'
             clique com o botão direito > Nova zona...
 
-        4) As características são
+        4) As características são:
 
             - Zona primária
             - Zona de Pesquisa Inversa IPv6
@@ -36,22 +36,22 @@ ZONA REVERSA E PRIMÁRIA
             - 'Não permitir atualizações dinâmicas'
             - Concluir
 
-        5) Atualize o PTR de ambos os servidores
+        5) Atualizar o PTR de ambos os servidores
             
             - Clique em 'Zonas de pesquisa direta'
-            - Clique 2x sobre 'senai.edu.local'
-            - Clique 2x sobre 'SrvArqBitBeat' > marque 'Atualizar o registro...'
-            - Clique 2x sobre 'srvwinbitbeat' > marque 'Atualizar o registro...'
+            - Clique sobre 'senai.edu.local'
+            - Clique sobre 'SrvArqBitBeat' > marque 'Atualizar o registro...'
+            - Clique sobre 'srvwinbitbeat' > marque 'Atualizar o registro...'
 
         6) Em 'Zonas de Pesquisa Inversa' > '0.168.192...'
             - Clique com o botão direito do mouse > Atualizar
 
-            NOTA: Os IPs dos servidores aparecerão!
+            NOTA: Os IPs dos servidores aparecerão
 
-        7) Crie um CNAME (Alias - apelido) para  'SrvArqBitBeat'
+        7) Crie um CNAME para 'SrvArqBitBeat'
 
             - Clique em 'Zonas de pesquisa direta'
-            - Clique 2x sobre 'senai.edu.local'
+            - Clique sobre 'senai.edu.local'
             - Botão direito do mouse > Novo alias (CNAME)...
             - Escreva o nome do alias ("arquivos")
             - Em 'Procurar', escolha o servidor que receberá o Alias (SrvArqBitBeat)
@@ -61,9 +61,7 @@ ZONA REVERSA E PRIMÁRIA
             - Windows + R > cmd
             - ping arquivos.senai.edu.local
 
-ENTREGA DE HOJE
-
-NOTA: Isso será feito em seu PC LOCAL!
+ENTREGA
 
     1) Windows + R
 
