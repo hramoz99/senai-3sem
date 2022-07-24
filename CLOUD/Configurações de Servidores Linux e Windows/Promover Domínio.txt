@@ -1,4 +1,4 @@
-AULA 65 - CRIAR AD E PROMOVER DOMÍNIO (11/06)
+CRIAR AD E PROMOVER DOMÍNIO
 
 ACTIVE DIRECTORY - AD DS
 
@@ -8,10 +8,10 @@ ACTIVE DIRECTORY - AD DS
 
 DOMÍNIO
 
-    * Um domínio é a unidade administrativa máxima do serviço de diretório. Você pode entender domínio simplesmente como um nome para uma 
+    * Um domínio é a unidade administrativa máxima do serviço de diretório. Você pode entender o domínio simplesmente como um nome para uma 
     família de recursos.
 
-    * O domínio é a principal unidade funcional da estrutura lógica do AD e pode armazenar milhões de objetos.
+    * O domínio é a principal unidade funcional da estrutura lógica do AD e armazena milhões de objetos.
 
 WINDOWS SERVER 
 
@@ -21,7 +21,7 @@ WINDOWS SERVER
 
     INSTALAÇÃO - AD 
 
-        1) Gerenciador do servidor (fixe esta tela)
+        1) Gerenciador do servidor 
         - Adicionar funções e recursos (instalação baseada em função ou recurso)
         - Selecione os 'Serviços de Domínio Active Directory'
         - Selecione os 'Serviços de Acesso e Política de Rede' (GPO)
