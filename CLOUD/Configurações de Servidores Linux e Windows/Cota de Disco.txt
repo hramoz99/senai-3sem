@@ -1,8 +1,8 @@
-AULA 70 – COTA DE DISCO (21/06)
+COTA DE DISCO
 
 FSRM - FILE SYSTEM RESOURCE MANAGER (GERENCIADOR DE RECURSOS DE SERVIDOR DE ARQUIVOS)
 
-    EXEMPLO - COTA FIXA
+    COTA FIXA
 
         * Cota Fixa (Rígida) estabelece um limite de uso de 20MB para uma pasta
         * Gerar Notificação com 80% ao Administrador;
@@ -21,16 +21,15 @@ WINDOWS SERVER - (SrvArqBitBeat)
     2) Siga o passo a passo da instalação
     - Em 'Funções do servidor'
 
-        * Clique na "setinha" em 'Serviços de Arquivo e Armazenamento...'
-        * Clique na "setinha" em 'Serviços de Arquivo e iSC1...'
+        * Clique na "setinha" > 'Serviços de Arquivo e Armazenamento...'
+        * Clique na "setinha" > 'Serviços de Arquivo e iSC1...'
         * Marque a opção 'Gerenciador de Recursos do Servidor...'
 
     3) Na 'Confirmação', marque 'Reiniciar cada servidor...'
     - Próximo > Instalar
 
-    4) Após a conclusão, no 'Gerenciador do Servidor', clique em 'Ferramentas'
-    - Note que agora o 'Gerenciador de Recursos...', aparecerá
-    - Selecione-o (fixe-o)
+    4) Após a conclusão no 'Gerenciador do Servidor', clique em 'Ferramentas'
+    - Selecione-o (fixe-o) 'Gerenciador de Recursos...' 
 
     5) Gerenciamento de Cota > Modelos de Cota
     - Botão direito do mouse > Criar modelo de cota
@@ -39,8 +38,8 @@ WINDOWS SERVER - (SrvArqBitBeat)
         * Será cota Fixa
 
     6) Clique em 'Adicionar'
-    Vá em 'Relatório'
-
+       
+       Em 'Relatório'
         * Gerar notificações com 80%
         * Gerar relatórios
             Marque 'Uso da Cota'
@@ -49,10 +48,10 @@ WINDOWS SERVER - (SrvArqBitBeat)
 
     7) Criar uma cota
 
-        Nota: Cota é criada por pasta
+        NOTA: Cota é criada por pasta
 
         * Clique em 'Procurar'
-        - Selecione a pasta desejada (EX: Suellen G Rufino)
+        - Selecione a pasta desejada 
 
         * Selecione 'Criar cota no caminho...'
 
@@ -60,9 +59,9 @@ WINDOWS SERVER - (SrvArqBitBeat)
 
         * Clique em 'Criar'
 
-    8) Faça o teste, movendo arquivos para esta pastá
-    DICA: No Explorador de Arquivos
-
-        Este Computador > Disco Local (C:) > Windows 
+    8) Faça o teste  
+    
+    No Explorador de Arquivos
+        'Este Computador > Disco Local (C:) > Windows' 
 
     * Copie a pasta 'explorer' para a pasta 'Suellen G Rufino'
