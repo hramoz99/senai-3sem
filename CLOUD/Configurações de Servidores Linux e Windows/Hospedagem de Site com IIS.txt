@@ -1,4 +1,4 @@
-AULA 74 - HOSPEDE SEU SITE COM IIS (25/06)
+ HOSPEDE SEU SITE COM IIS
 
 ISS
 
@@ -8,6 +8,7 @@ ISS
 
     * Para cada site, uma pasta será criada (isso possibilita a hospedagem de múltiplos sites)
         Note que o tráfego aqui é extremamente importante!
+
 
 PREPARAÇÃO DE AMBIENTE - INSTALAÇÃO ISS
 
@@ -69,7 +70,6 @@ CONFIGURAÇÃO ISS
     3) Abra o Gerenciador do Servidor, veja se o ISS está instalado
         - Ping do SrvArqBitBeat para www.redes.br
 
-        NOTA: O ping funcionou pois criamos o DNS no SrvWinBitBeat
 
     4) Na barra de tarefas, pesquise 'Serviços de Informações da internet 10'
         - Note que um site default está criado (site do próprio ISS)
@@ -80,7 +80,7 @@ CONFIGURAÇÃO ISS
     5) Crie um novo site
 
         - Selecione o diretório 'Sites'
-            Botaão direito do mouse > Criar novo site
+            Botão direito do mouse > Criar novo site
         
         - Nome do site: redes
         - Caminho físico: E:\Sites\Redes-br
@@ -91,4 +91,4 @@ CONFIGURAÇÃO ISS
         Botão direito sobre o arquivo > Copiar > Abra a pasta 'Site' (No SrvArqBitBeat) > Colar
 
     7) Faça o teste!
-        Pesquise www.redes.br, o site aparecerá!
+        Pesquise www.redes.br
