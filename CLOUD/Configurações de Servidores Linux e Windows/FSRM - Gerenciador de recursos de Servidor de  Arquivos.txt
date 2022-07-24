@@ -1,4 +1,4 @@
-AULA 68 - FSRM (GERENCIADOR DE RECURSOS DE SERVIDOR DE ARQUIVOS) – INSTALAÇÃO (17/06)
+FSRM (GERENCIADOR DE RECURSOS DE SERVIDOR DE ARQUIVOS) – INSTALAÇÃO 
 
 FSS - FILE AND STORAGE SERVICE
 
@@ -6,10 +6,9 @@ FSS - FILE AND STORAGE SERVICE
 
 FS - DEFINIÇÃO
 
-    * O FS-File Server (Servidor de Arquivos) é um computador conectado a uma rede que tem o objetivo principal de proporcionar um local para o Armazenamento e Compartilhado de 
-    arquivos que podem ser acessados por todos que estiverem ligados à rede.
+    * O FS-File Server (Servidor de Arquivos) é um computador conectado a uma rede que tem o objetivo principal de proporcionar um local para o Armazenamento e     compartilhamento de arquivos que podem ser acessados por todos que estiverem ligados à rede.
 
-    * O serviço FS é um recurso do Windows Server que permite o gerenciamento deste armazenamento e compartilhado de arquivos.
+    * O serviço FS é um recurso do Windows Server que permite o gerenciamento deste armazenamento de arquivos.
 
     OBS: Qualquer usuário inserido na rede (que o administrador tenha liberado) pode acessar a pasta / armazenamento compartilhado
 
@@ -47,14 +46,14 @@ WINDOWS SERVER
     3) Clique com o botão direito sob o disco
     - Deixe ele online
 
-    4) Clique novamente com o botão direito no disco
+    4) Clique com o botão direito no disco
     - Inicializar Disco
     - GPT
     - OK 
 
         NOTA: GPT consome uma parte do Armazenamento do disco nesta formatação
 
-    5) Clique novamente com o botão direito no disco
+    5) Clique com o botão direito no disco
     - Novo Volume Simples...
     - Avançar
     - Atribua uma letra para esta unidade
@@ -65,8 +64,8 @@ WINDOWS SERVER
     - Avançar
     - Concluir
 
-    6) Volte novamente ao Gerenciador > Este Computador 
-    - O disco estará lá 
+    6) Novamente Gerenciador > Este Computador 
+    - Local do disco
 
     7) Pesquise 'Gerenciamento do Servidor'
     - Note que o FSS já está instalado (Serviços de Arquivo e Armazenamento)
