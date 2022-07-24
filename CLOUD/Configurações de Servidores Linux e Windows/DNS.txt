@@ -21,9 +21,9 @@ ZONA REVERSA E PRIMÁRIA
 
     Como criar uma zona inversa?
 
-        1) Abra o SrvWinBitBeat
+        1) Entrar no SrvWinBitBeat
         
-        2) Abra o Gerenciador DNS
+        2) Gerenciador DNS
 
         3) Clique com o botão direito em 'Zonas de Pesquisa Inversa'
             clique com o botão direito > Nova zona...
