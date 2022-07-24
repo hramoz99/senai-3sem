@@ -1,14 +1,14 @@
-AULA 69 - FS (SERVIDOR DE ARQUIVOS) – INSTALAÇÃO (17/06)
+FS (SERVIDOR DE ARQUIVOS) – INSTALAÇÃO
 
-    Assunto: Manipular arquivos e pastas em um Compartilhamento de Arquivos no Windows Server
+    Assunto:  Manipular arquivos e pastas em um Compartilhamento de Arquivos no Windows Server
     Objetivo: Saber como organizar arquivos e pastas em um sistema operacional Windows Server 2019. Diferenciando Permissões de Compartilhamento e permissões NTFS.
 
 WINDOWS SERVER - SrvArqBitBeat
 
-    1) Monte a seguinte estrutura de diretório em sua unidade de disco (que foi criado na aula 68)
+    1) Monte a seguinte estrutura de diretório em sua unidade de disco 
 
         SENAI
-            Alunos_2RM
+            Aluno_2RM
                 Bruna Landim
                 Suellen G Rufino
 
@@ -20,6 +20,7 @@ WINDOWS SERVER - SrvArqBitBeat
                 Danilo Sibov
 
     2) Na pasta 'SENAI', defina as permissões de acesso para todos
+    
     - Botão direito sobre a pasta > Propriedade
     - Compartilhamento > Compartilhamento Avançado 
     - Selecione a caixa 'Compartilhar a pasta'
