@@ -1,10 +1,10 @@
-SPRINT 5 - AULA 63 - EC2 com WINDOWS SERVER
+EC2 com WINDOWS SERVER
 
 VPC
 
-    NOTA: Apague a VPC que já existia (10.0.0.0/16)
+    "Apague a VPC que já existia (10.0.0.0/16"
 
-    Criação de uma VPC para iniciarmos o W-SERVER
+    Criação de uma VPC
 
     1) VPC with a Single Public Subnet
     - 192.168.0.0/16 | Subnet 192.168.0.0/24
@@ -24,7 +24,7 @@ EC2 - Microsoft Windows Server 2019 Base
     RDP - Porta 3389 (Próprio do Windows)
     Anydesk - Acesso remoto universal
 
-    OBS: Use com a sub-nomenclatura "Datacenter" (ISO de Instalação
+    OBS: Use a sub-nomenclatura "Datacenter" (ISO de Instalação)
 
     1) Selecione a opção t2.medium (etapa 2)
     2) Selecione a VPC criada | subnet (etapa 3)
