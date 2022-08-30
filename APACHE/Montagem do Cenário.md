@@ -19,12 +19,10 @@
    > Clique em PRÓXIMO
 
  2. Alterar o nome da máquina
-   EX: SRVFW-BERLIM
 
  
  3. 'Desmarcar a opção de placa de rede'
 
-   > Clique em IMPORTAR
 _____________________________________________	     
 
 
