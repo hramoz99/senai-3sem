@@ -28,7 +28,7 @@
 _____________________________________________	     
 
 
-**CONFGURAÇÃO DAS VMs**
+**CONFIGURAÇÃO DAS VMs**
 
       1) Modifique as Especificações de tela
 
