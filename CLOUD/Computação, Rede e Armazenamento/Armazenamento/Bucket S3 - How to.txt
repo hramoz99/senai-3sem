@@ -1,0 +1,13 @@
+Criar bucket no s3
+Entre no bucket >  Permissões (Todo o acesso público liberado)
+
+Ainda nas permissões, vai em: 
+edições ACL para deixar o acesso público liberado 
+Salvar as alterações
+
+Na aba de Propriedades do bucket, role até o fim da página 
+"Hospedagem de site estático"
+Edite
+Configure apenas isso na parte de site estático
+Salvar as alterações
+Suba um index.html estático e teste

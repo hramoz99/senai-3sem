@@ -1,0 +1,88 @@
+AMBIENTE NA NUVEM
+
+A AWS oferece mais de 2000 serviços!
+
+* IAM = Identity and Access Management (Criação e armazenamento de usuários)
+
+* VPC = Virtual Private Cloud (Infraestrutura de rede na plataforma AWS)
+
+* EC2 = Elastic Compute Cloud (EC2) - criação de máquinas virtuais
+
+* AWS Lambda = serviço sem servidor
+
+* AWS Elastic Beanstalk = criação de máquinas automatizadas
+
+* S3 = Storage / armazenamento 
+
+* ELB = Elastic Load Balancing = Balanceamento de carga (internet)
+
+* Amazon CloudWatch = Monitoramento / Desligar a máquina após um determinado tempo
+
+* Auto Scaling = capacidade de clonar máquinas
+
+MÓDULOS: 5, 6 e 7 
+- Redes e entrega de conteúdo, Computação e armazenamento
+
+==================================================================================================
+
+O que é computação em nuvem?
+
+
+    Computador ou conjunto de computadores em um Data center que o usuário final pode armazenar
+
+    "Computação em nuvem é a entrega sob demanda de poder computacional, banco de dados, armazenamento, aplicativos e outros recursos de TI 
+    pela Internet com uma definição de preço conforme o uso"
+
+
+Infraestrutura como software 
+
+
+    "A computação em nuvem permite que você deixe de pensar em sua infraestrutura como hardware e passe a pensar nela (e usá-la) como software"
+
+        * Exigem espaço, equipe, segurança física, planejamento (quero velociade?), despesas de capital (qual local é o mais barato para eu
+        armazenar meus dados?)
+
+        * Tem um ciclo longo de aquisição de hardware (um servidor físico pode durar até 3 anos por exemplo);
+
+        * Exigem provisionamento de capacidade por meio da tentativa de adivinhar os picos máximos teóricos
+
+
+Modelo de computação em nuvem
+
+
+    * São flexíveis
+
+    * Rapidez, facilidade e economia
+
+    * Eliminam as tarefas de instalações e compra de hardaware físico
+
+
+Modelos de serviço em nuvem
+
+    * IaaS (Infraestrutura como serviço)
+
+    * Paas (Plataforma como serviço / banco de dados)
+
+    * Saas (Software como serviço / Google Drive, One Drive, Google fotos, etc)
+
+
+Modelos de implantação de computação em nuvem
+
+
+    * Nuvem 
+
+    * Híbrida
+
+    * No local (nuvem privada)
+
+
+Semelhanças entre AWS e TI tradicional
+
+    * Segurança 
+
+    * Redes
+
+    * Computação
+
+    * Armazenamento e banco de dados
+

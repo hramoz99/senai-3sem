@@ -1,0 +1,20 @@
+AWS EC2 - BootStraping - HTTP - ACL
+
+Criar uma máquina virtual
+
+    AMI da Amazon = Máquina virtual pronta (T2.micro)
+
+Habilitação de Apache - BootStraping (automatização)
+
+#!/bin/bash
+yum -y install httpd
+systemctl enable httpd
+systemctl start httpd
+echo '<html><h1>Senai Informática e AWS a parceria do futuro! </h1></html>' > /var/www/html/index.html
+
+Editar grupos de segurança 
+
+    EC2 > Grupos de segurança > sg-04a6c7a542fa0f27a - WebserverGrupoSec > Editar regras de entrada
+                                            (nome do grupo)
+
+    Adicionar uma nova regra = regra para HTTP (porta 80)
