@@ -1,13 +1,13 @@
-ADDS
+Elementos AD - ADDS
 
 As novas versões do windows server, superior, permitem que cada controlador de domínio leia e grave sua base de dados, 
 independente de ser primário ou secundário. Para criar um servidor que apenas execute leitura é necessário a criação de um RODC
 
-Nas versoões antigas um controlador de domínio era deixado como principal e um secundário ficava de prontidão, pois caso o primário parasse de funcionar, a autenticação não era suspensa
+Nas versões antigas um controlador de domínio era deixado como principal e um secundário ficava de prontidão, pois caso o primário parasse de funcionar, a autenticação não era suspensa
 
 Porém o BDC não grava arquivos SAM, portanto deveria ser elevado a PDC para tal função, o que era um processo complicado e moroso
 
-Quando o servidor antigp retornasse a seu funcionamento, deveria ser rebaixado a BDC pois não existiam dois PDCs na rede
+Quando o servidor antigo retornasse a seu funcionamento, deveria ser rebaixado a BDC pois não existiam dois PDCs na rede
 
 
 AD
@@ -21,7 +21,7 @@ Tipos de AD
   . Serviço principal de instalação do AD e o mais utilizado pelas empresas
 
  AD LDS - Active Directory Ligthweight Direcroty Service
-  . è também chamado de ADAM e possui menos recursos que o AD DS e foi utilizado no windows Server 2003
+  . É também chamado de ADAM e possui menos recursos que o AD DS e foi utilizado no windows Server 2003
 
  AD RMS - Active Directory Rights management Service
   . Aumenta a segurança da informações, uma vez que pode impedir que documentos e e-mails seja lidos por ususários não autorizados
@@ -30,18 +30,18 @@ Tipos de AD
   . Cuida do gerenciamento de certificados digitais de um dominio
 
  Ad Fs - Active Directory Federation Services
- . Tambem chamado de servico de federação do AD e sing on. Server para minimizar o número de senhas de longon a serem memorizadas pelo usuário. com o SSO única da acesso a todos os os serviços possíveis e autorizados
+ . Também chamado de serviço de federação do AD e sing on. Server para minimizar o número de senhas de longon a serem memorizadas pelo usuário. com o SSO única da acesso a todos os os serviços possíveis e autorizados
 
 Niveis funcionais 
 
-Determinam os recursos de dominio ou florestas dos serviços de dominio Active Directory disponiveis
-Tambem determinam os sistemas operacionais Qindoes Server que podem ser executados em controladores de dominio no dominio ou na floresta
-No entanto, os niveis funcionais não afetam os sistemas operacionais que podem ser executados em estações de trabalho e servidores mebros associados ao dominio ou á floresta
+Determinam os recursos de domínio ou florestas dos serviços de dominio Active Directory disponiveis
+Também determinam os sistemas operacionais Windows Server que podem ser executados em controladores de domínio no domínio ou na floresta
+No entanto, os níveis funcionais não afetam os sistemas operacionais que podem ser executados em estações de trabalho e servidores membros associados ao domínio ou á floresta
 
 
 Elementos do AD
 
- Confiança termo utilizado para definir que tipo de transparencia exxistira entre os diferentes segmentos da rede com o AD. Ao direionar um dominio a uma arvore, é criado de forma automatica uma confiança transitoria. na pratica isso significa que ususarios de um dominio tem acesso aos recrusos do outro. 
+Confiança - termo utilizado para definir que tipo de transparencia exxistira entre os diferentes segmentos da rede com o AD. Ao direionar um dominio a uma arvore, é criado de forma automatica uma confiança transitoria. na pratica isso significa que ususarios de um dominio tem acesso aos recrusos do outro. 
 É importante tomar ceto cuidado para que não seja dado maior permissão que o necessário para um determinado ususario.
 
 Controlador de Dominio
@@ -49,21 +49,21 @@ Controlador de Dominio
 
 Elementos
 
- - Arvore Pode conter um ou mais dominios fazendo com que os servidores possuam um catalogo global comun, sendo um unico dominio pode formar uma arvore
- - Floresta è o agrupamento de diversas Arvores de dominio. É uma coleção de dominio com Schema e configuração compartilhados representado por um unico e logico global catalog e conectado 
-por uma arvores dispersa de relações de confianças transitivas. Uma floresta é representadas por um dominio de floresta raiz
+ - Arvore Pode conter um ou mais domínios fazendo com que os servidores possuam um catálogo global comun, sendo um unico domínio pode formar uma árvore
+ - Floresta è o agrupamento de diversas Árvores de domínio. É uma coleção de domínio com Schema e configuração compartilhados representado por um único e lógico global catálogo e conectado por uma árvore dispersa de relações de confianças transitivas. Uma floresta é representadas por um domínio de floresta raiz
 
 
-Controlador de dominio - configurações 
+Controlador de domínio - configurações 
 
 
- passo - gerencimaneto do servidor  > ferramentas > usuarios e computadores do AD > expandir o dominio 
+PASSO A PASSO
+gerencimaneto do servidor  > ferramentas > usuarios e computadores do AD > expandir o dominio 
 
-para obter mais informações, vai em 'exibir > recursos avancados' 
+para obter mais informações, vai em 'exibir' > recursos avancados 
 
-        - fecha a pagina
+        - fecha a página
 
-ferramentas >  centra administrativa do AD > bota direito sob o dominio > novo > unidade organizacional
+ferramentas >  centro administrativa do AD > botão direito sob o domínio > novo > unidade organizacional
 
      - fecha a pagina
 
@@ -108,11 +108,11 @@ Criação
 
 gerenciamento do servidor > ferramentas > Usuarios e Computadores do AD > botao direito sob dominio > nova > OU > nome e habilitar o card > ok
 
- | Caso queira excluir a OU, deve-se clicar com botao direito sob a OU > propriedade > Objeto > desmarcar o card
+ | Caso queira excluir a OU, deve-se clicar com botao direito sob a OU > propriedades > Objeto > desmarcar o card
 
-gerencimaneto do servidor > ferramentas > Central Administrativa > botao direito sob OU > nvo > Unidade Organ > nome > Ok
+gerencimaneto do servidor > ferramentas > Central Administrativa > botao direito sob OU > novo > Unidade Organizacional > nome > Ok
 
- | Caso queira excluir a OU, deve-se clicar com botao direito sob a OU > propriedade > Objeto > desmarcar o card
+ | Caso queira excluir a OU, deve-se clicar com botao direito sob a OU > propriedades > Objeto > desmarcar o card
 
 
 
