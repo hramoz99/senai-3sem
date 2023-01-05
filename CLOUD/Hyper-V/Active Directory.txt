@@ -77,12 +77,3 @@ Adicionar o AD (Active Directory)
              incluir ferramentas de gerenciamento > adicionar recursos > próximo > próximo > instalar
 
    Passo 3 - Canto superior 'Promover este servidor a um controlador de domínio' > adicionar nova floresta (nome) > Selecionar 'nivel mais atual, 'senha',                          'servidor do  sistema de nomes', 'catalogos Global' > próximo > próximo > próxmo > instalar
-
- 
- 
-
-
-
-
-
-
