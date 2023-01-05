@@ -11,7 +11,8 @@ Instalação Hyper V - maquina local
  4 - 'Ativar ou deativar recursos do Windows'
  5 - Hyper V > Ok
 
-OBS: Caso não tiver todas opções, entrar na bios para habilita-las. Se não tiver na bios, significa que sua máquina não tem disposição para trabalhar em ambientes virtuais
+OBS: Caso não tiver todas opções, entrar na bios para habilita-las. Se não tiver na bios, significa que sua máquina não tem 
+disposição para trabalhar em ambientes virtuais
 
 Instalação Hyper V - Máquina Virtual
 
@@ -52,7 +53,7 @@ Buscar ISO (Imagem do Windows)
 
  TEMPLATES
 
- 1 - Iniciar uma maquina windows
+ 1 - Iniciar uma máquina windows
  2 - Windows + r sysprep
  3 - Duplo click na ferramenta 'sysprep'
  4 - Habilitar 'Entrar na configuração inicial' > generalizar > desligar
