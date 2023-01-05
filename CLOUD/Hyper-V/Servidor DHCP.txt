@@ -7,11 +7,13 @@ Subindo DHCP
     tela 3 - habilitar um servidor no pool
     tela 4 - habilitar a opção 'servidor DHCP' > próximo > próximo > instalar
 
-Ferramentas > dhcp > botão direito no servidor > autorizar > botão direito no servidor (novamente) > novo escopo > nome e descrição > definir ips > avançar > definir   os dias > avançar > concluir
+PASSO A PASSO
 
-opções de escopo > servidor de dns (definir Ip) > adicionar > servidor de nomes (definir ip) > adicionar > nome de dominio > aplicar  
+  Ferramentas > dhcp > botão direito no servidor > autorizar > botão direito no servidor (novamente) > novo escopo > nome e descrição > definir ips > avançar > definir   os dias > avançar > concluir
 
-botão direito no escopo > ativar
+  opções de escopo > servidor de dns (definir Ip) > adicionar > servidor de nomes (definir ip) > adicionar > nome de dominio > aplicar  
+
+  botão direito no escopo > ativar
 
 comando: ncpa.cpl > placa de rede > ipv4 > DHCP 
 
