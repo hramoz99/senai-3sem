@@ -1,0 +1,16 @@
+Boas práticas relacionadas a grupos de segurança
+10. Use nomes de grupo de segurança descritivos
+
+Em primeiro lugar, certifique-se de aplicar permissões a recursos com grupos de segurança, não contas individuais, isso torna o gerenciamento de recursos muito mais fácil.Em seguida, não nomeie seus grupos de segurança com um nome genérico como helpdesk ou treinamento de RH.Quando você tem nomes genéricos como este, eles serão usados ​​em todos os tipos de recursos e você perderá todo o controle de segurança.E não há uma maneira fácil de ver para que todos os grupos de segurança têm permissão. Sim, existem ferramentas que você pode executar, mas se você tiver um ambiente de tamanho médio ou grande, isso será uma tarefa enorme.Aqui está um exemplo recente de como isso pode ficar fora de controle (história real).Eu estava trabalhando com um cliente na limpeza de permissões para o Active Directory. Havia vários grupos de segurança que tinham permissões delegadas ao Active Directory.Havia um grupo chamado helpdesk, outro grupo IS Support e outro chamado AD Modify.Eu tinha a impressão de que apenas a equipe do Helpdesk tinha direitos ao Active Directory para redefinir senhas e desbloquear contas.Venha descobrir que esses grupos foram usados ​​para outros recursos, como software de helpdesk, compartilhamento de rede e impressoras. Portanto, incluiu várias equipes de TI.
+Depois de remover esses grupos, recebi telefonemas de programadores e analistas de negócios perguntando por que eles não podiam mais redefinir as senhas dos usuários. Por que diabos os programadores estão redefinindo as senhas dos usuários?
+Limpei o nome preciso do grupo de segurança que teria evitado que isso acontecesse.
+Se você não nomear o grupo de segurança específico, isso pode ser um problema para as permissões para muitas outras coisas.
+Aqui estão alguns bons exemplos de como nomear grupos.
+
+Exemplo 1: permitir que o helpdesk redefina senhas
+Nome do grupo de segurança: IT-Helpdesk-ActiveDirectory
+Como o nome do grupo é preciso, isso ajudaria a evitar que ele fosse usado em outros recursos, como uma impressora ou compartilhamento de rede.
+
+Exemplo 2: permitir direitos de RH para uma pasta compartilhada
+Nome do grupo de segurança: HR-Training-Folder-RW Novamente, ele tem um nome muito específico e ajuda a identificar para que deve ser usado.Você pode criar sua própria convenção de nomenclatura,
+ basta ser específico com o nome e evitar nomes genéricos de grupos de uma palavra.

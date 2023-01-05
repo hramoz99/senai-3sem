@@ -1,0 +1,20 @@
+Boas práticas para a gestão de senhas do admin local
+5. Use a solução de senha de administrador local (LAPS) sempre que possível
+
+O Local Administrator Password Solution (LAPS) está se tornando uma ferramenta popular para lidar com a senha do administrador local em todos os computadores.
+
+LAPS é uma ferramenta da Microsoft que fornece gerenciamento de senha de conta local de computadores associados ao domínio. Ele definirá uma senha exclusiva para cada conta de administrador local e a armazenará no Active Directory para fácil acesso.
+
+Esta é uma das melhores opções gratuitas de mitigação contra ataques de hash e movimento lateral de computador para computador.
+
+É muito comum que as organizações implantem o Windows usando um sistema baseado em imagem. Isso agiliza a implantação de uma configuração padrão em todos os dispositivos.
+
+Mas..
+
+Isso geralmente significa que a conta do administrador local será a mesma em todos os computadores. Como a conta do Administrador local tem direitos totais sobre tudo no computador, basta que um deles seja comprometido, então o hacker pode acessar todos os sistemas.
+
+O LAPS é baseado na infraestrutura do Active Directory, portanto, não há necessidade de instalar servidores adicionais.
+
+A solução usa a extensão do lado do cliente da política de grupo para executar todas as tarefas de gerenciamento nas estações de trabalho. É compatível com Active Directory 2003 SP1 e superior e cliente Vista Service Pack 2 e superior.
+
+Se você precisar usar a conta de administrador local em um computador, recupere a senha do diretório ativo e será exclusiva para aquele único computador.
