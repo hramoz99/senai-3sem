@@ -1,6 +1,7 @@
 Instalação do RSAT
 
-RSAT é um pacote de ferramentas de gerenciamento que permite aos administradores de TI gerenciar remotamente funções e recursos no Windows Server a partir de um computador que está executando o windows 10, windows 8.1 e 8
+RSAT é um pacote de ferramentas de gerenciamento que permite aos administradores de TI gerenciar remotamente funções e recursos no 
+Windows Server a partir de um computador que está executando o windows 10, windows 8.1 e 8
 
 Quando instalado em um desses windows  as ferramentas são ativadas por padrão
 
@@ -9,7 +10,8 @@ Quando instalado em um desses windows  as ferramentas são ativadas por padrão
 Admin Center
 Combina ferramentas em um único console que pode ser facilmente implantado e acessado por meio de uma interface da web
 
-Windows admin center é um aplicativo da web modular: a cada período de tempo a microsoft pode lançar novos módulos que complementa o funcionamento do Admin Center
+Windows admin center é um aplicativo da web modular: a cada período de tempo a microsoft pode lançar novos módulos que complementa
+o funcionamento do Admin Center
 
 composto por 4 modulos: 
 
