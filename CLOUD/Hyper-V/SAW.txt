@@ -1,61 +1,54 @@
 SAW - Estação de Trabalho de Administração Segura 
 
-Uma estação de trabalho de administrador segura é um sistema dedicado que só deve ser usado para realizar tarefas administrativas com sua conta privilegiada.
-Não deve ser usado para verificar e-mails ou navegar na Internet. Na verdade ... não deveria nem ter acesso à internet.
-Que tarefas você faria em um SAW?
+Uma estação de trabalho de administrador segura é um sistema dedicado que deve ser usado para realizar tarefas administrativas com sua conta privilegiada.
+Não deve ser usado para verificar e-mails ou navegar na Internet. 
 
-Administração do Active Directory
+Tarefas de uma SAW?
 
-Política de grupo
+ - Administração do Active Directory
 
-Gerenciando servidores DNS e DHCP
+ - Política de grupo
 
-Qualquer tarefa que requeira direitos de administrador nos servidores
+ - Gerenciando servidores DNS e DHCP
 
-Direitos de administrador para sistemas de gerenciamento, como VMware, Hyper-v, Citrix
+ - Tarefas com direitos de administrador
 
-Administração do Office 365
+ - Direitos de administrador para sistemas de gerenciamento
 
-Você entendeu a ideia.
-
-Basicamente, quando você precisa usar sua conta privilegiada para realizar tarefas administrativas, você deve estar fazendo isso a partir de um SAW.
-
-As estações de trabalho de uso diário são mais vulneráveis ​​ao comprometimento da passagem de hash, ataques de phishing, sites falsos, keyloggers e muito mais.
-
-Usar uma estação de trabalho segura para sua conta elevada fornece proteção muito maior contra esses vetores de ataque.
-
-Como os ataques podem vir de internos e externos, é melhor adotar uma postura de segurança contra violação.
+ - Administração do Office 365
+ 
+Basicamente, quando precisar usar sua conta privilegiada para realizar tarefas administrativas, deve-se estar fazendo isso a partir de um SAW.
+As estações de trabalho de uso diário são mais vulneráveis ao comprometimento da passagem de hash, ataques de phishing, sites falsos, keyloggers. Usar uma estação de trabalho segura para sua conta elevada fornece proteção muito maior contra esses vetores de ataque. Como os ataques podem vir de internos e externos, é melhor adotar uma postura de segurança contra violação.
 
 Devido às ameaças e mudanças contínuas na tecnologia, a metodologia de como implantar um SAW continua mudando. Há também PAW e servidores de salto para tornar ainda mais confuso.
 
-Aqui estão algumas dicas para ajudá-lo a começar:
+DICAS:
 
-Use uma instalação limpa do sistema operacional (use o sistema operacional Windows mais recente)
+   1. Use uma instalação limpa do sistema operacional (use o sistema operacional Windows mais recente)
 
-Aplicar linha de base de segurança de proteção
+   2. Aplicar linha de base de segurança de proteção
 
-Ativar criptografia de disco completo
+   3. Ativar criptografia de disco completo
 
-Restringir portas USB
+   4. Restringir portas USB
 
-Use firewall pessoal
+   5. Use firewall pessoal
 
-Bloquear internet
+   6. Bloquear internet
 
-Use uma VM - o Terminal Server funciona bem
+   7. Use uma VM - o Terminal Server funciona bem
 
-Software mínimo instalado
+   8. Software mínimo instalado
 
-Use dois fatores ou cartão inteligente para acesso
+   9 Use dois fatores ou cartão inteligente para acesso
 
-Restrinja os sistemas para aceitar apenas conexões do SAW
+   10. Restrinja os sistemas para aceitar apenas conexões do SAW
 
-Aqui está meu fluxo de trabalho típico usando um SAW:
+
+
+Fluxo de trabalho típico usando um SAW:
 
 Faça login em meu computador com minha conta normal para verificar e-mail e ver novas solicitações de suporte. Tenho um pedido para dar a um usuário permissões para uma pasta compartilhada.
 
 Vou entrar no meu SAW com minha conta privilegiada que tem direitos para modificar a associação do grupo AD e adicionar o usuário ao grupo de segurança AD necessário.
 
-Muito simples, certo?
-
-Pode parecer um incômodo, mas na verdade acho mais conveniente dessa forma. Posso entrar remotamente quando estiver fora da rede e ter um servidor com todas as ferramentas de que preciso. Eu também não preciso me preocupar em reinstalar todo o meu software de suporte se precisar recriar a imagem do meu computador.
