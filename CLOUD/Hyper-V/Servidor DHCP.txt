@@ -1,0 +1,30 @@
+Subindo DHCP
+
+1 - Gerenciador do servidor
+2 - Adicionar funções e recursos
+3 - tela 1 - próximo
+    tela 2 - habilitar 'instalação baseada em função ou recurso'
+    tela 3 - habilitar um servidor no pool
+    tela 4 - habilitar a opção 'servidor DHCP' > próximo > próximo > instalar
+
+Ferramentas > dhcp > botão direito no servidor > autorizar > botão direito no servidor (novamente) > novo escopo > nome e descrição > definir ips > avançar > definir   os dias > avançar > concluir
+
+opções de escopo > servidor de dns (definir Ip) > adicionar > servidor de nomes (definir ip) > adicionar > nome de dominio > aplicar  
+
+botão direito no escopo > ativar
+
+comando: ncpa.cpl > placa de rede > ipv4 > DHCP 
+
+CMD - comando: arp -a (mostra o ip mais o mac address)
+
+copia o mac > ferraemntas > dhcp > botão direito em 'reservas' > nova reserva > nome e mac > adicionar 
+
+
+Monitore logs de DHCP para dispositivos conectados
+
+Você deve saber o que está conectado à sua rede. Se possui vários locais com muitos usuários e computadores, isso pode ser um grande desafio.
+Existem maneiras de evitar que apenas dispositivos autorizados se conectem, mas isso pode ser caro e muito trabalhoso para configurar. Se você tem os recursos ($$$$), esse é o caminho a percorrer.
+
+Outro método que já está disponível para você é monitorar os logs de DHCP dos dispositivos conectados. Você deve ter todos os dispositivos de usuário final configurados para usar o DHCP. Com isso pode então olhar os logs para ver o que está conectando. Você deve ter uma convenção de nomenclatura para o seu equipamento, isso tornará mais fácil identificar possíveis dispositivos não autorizados.
+
+Dispositivos desconhecidos devem ser investigados.
