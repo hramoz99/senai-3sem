@@ -7,13 +7,13 @@ Nas versoões antigas um controlador de domínio era deixado como principal e um
 
 Porém o BDC não grava arquivos SAM, portanto deveria ser elevado a PDC para tal função, o que era um processo complicado e moroso
 
-Quando o servidor antigp retornasse a seu funcionamento, deveria ser rebaixado a BDC pois não existiam dois PDCs na rede
+Quando o servidor antigo retornasse a seu funcionamento, deveria ser rebaixado a BDC pois não existiam dois PDCs na rede
 
 
 AD
-Foi criado em 1999 e esta em funcionalidade plena desde o windows 2000 server
-Fornece a distribuição do serviço de diretório, o qual pode ser utilizado para centralizar e gerenciar a segurança da sua rede
-O AD surgiu com o Windows Server 2000, portanto redes com windows Nt Sever não podem ser controladores de dominio
+Foi criado em 1999 e esta em funcionalidade plena desde o windows 2000 server. Fornece a distribuição do serviço de diretório, o qual pode 
+ser utilizado para centralizar e gerenciar a segurança da sua rede.
+O AD surgiu com o Windows Server 2000, portanto redes com windows Nt Sever não podem ser controladores de domínio
 
 Tipos de AD
 
@@ -113,86 +113,3 @@ gerenciamento do servidor > ferramentas > Usuarios e Computadores do AD > botao 
 gerencimaneto do servidor > ferramentas > Central Administrativa > botao direito sob OU > nvo > Unidade Organ > nome > Ok
 
  | Caso queira excluir a OU, deve-se clicar com botao direito sob a OU > propriedade > Objeto > desmarcar o card
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
