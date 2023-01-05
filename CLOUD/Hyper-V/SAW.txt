@@ -18,7 +18,8 @@ Tarefas de uma SAW?
  - Administração do Office 365
  
 Basicamente, quando precisar usar sua conta privilegiada para realizar tarefas administrativas, deve-se estar fazendo isso a partir de um SAW.
-As estações de trabalho de uso diário são mais vulneráveis ao comprometimento da passagem de hash, ataques de phishing, sites falsos, keyloggers. Usar uma estação de trabalho segura para sua conta elevada fornece proteção muito maior contra esses vetores de ataque. Como os ataques podem vir de internos e externos, é melhor adotar uma postura de segurança contra violação.
+As estações de trabalho de uso diário são mais vulneráveis ao comprometimento da passagem de hash, ataques de phishing, sites falsos, keyloggers. 
+Usar uma estação de trabalho segura para sua conta elevada fornece proteção muito maior contra esses vetores de ataque. Como os ataques podem vir de internos e externos, é melhor adotar uma postura de segurança contra violação.
 
 Devido às ameaças e mudanças contínuas na tecnologia, a metodologia de como implantar um SAW continua mudando. Há também PAW e servidores de salto para tornar ainda mais confuso.
 
