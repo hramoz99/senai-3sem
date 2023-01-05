@@ -44,12 +44,12 @@ Elementos do AD
 Confiança - termo utilizado para definir que tipo de transparencia exxistira entre os diferentes segmentos da rede com o AD. Ao direionar um dominio a uma arvore, é criado de forma automatica uma confiança transitoria. na pratica isso significa que ususarios de um dominio tem acesso aos recrusos do outro. 
 É importante tomar ceto cuidado para que não seja dado maior permissão que o necessário para um determinado ususario.
 
-Controlador de Dominio
- - É o servidor ou servidores responsaveis por fornecer os serviços de diretorio do AD e armazenar os dados do diretorio.
+Controlador de Domínio
+ - É o servidor ou servidores responsáveis por fornecer os serviços de diretório do AD e armazenar os dados do diretório.
 
 Elementos
 
- - Arvore Pode conter um ou mais domínios fazendo com que os servidores possuam um catálogo global comun, sendo um unico domínio pode formar uma árvore
+ - Árvore Pode conter um ou mais domínios fazendo com que os servidores possuam um catálogo global comun, sendo um unico domínio pode formar uma árvore
  - Floresta è o agrupamento de diversas Árvores de domínio. É uma coleção de domínio com Schema e configuração compartilhados representado por um único e lógico global catálogo e conectado por uma árvore dispersa de relações de confianças transitivas. Uma floresta é representadas por um domínio de floresta raiz
 
 
@@ -65,9 +65,9 @@ para obter mais informações, vai em 'exibir' > recursos avancados
 
 ferramentas >  centro administrativa do AD > botão direito sob o domínio > novo > unidade organizacional
 
-     - fecha a pagina
+     - fecha a página
 
-ferramentas > dominios e relações de confianca do AD > 
+ferramentas > domínios e relações de confiança do AD > 
 
 
  Como identificar um controlador de dominio na rede?
@@ -95,22 +95,22 @@ Criar ou adicioar um computador no dominio
 primeiro - trocar o ip da placa de rede
  windows + r > ncpa.cpl > propriedade > ipv4 > propriedade > alterar ip
 
-windows > sistemas > informações do sistemas > configurações avancadas > nome do computador > alterar > nome do pc > dominio > ok
+windows > sistemas > informações do sistemas > configurações avançadas > nome do computador > alterar > nome do pc > dominio > ok
 
 
 
 
 
 
-Trabalahndo com OUs - Unidades Organizacioanais
+Trabalhando com OUs - Unidades Organizacioanais
 
 Criação 
 
-gerenciamento do servidor > ferramentas > Usuarios e Computadores do AD > botao direito sob dominio > nova > OU > nome e habilitar o card > ok
+gerenciamento do servidor > ferramentas > Usuarios e Computadores do AD > botão direito sob domínio > nova > OU > nome e habilitar o card > ok
 
  | Caso queira excluir a OU, deve-se clicar com botao direito sob a OU > propriedades > Objeto > desmarcar o card
 
-gerencimaneto do servidor > ferramentas > Central Administrativa > botao direito sob OU > novo > Unidade Organizacional > nome > Ok
+gerencimaneto do servidor > ferramentas > Central Administrativa > botão direito sob OU > novo > Unidade Organizacional > nome > Ok
 
  | Caso queira excluir a OU, deve-se clicar com botao direito sob a OU > propriedades > Objeto > desmarcar o card
 
