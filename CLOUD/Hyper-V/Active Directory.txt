@@ -1,46 +1,45 @@
 Active Directory - Administrando o Windows Server
 
 Comando
-Versão do Windows: windows + r 
-                   winver
+Versão do Windows: windows + r > winver
 
 Instalação Hyper V - maquina local
 
- 1 Windows Iniciar 
- 2 Apps e Recursos 
- 3 No canto superior direito - Programas e Recursos
- 4 Ativar ou deativar recursos do Windows
- 5 Hyper V > Ok
+ 1 - Windows Iniciar 
+ 2 - Apps e Recursos 
+ 3 - No canto superior direito, 'Programas e Recursos'
+ 4 - 'Ativar ou deativar recursos do Windows'
+ 5 - Hyper V > Ok
 
-OBSERVAÇÃO = Caso não tiver a todas opções, entrar na bios para habilitar as opções, se não tiver, significa que sua máquina não tem disposição para trabalhar em ambientes virtuais
+OBS: Caso não tiver todas opções, entrar na bios para habilita-las. Se não tiver na bios, significa que sua máquina não tem disposição para trabalhar em ambientes virtuais
 
 Instalação Hyper V - Máquina Virtual
 
-1 Windows Iniciar
-2 Gerenciador do servidor
-3 Adicionar funções e recursos
-4 tela 1 - proximo
-  tela 2 - habilitar instalação baseada em função ou recurso
-  tela 3 - habilitar um servidor na lista abaixo e a opção selecionar um um servidor no pool de servidor
-  tela 4 - habilitar a opção hyper v > instalar outras ferramentas> avancar > ferramentas >  gereciamento de hyper v
+ 1 -  Windows Iniciar
+ 2 -  Gerenciador do servidor
+ 3 -  Adicionar funções e recursos
+ 4 -  tela 1 - proximo
+      tela 2 - habilitar instalação baseada em função ou recurso
+      tela 3 - habilitar um servidor na lista abaixo e a opção 'selecionar um  servidor no pool de servidor'
+      tela 4 - habilitar a opção hyper v > instalar outras ferramentas> avancar > ferramentas >  gereciamento de hyper v
 
-  Criação de comutadores virtuais (pontos de comunicação)
 
-tipos de comutadores
+Criação de comutadores virtuais (pontos de comunicação)
 
-  Externo -  Conexão da maquiana virtual com o mundo real (associação da placa fisica com a virtual)
-  Interno -  Conexão Limitada com as maquinas virtuais e maquiana fisica (associação da placa fisica com a virtual limitada)
-  Particular - Conexão somente entre maquinas virtuais
+ tipos de comutadores
 
- Clicar sob o nome do servidor > Gerenciador de Comutadores Virtuais > Particular > criar comutador 
+  . Externo -  Conexão da maquiana virtual com o mundo real (associação da placa fisica com a virtual);
+  . Interno -  Conexão Limitada com as maquinas virtuais e maquiana fisica (associação da placa fisica com a virtual limitada);
+  . Particular - Conexão somente entre maquinas virtuais;
+
+Comutador com acesso as VMs
+ Clicar no nome do servidor > Gerenciador de Comutadores Virtuais > Particular > criar comutador 
 
  Criar o nome > rede privada > aplicar > ok
 
 
-
 Comutador com acesso a internet
- 
- Clicar sob o nome do servidor > Gerenciador de Comutadores Virtuais > Externo > criar comutador 
+ Clicar no nome do servidor > Gerenciador de Comutadores Virtuais > Externo > criar comutador 
  
  Criar o nome > aplicar > ok
 
@@ -53,106 +52,36 @@ Buscar ISO (Imagem do Windows)
 
  TEMPLATES
 
- - Iniciar uma maquina windows
- - windows + r sysprep
- - duplo click na ferramenta sysprep
- - habilitar entrar na configuração inicial > generalizar > desligar
- - criar nova VM
- - botao direito sobre a maquina > configurações > disco rigido > novo > avançar > habilitar VHDX > Diferenciação (ambiente de teste) > Nome > procurar o template > concluir
+ 1 - Iniciar uma maquina windows
+ 2 - Windows + r sysprep
+ 3 - Duplo click na ferramenta 'sysprep'
+ 4 - Habilitar 'Entrar na configuração inicial' > generalizar > desligar
+ 5 - Criar nova VM
+ 6 - Botão direito sob a máquina > configurações > disco rígido > novo > avançar > habilitar 'VHDX' > Diferenciação (ambiente de teste) > Nome > procurar o template
 
 
-
-criar vm
- botao direito na maquina host > novo > avancar > nome > geração 2 > memoria desejavel > conectar ao switch particular > tamanho desejavel > buscar iso
-
+Criar VM - PASSO A PASSO
+ Botão direito na máquina física > novo > avançar > nome > geração 2 > memória desejável > conectar ao switch particular > tamanho desejável > buscar iso
+ 
  - Iniciar o servidor
 
 
+Adicionar o AD (Active Directory)
 
-
-
-Adicionar o AD
-
- - Passo 1  -  Garantir que está com IP fixo 
-   caso não haja ip
-        Servidor local > endereço IPv4 atribuido por DHCP > Ethernet (Interface de rede) > renomear > propriedade > IPv4 > alocar IP
+   Passo 1  -  Garantir que está com IP fixo 
+   
+   OBS: Caso não haja ip:
+        Servidor local >  Renomear Interface de rede (Ethernet) > propriedade > IPv4 > alocar IP
  
-- Passo 2 - Adicionar recursos e funções > avançar >  Instalçao baseada em função ou recurso > Selecionar um servidor no pool de servidor > servicos de dominio Active Directory > Incuir ferramentas de gerenciamento > adicionar recursos > avancar > avancar > instalar
+   Passo 2 - Adicionar recursos e funções > próximo >  Instalação baseada em função ou recurso > Selecionar um servidor no pool > serviços de dominio AD > 
+             incluir ferramentas de gerenciamento > adicionar recursos > próximo > próximo > instalar
 
-- Passo 3 - canto superior > promover este servidora u, controlador de dominio > adicionar nova floresta (nome) > nivel mais atual, senha, habilitar servidor do sistema de nomes e catalogos Global > avancar > avancar > avancar > Instalar
-
-
-
-
-  6. Use uma estação de trabalho de administração segura (SAW)
-
-Uma estação de trabalho de administrador segura é um sistema dedicado que só deve ser usado para realizar tarefas administrativas com sua conta privilegiada.
-
-Não deve ser usado para verificar e-mails ou navegar na Internet. Na verdade ... não deveria nem ter acesso à internet.
-
-Que tarefas você faria em um SAW?
-
-Administração do Active Directory
-
-Política de grupo
-
-Gerenciando servidores DNS e DHCP
-
-Qualquer tarefa que requeira direitos de administrador nos servidores
-
-Direitos de administrador para sistemas de gerenciamento, como VMware, Hyper-v, Citrix
-
-Administração do Office 365
-
-Você entendeu a ideia.
-
-Basicamente, quando você precisa usar sua conta privilegiada para realizar tarefas administrativas, você deve estar fazendo isso a partir de um SAW.
-
-As estações de trabalho de uso diário são mais vulneráveis ​​ao comprometimento da passagem de hash, ataques de phishing, sites falsos, keyloggers e muito mais.
-
-Usar uma estação de trabalho segura para sua conta elevada fornece proteção muito maior contra esses vetores de ataque.
-
-Como os ataques podem vir de internos e externos, é melhor adotar uma postura de segurança contra violação.
-
-Devido às ameaças e mudanças contínuas na tecnologia, a metodologia de como implantar um SAW continua mudando. Há também PAW e servidores de salto para tornar ainda mais confuso.
-
-Aqui estão algumas dicas para ajudá-lo a começar:
-
-Use uma instalação limpa do sistema operacional (use o sistema operacional Windows mais recente)
-
-Aplicar linha de base de segurança de proteção
-
-Ativar criptografia de disco completo
-
-Restringir portas USB
-
-Use firewall pessoal
-
-Bloquear internet
-
-Use uma VM - o Terminal Server funciona bem
-
-Software mínimo instalado
-
-Use dois fatores ou cartão inteligente para acesso
-
-Restrinja os sistemas para aceitar apenas conexões do SAW
-
-Aqui está meu fluxo de trabalho típico usando um SAW:
-
-Faça login em meu computador com minha conta normal para verificar e-mail e ver novas solicitações de suporte. Tenho um pedido para dar a um usuário permissões para uma pasta compartilhada.
-
-Vou entrar no meu SAW com minha conta privilegiada que tem direitos para modificar a associação do grupo AD e adicionar o usuário ao grupo de segurança AD necessário.
-
-Muito simples, certo?
-
-Pode parecer um incômodo, mas na verdade acho mais conveniente dessa forma. Posso entrar remotamente quando estiver fora da rede e ter um servidor com todas as ferramentas de que preciso. Eu também não preciso me preocupar em reinstalar todo o meu software de suporte se precisar recriar a imagem do meu computador.
-
+   Passo 3 - Canto superior 'Promover este servidor a um controlador de domínio' > adicionar nova floresta (nome) > Selecionar 'nivel mais atual, 'senha',                          'servidor do  sistema de nomes', 'catalogos Global' > próximo > próximo > próxmo > instalar
 
  
  
 
-Instalção do RSAT
+Instalação do RSAT
 
  RSAT é um pacote de ferramentas de gerenciamento que permite aos administradores 
       de TI gerenciar remotamente funçoes e recursos no Windows Server a partir de um computador que está executando o windows 10, windows 8.1 e 8
