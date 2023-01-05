@@ -1,6 +1,7 @@
 Atualização do Windows Server 2016 para o Windows Server 2019
 
-Se você desejar manter o mesmo hardware e todas as funções de servidor já configurada sem mesclar o servidor, faça uma atualização in-loco. Uma atualização in-loco permite ir de um sistema operacional antigo para um mais recente, mantendo suas configurações, funções de servidor e dados intactos.
+Se você desejar manter o mesmo hardware e todas as funções de servidor já configurada sem mesclar o servidor, faça uma atualização in-loco. 
+Uma atualização in-loco permite ir de um sistema operacional antigo para um mais recente, mantendo suas configurações, funções de servidor e dados intactos.
 
 !!! Antes de começar sua atualização in-loco !!!
 Antes de iniciar a atualização do Windows Server, recomendamos coletar algumas informações de seus dispositivos para 
@@ -16,14 +17,18 @@ Get-ComputerInfo -Property WindowsBuildLabEx,WindowsEditionID | Out-File -FilePa
 systeminfo.exe | Out-File -FilePath systeminfo.txt
 ipconfig /all | Out-File -FilePath ipconfig.txt
 
-Copie, cole e armazene as informações do sistema resultantes em algum lugar do seu dispositivo. Usando o Explorador de Arquivos, navegue até o diretório anotado e copie os arquivos para uma unidade flash USB ou um local de rede fora do computador
+Copie, cole e armazene as informações do sistema resultantes em algum lugar do seu dispositivo. Usando o Explorador de Arquivos, 
+navegue até o diretório anotado e copie os arquivos para uma unidade flash USB ou um local de rede fora do computador
 
 Digite ipconfig /all no prompt de comando e, em seguida, copie e cole as informações de configuração resultantes na mesma localização acima.
 
-Abra o Editor do Registro, vá para a chave HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion e copie e cole BuildLabEx (versão) e EditionID (edição) do Windows Server na mesma localização que a descrita acima.
+Abra o Editor do Registro, vá para a chave HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion e copie e 
+cole BuildLabEx (versão) e EditionID (edição) do Windows Server na mesma localização que a descrita acima.
 
-Depois de coletar todas as suas informações relacionadas ao Windows Server, é altamente recomendável fazer um backup do sistema operacional, dos aplicativos e das máquinas virtuais.
-Também deve Desligar, realizar uma Migração rápida ou Migrar em tempo real as máquinas virtuais em execução no momento no servidor. Você não pode ter máquinas virtuais em execução durante a atualização in-loco.
+Depois de coletar todas as suas informações relacionadas ao Windows Server, é altamente recomendável fazer um backup do sistema operacional, 
+dos aplicativos e das máquinas virtuais.
+Também deve Desligar, realizar uma Migração rápida ou Migrar em tempo real as máquinas virtuais em execução no momento no servidor. 
+Você não pode ter máquinas virtuais em execução durante a atualização in-loco.
 
 Para executar a atualização
 
@@ -38,19 +43,22 @@ PASSO A PASSO
 
  5 - Controle de Conta de Usuário solicitando permissão para iniciar a instalação
 
- 6 - Para dispositivos conectados à Internet, marque a opção Baixar atualizações, drivers e recursos opcionais (recomendado) e, em seguida, selecione Avançar.
+ 6 - Para dispositivos conectados à Internet, marque a opção Baixar atualizações, drivers e recursos opcionais (recomendado) e, 
+ em seguida, selecione Avançar.
 
  7 - Tela para escolher ficar online para obter atualizações importantes do Windows
 
  8 -A instalação verifica a configuração do dispositivo, você deve aguardar até que ela seja concluída e, em seguida, selecionar Avançar.
 
- 9 -Dependendo do canal de distribuição do qual você recebeu a mídia do Windows Server (Varejo, Licença de Volume, OEM, ODM etc.) e da licença do servidor, talvez você deva inserir uma chave de licenciamento para continuar.
+ 9 -Dependendo do canal de distribuição do qual você recebeu a mídia do Windows Server (Varejo, Licença de Volume, OEM, ODM etc.) e
+ da licença do servidor, talvez você deva inserir uma chave de licenciamento para continuar.
 
  10 - Selecione a edição do Windows Server 2019 que você deseja instalar e selecione Avançar.
 
  11 - Tela usada para escolher a edição do Windows Server 2019 a ser instalada
 
- 12 - Selecione Aceitar para aceitar os termos do seu contrato de licenciamento com base no seu canal de distribuição (como Varejo, Licença de Volume, OEM, ODM e assim por diante).
+ 12 - Selecione Aceitar para aceitar os termos do seu contrato de licenciamento com base no seu canal 
+ de distribuição (como Varejo, Licença de Volume, OEM, ODM e assim por diante).
 
  13 - Tela para aceitar seu contrato de licença
 
