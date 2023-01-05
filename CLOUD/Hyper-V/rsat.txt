@@ -1,0 +1,71 @@
+Instalação do RSAT
+
+ RSAT é um pacote de ferramentas de gerenciamento que permite aos administradores 
+      de TI gerenciar remotamente funçoes e recursos no Windows Server a partir de um computador que está executando o windows 10, windows 8.1 e 8
+
+ Quando instalado em um desses windows  as ferramentas são ativadas por paadrao
+
+
+dowload - rsat microsof > instalar
+
+
+gerenciador de servidor > ferramentas
+
+
+Admin Center
+Combina ferramentas em um único console que pode ser facilmente implantado e acessado por meio de uma interface da web
+
+Windows admin center é um aplicativo da web modular: a cada periodo de tempo a microsoft pode lancar novos modulos que complementa o funcionamento do Admin Center
+
+composto por 4 modulos: 
+
+      - gerenciador de servido (Administração de windows server)
+      - cluster de failover
+      - cluster hiper convergidos (ambientes hiper convergidos)
+      - clientes windows 10 
+
+
+Componentes principais
+
+ - gateway- gerencia servidores por meio do powershell remoto e do windows management Intrumentation (WMI) pelo gerenciamento remoto do windows (WINRM)
+ - servidor web - o componente do servidor da web observa as solicitações HTTPS e serve a interface do usuario ao navegador da web na estação de gerenciamento
+
+     -> O admin center é uma ferramenta baseada na web que usa https, ou seja, requer um certifcado x.509 para fornecer criptografia SSL. O assistenhte de instalçao oferece a opção de 
+usar um certificado autoassinado ou fornecer seu proprio certficado SSL. Este certificado expira 60 dias após sua criação
+
+
+
+
+ATENÇÃO 
+
+
+Pode instalar o Windows admin no windows 10 versao 1709 ou mais recente ou no windows Servr 2016 ou mais recente
+
+Não é compativel com controladores de dominio
+
+as versoes de navegador do windows do microsoft edge no windows 10 e do google chrome são testadas e tem suporte no windows 10
+
+Navegadores modernos nao foram testados e não são oficialmente suportados
+
+o internet Explorer não suporta
+
+
+
+ Baixar Admin Center
+
+maquina virtual precisa entar com acesso a rede externa
+
+dowload admin center > instalar (porta 6516)
+
+tranferencia de disco 
+
+Vm cliente > controlador > disco rigido > adicionar > novo > expansão dinamica > nome > definir tamanho > concluir
+
+gerenciamento de disco > Disco novo (GPT) > novo volume simples > avancar > avancar > avancar > nome do rotulo do volume > concluir  > deixar offline > desligar maquina > configurações > disco rigigo > remover
+
+VM server
+apontar disco existente > iniciar maquina > deixar o disco online > instalar o windows admin 
+
+gerenciador do servidor > servidor local > configuração de seguranca aprimorada > desligar seguranca para admin
+
+                                            (porta 443 )
