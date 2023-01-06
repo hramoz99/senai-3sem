@@ -1,0 +1,171 @@
+Configurando Ac Subordinada
+
+gerenciador de servidor > adicionar funções e recursos > proximo > proximo > proximo > Serviços de certificados do AD > habilitar a caixa de texto > proximo > proximo > habilitar Autoridade de certificação > habilitar Registro da web de autoridade de certificação > habilitar Respondente Online > proximo > instalar
+
+
+gerenciador de servidor > notificações > configurar os Serviços de certificados do Active Directory > proximo > habilitar Autoridade de certificação e Registro na web de autoridade de certificação e respondente online > Corporativa > Subordinado > Usar chave privada existente > SHA512 compriment. da chave 4096 permitir a interação do admini > inserir informações (uma vez criado, não poderá ser alterado) >  habilitar 'Enviar uma solicitação de certificado a uma autoridade de certificação pai' e 'nome da autoridade de certificação' e direcionar para qual servidor >  proximo > configurar > fechar  >  configurar
+
+
+
+
+
+Administrando certificados
+
+
+windows + r mmc /a > arquivo > salvar como  (escolher pasta)> arquivo  > 'adicionar ou remover snap-in' > certificado (adicionar) > minha conta de usuario >  certificado (adicionar) > contas de servicos > computador local  > agentes de conexoes de rede > certificado (adicionar) > contas de computador > computador local > ok > arquivo > salvar
+
+
+
+windows + r mmc /a > arquivo  > adicionar ou remover snap-in > certificado authority (adicionar) > computador local > arquivo > salvar como (escolher pasta)
+
+
+
+Backup de Autoridade Certificadora
+
+
+gerenciador de servidor > ferramentas > Autoridade Certificadora > botao direito sob o servidor > propriedade (verificar as informações) > marcar servidor > acão > todas as tarefas > fazer backup da autoridade certificadora > avancar > habilitar 'chave privada e certificado...' e 'bancos de dados de certificados...' e selecionar o local para guarda o backup > avancar > avancar > concluir
+
+
+Restaurar
+
+gerenciador de servidor > ferramentas > Autoridade Certificadora > marcar servidor > acão > todas as tarefas > restaura autoridade de certificação > ok > avancar > habilitar 'chave privada e certificado...' e 'bancos de dados de certificados...' e selecionar o local para guarda o backup > avancar > avancar > concluir
+
+
+Criar backup via powershell
+
+ C:
+ cd |CABackup
+ $Today = Get-Date -Format ddMM
+ Backup-CaRoleService -DatabaseOnly -Path C:\CABackup\"$Today"
+
+
+
+
+Replicar Certifcado por GPO
+
+
+gerenciador de servidor > ferramentas > Autoridade certificadora > botao direito sob o servidor > propriedades > Aba geral > exibir certificados > detalhes > copiar para arquivo > avancar > x.509 binário codificado por DEB(*.cer) > escolher pasta para armazen. > avancar > concluir 
+
+
+gerenciador de servidor > feramentas > Gerenciamento de politicas de grupo > botao direito sob default domain policy > editar > configuração de computadores > politicas > configurações do Windows > configurações de seguranca > politicas de chave publica > cliente dos servicos de certificados > modelo de configuração habilitada > aplicar > ok 
+
+gerenciador de servidor > feramentas > Gerenciamento de politicas de grupo > botao direito sob default domain policy > editar > configuração de computadores > politicas > configurações do Windows > configurações de seguranca > politicas de chave publica > cliente Servico Certificados > modelo de configuração habilitada > habilitar renovar certifiados expirados e atualizar certificados > aplicar > ok 
+
+
+gerenciador de servidor > feramentas > Gerenciamento de politicas de grupo > botao direito sob default domain policy > editar > configuração de computadores > politicas > configurações do usuario > configurações de seguranca > politicas de chave publica > cliente dos servicos de certificados > modelo de configuração habilitada > aplicar > ok 
+
+
+
+Forcar atualização de plitica de grupo 
+
+
+  comando (cmd ) = gpupdate /force
+
+
+
+Emitir certificado via portal web
+
+ abrir navegador > bsucar ip (http://[ip_da_maquina ]/certsrv/) > solicitar certificado > certificado de usuario > mais opções > escolher as informações > enviar
+
+ abrir navegador > bsucar ip (http://[ip_da_maquina ]/certsrv/) > solicitar certificado > solicitação avancada de certificado > envie uma solicitação de certificado usando o arquivo > modelo de certificado 'servidor web' > gerenciador do servidor > ferramentas > gerenciador de serviços de IIS > servidor > certificados > criar solicitação de certificação > insira as informações > definir provedor e tamanho do bit > escolher pasta > concluir > copiar dados do arquivo e colar na aba 'codificação na base 64' > enviar > baixar certificado > abrir o certificado > instalar > maquina local > avancar > concluir 
+
+
+
+
+
+
+
+
+subindo ad rms para proteger documentos 
+
+gerenciador do servidor > ferramentas > usuarios e computadores do AD > criar uma nova OU > sob essa OU, botao direito > novo > usuario > inserir informações > definir senha > concluir > botao direito sob o novo user > propriedades > membro de > adcicionar > administradores de empresa e de esquemas > ok
+
+gerenciador do servidor > adicionar funções e recursos > proximo > instalação baseada em função e recurso > selecionar o servidor > Active Directory Rights Managemente Services > proximo > proximo > proximo > habilitar  Active Directory Managemnte Server > instalar > realizar configurações adicional > proximo > criar novo cluster AD RMS raiz > usar banco de dados interno  > inserir a conta que foi criada passos atras > modo crptografico 2 > Usar armazenamento de chave > definir senha >  proximo > habilitar 'usar uma conexao criptograda  por SSL' e inserir nome do dominio > escolher autoridade certificadora > nomear certificado > habilitar 'registrar o SCP agora'
+
+
+gerenciador do servidor > ferramentas > Active Directory Management Server
+
+
+   |Em caso de erro, reinicie a maquina
+
+
+
+Instalar o office > abrir o word > arquivo > proteger documentos > restringir acesso > conectar aos servidores de gerenciamento > credencias do usuario com acesso ao servidor 
+
+
+  
+  proteger documentos > restringir acesso > habilitar restringir a permissao a documento
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,216 @@
+Subindo o RODC
+
+  - Não administravel
+  - Replica somente as senhas necessarias
+  - Segurança
+  - Não tem muita informação
+          
+
+
+      'Instalação iguais dos outros '
+
+  opções do controlador > habilitar servidor do sistema de nomes>  catalogo Global > Controlador de dominio somente leitura
+
+
+ Criar usuarios que possa ter acesso ao RODC
+
+  Usuarios e Computadores > criar OU > grupo  > domain controllers > botao direito sobre o servidro RODC > diretiva de replicação de senha > adicionar > habilitar permissoes replicação de senha > ok > selecionar grupos
+
+
+
+
+ Serviços e sites do AD DS
+
+
+   Site = localidade fisica
+  ferramentas > servicos e sites do Ad > subnets > escolher subnet > ok 
+
+
+  Criar outro site:
+        botao direito sobre Sites > novo site > nome > ok 
+
+
+
+Vm Roteador
+
+ Configurar IPs das maquinas
+
+  cmd > usar script abaixo para criar varias redes ao mesmo tempo
+
+
+https://github.com/edupopov/powershell/blob/main/ConfigEnderecosIpMultiplosServerCore
+
+   ou
+
+  ncpa.cpl > botao direito sob ethernet > propriedade > ipv4 > avancado > adicionar >ok > 
+  
+ adicionar funçoes e recursos > configurações anteriores > em funcoes do servidor habilitar acesso remoto > proximo > proximo > roteamento> adicionar recurso > proximo > instalar > ferramentas > roteamento e acesso remoto > bota direito sob o roteador > configurar e habilitar acesso remoto  > habilitar configuração personalizada > habilitar roteamento de lan > concluir   
+
+
+
+
+
+Apontamento para o roteador 
+
+ncpa.cpl > botao direito sob ethernet > propriedade > ipv4 > Verificar se o gateway é o endereço certo
+
+
+
+
+https://learn.microsoft.com/pt-br/troubleshoot/windows-server/identity/active-directory-replication-error-1256
+
+https://learn.microsoft.com/pt-br/troubleshoot/windows-server/identity/replication-error-1722-rpc-server-unavailable
+
+https://athiago.wordpress.com/2014/07/05/active-directory-entendendo-o-conceito-de-sites-e-qual-a-sua-importancia/
+
+
+Serviços e sites do AD DS
+
+ Conectar no controlador primario
+  
+      gerenciador do servidor > servicos e sites do AD >  Sites > inter-Site > IP > DEFAULTiPSITELINK
+
+
+
+DEFAULTiPSITELINK = link de comunicação entre os controladores de dominio (cada controlador atualiza sua base de dados atraves desse link)
+
+ 
+
+Bloequear Conexao
+
+
+Sites > inter-Site > botao direito IP > novo Link de site > escolher os servidores que se conectaram 
+
+
+Criar conexão manual
+
+ Botao direito sob o servidor > nova conexao dos serviços > selecionar o servidor desejavel > ok 
+
+
+
+Modificar Conexao automatica
+
+ clicar sob a conexao > alterar > selecionar o servidor > ok
+
+
+
+Prioritario : servidor com prioridade da comunicação, dentro do site, com os demais
+
+TERMOS INTRA SITE
+notifcatione - ocorre quando qualquer controlador de dominio dentro de um site efetua uma alteraçao em uma partição do AD, se ocorre a alteração esse processo faz uma notificação no que aconteceu 
+pulling - ocorre para questionar seus parceiros de replicação, para saber se existe alguma alteração ou não
+
+
+
+APONTAMENTO CONDICIONAIS - DNS
+
+ Gerenciador de servicos > ferramentas > DNS > encaminhadores condicionais > botao direito > novo encaminahdor condicional > escrever nome do dominio e ip > habilitar armazenar o encaminhador condicional no Ad > habilitar Todos os servidores nesta floresta > Ok
+
+
+RELAÇÃO DE CONFIANCA
+
+ > ligar o roteador, servidor fora do dominio e o controlador de dominio primario 
+
+
+  <> Controlador de dominio primario 
+
+  gerenciador de servidor > ferramentas > dominios e relações de confiancas do AD > botao direito sob nome do dominio > propriedade > relação de confianca > nova relação de confiança > nova relação de confiança > avancar > nome do outro dominio que deseja se conectar > relação de confianca externa > bidirecional > este dominio apenas > autenticação em todo o dominio > adicionar senha > avancar > Marcar sim > marcar sim > concluir
+
+
+  https://social.technet.microsoft.com/wiki/pt-br/contents/articles/31939.montando-relacoes-de-confianca-entre-dominios-em-servidores-windows-server-2012-r2-dica-do-mct.aspx
+
+  <> Controlador de dominio externo
+
+  gerenciador de servidor > ferramentas > dominios e relações de confiancas do AD > botao direito sob nome do dominio > propriedade > relação de confianca > nova relação de confiança > nova relação de confiança > avancar > nome do outro dominio que deseja se conectar > relação de confianca externa > bidirecional > este dominio apenas > autenticação em todo o dominio > adicionar senha > avancar > Marcar sim > marcar sim e inserir o nome do usuario que permite essa conexao de entrada> concluir
+
+
+
+Teste de Relação de confianca
+
+
+  criar uma pasta > botao direito sobre ela > propriedade > compartilhamento avancado > compartilhar essa pasta > permissoes > adicionar > locais (selecionar o dominio externo ) > avancado > localizar agora > selecionar user > ok > ok > aplicar > ok
+
+
+
+
+
+
+
+
+
+
+Niveis funcionais 
+
+aumentar = gerenciador de servidor > ferramentas > Dominios e Relações de confianca > botao direito sob o dominio > aumentar nivel funcional
+
+
+https://www.eduardopopovici.com/2018/02/rebaixar-nivel-funcional-do-dominio-e.html
+https://learn.microsoft.com/en-us/windows/win32/adschema/active-directory-schema
+
+
+
+ Default-site-link
+ Site Link
+
+Os links de site são usados ​​para conectar dois ou mais sites para fins de replicação. Quando você instala o Active Directory em uma nova floresta, um novo link de site denominado DEFAULTIPSITELINK é criado. Conforme você adiciona outros sites à floresta, esses sites são incluídos no link de site padrão, a menos que você tenha configurado outros links de site. Se todas as conexões de rede entre sites tiverem a mesma velocidade e prioridade, a configuração padrão pode funcionar.
+Nesse caso, a "configuração de replicação entre sites para todos os sites terá as mesmas propriedades. Se você alterasse essas propriedades, as alterações afetariam a topologia de replicação para todos os sites.
+Ao criar links de site adicionais, você pode configurar propriedades de replicação diferentes quando as conexões de rede entre sites têm velocidades e prioridades diferentes.
+A criação de links de site adicionais ajuda o gerador de topologia entre sites (ISTG) designado para um site a priorizar os links de site e determinar quando um link de site deve ser usado. No entanto, isso não muda a maneira como a replicação entre sites funciona. O tráfego de replicação entre sites é sempre enviado de um servidor bridgehead em um site para um servidor bridgehead em outro site.
+Embora seja função do ISTG gerar a topologia de replicação entre sites e designar servidores bridgehead, você também pode designar servidores bridgehead manualmente. Depois de estabelecer links de sites e designar servidores bridgehead conforme necessário, você pode alterar a maneira como a replicação entre sites é tratada. Por exemplo, você pode desativar a compactação ou ativar a notificação para que as alterações possam ser replicadas mais rapidamente entre os sites.
+Lembre-se que um site link representa a uma conexão ou link lógico entre dois ou mais sites no Active Directory. Quando criamos um novo site link é necessário informar pelo menos dois sites que farão parte deste link lógico.
+Por padrão, quando você cria o primeiro domínio em uma floresta é criado um site link chamado DEFAULTIPSITELINK. Todo novo site criado é associado a este site link padrão caso você não tenha removido ou renomeado o mesmo.
+Mesmo que você crie uma subrede e um site para separar logicamente suas localidades, caso você não tenha criado site links específicos para as localidades você não terá uma segmentação de replicação, pois como todos os sites estariam usando o DEFAULTIPSITELINK, todos os sites estariam replicando entre eles.
+Pensando como um administrador de redes, seria necessário segmentar corretamente a comunicação entre os sites informando ao Active Directory quem pode se comunicar com quem. Como realizar esta segmentação?
+Digamos que há quatro sites (LONDON, MANCHESTER, LIVERPOOL e YORK) interconectados por enlaces e que cada um possui um custo para o tráfego de dados.
+Vamos assumir que o site LONDON possui o maior custo no enlace e que ele deverá apenas replicar com o site MANCHESTER, pois existe um enlace entre estes dois sites apenas. Todos os outros dois sites possuem enlaces de menor custo e que podem ser usado para replicar alterações entre ambos, com o site MANCHESTER, mas não devem replicar com LONDON, pois não possuem um enlace para este site.
+Além do custo por enlace, haverá momentos em que você terá que definir custos para o cada site link. A título de exemplo, vamos imaginar que exista um enlace de dados entre YORK e LONDON, mas que este enlace de dados seja lento (9.6 Kbps).
+Digamos que exista um site link chamado LONDON_TO_YORK interconectando os sites e que o custo deste site link também seja de 100 como nos exemplos anteriores. Os site links LONDON_TO_MANCHESTER e MANCHESTER_TO_YORK possuem o custo de 100.
+Por questões de confiabilidade, você deseja que o enlace de dados entre YORK e LONDON não seja utilizado e que este tráfego seja feito primeiramente entre YORK e MANCHESTER (1024 Kbps) e em seguida entre MANCHESTER e LONDON (1024 Kbps).
+Se o custo de cada site link for o padrão (100), a replicação ocorrerá pelo menor caminho possível, indiferente do enlace de dados ser lento ou não, pois este é o comportamento padrão.
+Como resolver este problema? Neste exemplo, o que nós podemos fazer é alterar o custo do site link, tal como ocorre quando precisamos configurar custos de rotas em roteadores.
+De posse destes valores, para garantirmos que a replicação ocorra da forma como esperamos, o custo do site link LONDON_TO_YORK seria configurado como 1042, o site link LONDON_TO_MANCHESTER com 340 e o site link MANCHESTER_TO_YORK com 340.
+Por padrão, o KCC usa o site link com menor custo para replicar dados entre sites.
+Como o objetivo é evitar o enlace de dados entre YORK e LONDON, seria apenas necessário configurar o site link MANCHESTER_TO_YORK com um valor superior de 300. Como já assumimos que os outros site links possuem o custo de 100 cada, o que no final gera um custo de 200 com a soma
+Criar cada site link mostrados anteriormente já é suficiente para resolver o nosso problema? Quase…
+O que falta então? Há um detalhe muito importante e que normalmente não é levado em consideração no momento de efetuar a configuração deste recurso, a conexão física que interconecta cada site.
+Como informado anteriormente, foi descrito que o site LONDON possui um enlace de dados conectando LONDON ao site MANCHESTER e que MANCHESTER possui enlaces de dados conectando-o a todos os outros sites.
+Resumindo, o site MANCHESTER pode ser considerado uma ponte entre o site LONDON e os sites LIVERPOOL e YORK.
+Mas o que este detalhe interfere em nossa configuração? Para entendermos qual é a importância deste detalhe relacionado ao enlace de dados, precisamos entender como funciona a criação da topologia de replicação do Active Directory.
+Felizmente a topologia de replicação intrasite do Active Directory não precisa ser criada manualmente por quem configura as subredes, site links e sites, pois este processo é feito automaticamente por um componente do Active Directory chamado KCC ou Knowledge Consistency Checker.
+Este componente irá garantir que a topologia de replicação intrasite do Active Directory seja criada da melhor forma possível definindo que não haverá mais do que três saltos entre quaisquer dois controladores de domínio dentro do mesmo site.
+O KCC é responsável por avaliar e criar objetos de conexão de duplo sentido entre os controladores de domínio dentro de um site. Ele também é responsável por gerenciar objetos de conexão, como por exemplo, quando um novo controlador de domínio é inserido, removido ou deixa de responder em um site para manter a consistência da replicação entre os controladores de domínio.
+Enquanto o KCC gerencia objetos de conexão intrasite o ISTG ou Intersite Topology Generator, que também é parte do KCC gerencia a replicação intersite usando as configurações existentes em cada site link que foi mostrado anteriormente.
+OK! Se o KCC e o ISTG gerenciam estas replicações, por que ainda falta algo a ser feito e eu tenho que me preocupar com a questão dos enlaces de dados disponíveis entre os sites?
+Simples! Por padrão o KCC assume que todos os controladores de domínio dentro de um site estão conectados diretamente por uma conexão, seja ela local ou não e isto se aplica também ao ISTG para a conexão entre os sites.
+Este processo garante que você tenha transitividade entre sites que podem ou não estar conectados fisicamente, pois se o site A está conectado ao site B e o site B está conectado ao site C, o ISTG assume que o site A está conectado ao site C.
+Se isto é verdade, ao assumir que todos os sites estão conectados por enlaces de dados diretamente, o ISTG pode gerar uma inconsistência criando bridge connections entre dois servidores em sites distintos e isto pode causar a duplicidade de zonas integradas ao Active Directory, problemas de replicação, etc.
+Além dos possíveis problemas, deixar que o Active Directory assuma que existe um topologia de rede altamente conectada pode resultar em replicações desnecessárias ou indesejadas, uma vez que você pode desejar controlar de onde e para onde os objetos são replicados em sua infraestrutura.
+Como já sabemos das possíveis questões que podemos ter com o uso do ISTG para gerar conexões dinâmicas e automáticas entre os sites, como podemos resolver isto? Este é um passo muito simples. Apenas clique com o botão direito sobre o container IP em Inter-Site Transports e desmarque a opção Bridge All Site Links.
+Feita esta alteração em seu domínio, você estará evitando que conexões dinâmicas sejam criadas entre os sites que não estão conectados diretamente lhe permitindo um maior controle sobre de onde e para onde sua replicação estará fluindo.
+É importante informar também que, caso a opção Bridge All Site Links esteja ativa, de nada irá adiantar a criação de site links como mostrado anteriormente, pois eles não terão efeito algum.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Boas práticas de segurança com seu DNS
+18. Monitore registros de DNS para ameaças à segurança
+
+A maioria das conexões começa com uma consulta DNS. Todos os sistemas associados ao domínio devem ser configurados para usar o servidor DNS do Windows local.
+
+Com essa configuração, você pode registrar todas as pesquisas DNS internas e externas. Quando um dispositivo cliente faz uma conexão com um site malicioso, ele registra o nome do site nos logs DNS.
+
+Esses domínios maliciosos geralmente são domínios de caracteres estranhos e aleatórios que levantam bandeiras vermelhas.
+
+Você pode registrar logs de acesso a web e validação de URLs de seus usuários utilizando softwares antivírus cloud como o Kaspersky, Panda, Norton, etc. Servidores Proxy também são excelentes para apoiar com as requisições de DNS.
+
+
+  

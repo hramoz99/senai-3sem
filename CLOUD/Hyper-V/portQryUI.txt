@@ -1,0 +1,10 @@
+PortQryUI
+
+
+ - Verificação de portas
+
+
+abrir o portQryUI > yes > Unzip > ok 
+
+
+  

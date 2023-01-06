@@ -1,0 +1,18 @@
+controlador de dominio  
+
+ gerenciador do servidor > adicionar funções e recursos > peoximo > instalação baseada em função e recurso > selecionaa um servidor pool e selcionar o servidor >  Active Directory Domain Services e DNS Server > proximo > proximo > instalar  
+   
+
+
+
+
+Nested Virtualization
+
+  
+  poweshell
+
+         Set-VMProcessor -VMName "Server1 - Windows Server 2019" -ExposeVirtualizationExtensions $true
+
+
+
+     botao direito servidor 1 (controlador de dominio) > configurações > desabilitar memoria dinamica > aplicar > processador > nº de proce. 2 > aplicar > adaptador de rede > recursos avancados > habilitar falsificação do endereço mac > aplicar > adaptador de rede > recursos avancado > habilitar falsificação do endereço mac > aplicar  
