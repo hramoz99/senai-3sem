@@ -23,5 +23,5 @@ Poweshell
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 LINKS ÚTEIS
 
-https://github.com/edupopov/powershell
-https://www.profissionaisti.com.br/adrt-active-directory-report-tool-ferramenta-para-extrair-e-exibir-informacoes-uteis-do-ad\
+. https://github.com/edupopov/powershell
+. https://www.profissionaisti.com.br/adrt-active-directory-report-tool-ferramenta-para-extrair-e-exibir-informacoes-uteis-do-ad\
