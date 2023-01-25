@@ -4,7 +4,7 @@ PASSO A PASSO
 
 gerenciamento de disco (Virtualizador) > ação > criar VHD  > VHDX, 2GB, Area de trabalho, expandido dinamicamente > ok > botão direito sob o disco > inicializar o disco > GPT > botão direito sob o disco > novo volume simples > avançar > avançar > escolher uma letra > modificar o rótulo > concluir   
 
-descompactar os arquivos > botao direito sob o disco > offline > botão direito sobre o disco > desanexar vhd > ok  
+descompactar os arquivos > botão direito sob o disco > offline > botão direito sobre o disco > desanexar vhd > ok  
 
 selecionar servidor > botão direito > configurações > controlador SCSI > disco rígido > adicionar > procurar > aplicar > ok > iniciar servidor 
 
@@ -25,3 +25,4 @@ LINKS ÚTEIS
 
 . https://github.com/edupopov/powershell
 . https://www.profissionaisti.com.br/adrt-active-directory-report-tool-ferramenta-para-extrair-e-exibir-informacoes-uteis-do-ad\
+
