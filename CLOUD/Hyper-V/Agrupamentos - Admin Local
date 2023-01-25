@@ -1,0 +1,15 @@
+Organização dos agrupamentos do Admin Local
+  
+PASSO A PASSO
+
+gerenciador de servidor > ferramentas > 'usuários e computadores do AD' > botão direito > novo > OU > botão direito > novo > grupo > habilitar 'global' e 'segurança' 
+
+gerenciador do servidor > ferramentas > gerenciamento de política de grupo > botão direito em 'objetos de politica de grupo' > novo > criar política > botão direito sob a politica (GPO) > editar > configuração do computador > políticas > configuração do windows > configurações de segurança > botão direito em 'grupos restritos' > adicionar grupo > procurar > avançado > localizar agora > administradores > ok > adicionar membro > procurar > avançado > localizar agora > ok > aplicar  
+
+botão direito sob a OU > vincular com GPO existente > selecionar a GPO > botão direito sob a OU > atualização da Politica de Grupo > sim  
+
+
+!!! Atualizar as politicas nos servidores clientes !!!
+
+   abrir o powershell 
+          gpupdate |force
