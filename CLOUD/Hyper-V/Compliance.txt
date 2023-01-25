@@ -1,0 +1,58 @@
+O que é compliance?
+
+ - Estar em conformidade com leis e regulamentos.
+
+ - Esse conceito abrange todas as políticas, regras, controles internos e externos aos quais a organização precisa se adequar.
+
+ - Adequando ao compliance, suas atividades estarão em plena conformidade com as regras e legislação aplicadas aos seus processos, poré,m isso não deixa seu ambiente exatamente seguro.
+
+
+
+CIDAL
+
+ Segurança da Informação - Pilares
+
+   - Integridade 
+   - Confiabilidade
+   - Disponibilidade
+   - Autenticidade
+   - Legalidade
+
+
+Confidencialidade: a que deve ser lida somente pela pessoa a quem é dirigida, ou seja, as informações só devem ser acessadas por pessoas autorizadas, por exemplo o saldo bancário de um cliente.
+
+Integridade: quando enviamos ou recebemos qualquer tipo de informação queremos que esses dados sejam verdadeiros. Por exemplo ao fazermos um backup de determinado arquivo, esse backup deve ser uma cópia fiel do arquivo original e se mantem assim.
+
+Disponibilidade – todas as nossas informações estão armazenadas em algum local. Agora imagine que se você precise de uma determinada informação e quando for acessá-la não consegue porque o servidor está indisponível, não podemos deixar que isso ocorra.
+
+Autenticidade – ao enviarmos algum dado queremos ter certeza de enviar para o receptor correto e ao recebermos queremos ter certeza que foi enviado pelo emissor verdadeiro. Um exemplo é a troca de e-mails, devemos garantir a veracidade do emissor e receptor.
+
+Legalidade – o uso da tecnologia e comunicação deve estar de acordo com as leis vigentes no local ou país.
+
+
+Veja as normas técnicas de segurança para as empresas:
+
+ NBR 1333, de 12/1990 – Controle de acesso físico a CPDs (Centro de Processamento de Dados).
+
+ NBR 1334, de 12/1990 – Critérios de segurança física para armazenamento de dados.
+
+ NBR 1335, de 07/1991 – Segurança física de microcomputadores e terminais em estações de trabalho.
+
+ NBR 10842 – Equipamentos para tecnologia da informação e requisitos de segurança.
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+LINKS ÚTEIS
+
+. https://www.cisoadvisor.com.br/ataques-que-exploram-certificados-digitais-crescem-700-em-cinco-anos/
+. https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=454634&ori=1
+. https://www.tripwire.com/state-of-security/capcom-hacked-resident-evil-game-developer-discloses-cyber-attack
+. https://www.bleepingcomputer.com/news/security/windows-kernel-zero-day-vulnerability-used-in-targeted-attacks/
+. https://threatpost.com/bug-bounty-awards-spike-2020/160719/?
+. https://www.eduardopopovici.com/2018/12/quebrando-senha-de-administrador-do.html
+
+
+
