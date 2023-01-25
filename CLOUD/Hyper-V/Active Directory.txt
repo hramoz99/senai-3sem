@@ -3,7 +3,7 @@ Active Directory - Administrando o Windows Server
 Comando
 Versão do Windows: windows + r > winver
 
-Instalação Hyper V - maquina local
+Instalação Hyper V - máquina local
 
  1 - Windows Iniciar 
  2 - Apps e Recursos 
