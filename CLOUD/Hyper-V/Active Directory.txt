@@ -19,10 +19,10 @@ Instalação Hyper V - Máquina Virtual
  1 -  Windows Iniciar
  2 -  Gerenciador do servidor
  3 -  Adicionar funções e recursos
- 4 -  tela 1 - proximo
+ 4 -  tela 1 - próximo
       tela 2 - habilitar instalação baseada em função ou recurso
       tela 3 - habilitar um servidor na lista abaixo e a opção 'selecionar um  servidor no pool de servidor'
-      tela 4 - habilitar a opção hyper v > instalar outras ferramentas> avancar > ferramentas >  gereciamento de hyper v
+      tela 4 - habilitar a opção hyper v > instalar outras ferramentas> avançar > ferramentas >  gereciamento de hyper v
 
 
 Criação de comutadores virtuais (pontos de comunicação)
