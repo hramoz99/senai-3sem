@@ -7,12 +7,11 @@ Nas versoões antigas um controlador de domínio era deixado como principal e um
 
 Porém o BDC não grava arquivos SAM, portanto deveria ser elevado a PDC para tal função, o que era um processo complicado e moroso
 
-Quando o servidor antigp retornasse a seu funcionamento, deveria ser rebaixado a BDC pois não existiam dois PDCs na rede
+Quando o servidor antigo retornasse a seu funcionamento, deveria ser rebaixado a BDC pois não existiam dois PDCs na rede
 
 
 AD
-Foi criado em 1999 e esta em funcionalidade plena desde o windows 2000 server
-Fornece a distribuição do serviço de diretório, o qual pode ser utilizado para centralizar e gerenciar a segurança da sua rede
+Foi criado em 1999 e esta em funcionalidade plena desde o windows 2000 server. Fornece a distribuição do serviço de diretório, o qual pode ser utilizado para centralizar e gerenciar a segurança da sua rede.
 O AD surgiu com o Windows Server 2000, portanto redes com windows Nt Sever não podem ser controladores de dominio
 
 Tipos de AD
@@ -34,68 +33,55 @@ Tipos de AD
 
 Niveis funcionais 
 
-Determinam os recursos de dominio ou florestas dos serviços de dominio Active Directory disponiveis
-Tambem determinam os sistemas operacionais Qindoes Server que podem ser executados em controladores de dominio no dominio ou na floresta
-No entanto, os niveis funcionais não afetam os sistemas operacionais que podem ser executados em estações de trabalho e servidores mebros associados ao dominio ou á floresta
+Determinam os recursos de dominio ou florestas dos serviços de dominio Active Directory disponiveis. Também determinam os sistemas operacionais Qindoes Server que podem ser executados em controladores de dominio no dominio ou na floresta.
+No entanto, os niveis funcionais não afetam os sistemas operacionais que podem ser executados em estações de trabalho e servidores mebros associados ao domínio ou á floresta
 
 
 Elementos do AD
 
- Confiança termo utilizado para definir que tipo de transparencia exxistira entre os diferentes segmentos da rede com o AD. Ao direionar um dominio a uma arvore, é criado de forma automatica uma confiança transitoria. na pratica isso significa que ususarios de um dominio tem acesso aos recrusos do outro. 
-É importante tomar ceto cuidado para que não seja dado maior permissão que o necessário para um determinado ususario.
+Confiança termo utilizado para definir que tipo de transparência exxistira entre os diferentes segmentos da rede com o AD. Ao direcionar um domínio a uma árvore, é criado de forma automatica uma confiança transitoria. na pratica isso significa que ususarios de um dominio tem acesso aos recrusos do outro. 
+É importante tomar certo cuidado para que não seja dado maior permissão que o necessário para um determinado ususario.
 
-Controlador de Dominio
- - É o servidor ou servidores responsaveis por fornecer os serviços de diretorio do AD e armazenar os dados do diretorio.
+Controlador de Domínio
+ - É o servidor ou servidores responsáveis por fornecer os serviços de diretório do AD e armazenar os dados do diretório.
 
 Elementos
 
- - Arvore Pode conter um ou mais dominios fazendo com que os servidores possuam um catalogo global comun, sendo um unico dominio pode formar uma arvore
- - Floresta è o agrupamento de diversas Arvores de dominio. É uma coleção de dominio com Schema e configuração compartilhados representado por um unico e logico global catalog e conectado 
-por uma arvores dispersa de relações de confianças transitivas. Uma floresta é representadas por um dominio de floresta raiz
+ - Árvore pode conter um ou mais domínios fazendo com que os servidores possuam um catálogo global comun, sendo um único domínio pode formar uma árvore
+ 
+ - Floresta è o agrupamento de diversas árvores de domínio. É uma coleção de domínio com Schema e configuração compartilhados representado por um único e lógico global catálog e conectado por uma árvores dispersa de relações de confianças transitivas. Uma floresta é representadas por um dominio de floresta raiz.
 
 
 Controlador de dominio - configurações 
 
 
- passo - gerencimaneto do servidor  > ferramentas > usuarios e computadores do AD > expandir o dominio 
+ PASSO A PASSO
+ 
+ gerencimaneto do servidor  > ferramentas > usuários e computadores do AD > expandir o domínio 
 
-para obter mais informações, vai em 'exibir > recursos avancados' 
+para obter mais informações, vai em 'exibir > recursos avançados' 
 
-        - fecha a pagina
+        - fecha a página
 
-ferramentas >  centra administrativa do AD > bota direito sob o dominio > novo > unidade organizacional
+ferramentas > central administrativa do AD > botão direito sob o domínio > novo > unidade organizacional
 
-     - fecha a pagina
+     - fecha a página
 
-ferramentas > dominios e relações de confianca do AD > 
+ferramentas > domínios e relações de confiança do AD > 
 
 
- Como identificar um controlador de dominio na rede?
+ Como identificar um controlador de domnio na rede?
 
- prompt > cmd > netdom query fsmo (comando so funciona em controladores de dominio ou estações que receberao o site)
+ prompt > cmd > netdom query fsmo (comando só funciona em controladores de domínio ou estações que receberão o site)
 
-Boas práticas sobre instalação de softwares no AD DS
-12. NÃO instale software ou funções adicionais em controladores de domínio
 
-Os controladores de domínio devem ter software e funções limitados instalados.
 
-Os DCs são essenciais para a empresa, você não quer aumentar os riscos de segurança tendo software adicional em execução neles.
-
-O Windows Server Core é uma ótima opção para executar a função DC e outras funções, como DHCP, DNS, servidores de impressão e servidores de arquivos.
-
-O Server Core funciona sem uma GUI e requer menos patches de segurança devido ao seu tamanho menor.
-
-Eu tenho executado core em vários clientes por anos e tem sido uma ótima escolha. Muito estável
-
-Mais software, mais funções = maiores riscos de segurança.
-
-Mantenha seus CDs enxutos e limpos.
 Criar ou adicioar um computador no dominio
 
-primeiro - trocar o ip da placa de rede
+Primeiro - trocar o ip da placa de rede
  windows + r > ncpa.cpl > propriedade > ipv4 > propriedade > alterar ip
 
-windows > sistemas > informações do sistemas > configurações avancadas > nome do computador > alterar > nome do pc > dominio > ok
+windows > sistemas > informações do sistemas > configurações avançadas > nome do computador > alterar > nome do pc > domínio > ok
 
 
 
@@ -106,11 +92,11 @@ Trabalahndo com OUs - Unidades Organizacioanais
 
 Criação 
 
-gerenciamento do servidor > ferramentas > Usuarios e Computadores do AD > botao direito sob dominio > nova > OU > nome e habilitar o card > ok
+gerenciamento do servidor > ferramentas > Usuários e Computadores do AD > botão direito sob domínio > nova > OU > nome e habilitar o card > ok
 
  | Caso queira excluir a OU, deve-se clicar com botao direito sob a OU > propriedade > Objeto > desmarcar o card
 
-gerencimaneto do servidor > ferramentas > Central Administrativa > botao direito sob OU > nvo > Unidade Organ > nome > Ok
+gerencimaneto do servidor > ferramentas > Central Administrativa > botão direito sob OU > nvo > Unidade Organ > nome > Ok
 
  | Caso queira excluir a OU, deve-se clicar com botao direito sob a OU > propriedade > Objeto > desmarcar o card
 
