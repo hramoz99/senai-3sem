@@ -4,7 +4,7 @@ Configuração WDS
 2 - Adicionar funções e recursos
 3 - tela 1 - próximo
     tela 2 - habilitar instalação baseada em função ou recurso
-    tela 3 - selecionar 'um servidor no pool de servidor' e habilitar um servidor na lista abaixo
+    tela 3 - selecionar um servidor no pool de servidor e habilitar um servidor na lista abaixo
     tela 4 - serviços de implantação do windows > próximo > próximo > reiniciar cada servidor > instalar
 
 PASSO A PASSO
