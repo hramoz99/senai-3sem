@@ -1,17 +1,17 @@
 Windows Admin Center
  
- Inicie o servidor que está instalado o software
+ !!! Inicie o servidor que está instalado o software !!!
 
  - Abra o app
- - procure no canto direito as maquinas que serão monitoradas
- - selecione a maquina
+ - procure no canto direito as máquinas que serão monitoradas
+ - selecione a máquina
 
-     habilitar nas maquinas o acesso remoto
+    NOTA: habilitar nas máquinas o acesso remoto
 
-gerenciador de servidor > servidor local > habilitar gerenciamento remoto > habilitar area de trabalho remota > hablitar permitir conexoes remotas com este computador > aplicar > Ok 
+gerenciador de servidor > servidor local > habilitar 'gerenciamento remoto' > habilitar 'área de trabalho remota' > hablitar 'permitir conexões remotas com este computador'> aplicar > Ok 
 
    
-Area de Trabalho remota - porta 3389
+Área de Trabalho remota - porta 3389
 
  windows + r wf.msc > regras de entrada
 
@@ -21,146 +21,123 @@ Area de Trabalho remota - porta 3389
 
 
 
-Acesso remoto por linha de comando
+Acesso remoto por linha de comando - PowerShell
 
  comando
      Enter-PSSesion -ComputerName [nome_do_servidor]
 
 
-Windows Powershell - criador de scripts
-
-Ponto de atenção
-
-
-
-
 COMANDOS - CMD
 
 
- whoami = apresenta a conta alocada na maquina e o dominio que se encontra
+ whoami = apresenta a conta alocada na máquina e o domínio que se encontra
  whoami /? = mostra outros jeitos de ser usado 
 
 
 
+Grupos e usuários
 
-Grupos e usuarios
 
+Entidades de segurança 
 
-Entidades de seguranca 
+ - Contas de usuários
+ - Contas de computador 
 
-Contas de usuarios
-contas de computador 
+ OBS: Contas de usuários também podem ser usadas como uma conta de serviço (dedicadas para algun aplicativos)
 
- OBS; Contas de usuarios tambem podem ser usadas como uma conta de serviço (dedicadas para algun aplicativos)
-
-Os grupos de segurança são usados para coletar contas de usuario, contas de computador e outro grupos em unidades gerenciaveis
+Os grupos de segurança são usados para coletar contas de usuário, contas de computador e outro grupos em unidades gerenciáveis
 
 GRUPOS 
- Administradores de servico - responsavel por manter e oferecer servicos de dominio ADDS , incluindo o gerenciamento de controladores de dominio e a configuração do ADDS
+ Administradores de serviço - responsável por manter e oferecer serviços de domínio ADDS , incluindo o gerenciamento de controladores de domínio e a configuração do ADDS
 
- Adminsitradores de dados: Responsavel pela manutenção dos dados armazenados em adições eem estações de trabalho  e servidores menbro do dominio.
+ Adminsitradores de dados: responsável pela manutenção dos dados armazenados em adições eem estações de trabalho  e servidores menbro do dominio.
 
-
-Os grupos são usados para coletar contas de usuario, contas de computador e outros grupos em unidades gerenciaveis. Trabalhar com grupos em vez de com usuarios individuais ajuda a simplificar a manutenção
-
- Há dois tipos de grupos AD:
-
- Grupos de distribuição usado para criar listas de distribuição de e-mail
- Grupos de segurança usado para atribuir permissoes a recursos compartilhados
+Os grupos são usados para coletar contas de usuário, contas de computador e outros grupos em unidades gerenciáveis. Trabalhar com grupos em vez de com usuários individuais ajuda a simplificar a manutenção.
 
 
-Atribua direitos de usuario a grupos de seguranca no AD
- Os direitos do usuario são atribuidos a um grupo de seguranca para determinar o que os membros desse grupo podem fazer dentro do escopo de um dominio ou floresta. Um usuario adicionado ao grupo operadores de backup no AD tem a capacidade de fazer backup e restaurar arquivos e diretorios localizados em cada comtrolador de dominio no dominio
+Há dois tipos de grupos AD:
+
+ Grupos de distribuição usado para criar listas de distribuição de e-mail;
+ Grupos de segurança usado para atribuir permissões a recursos compartilhados;
 
 
-Atribua permissoes a grupos de seguranca para recursos
- As permissoes sao diferentes dos direitos do usuario. As permissoes sao atribuidas ao grupo de seguranca para o recurso compratilhado. As permissoes determinam quem pode acessar o recurso e o nivel de acesso, como controle total.
+Atribua direitos de usuário a grupos de seguranca no AD
+
+Os direitos do usuário são atribuidos a um grupo de segurança para determinar o que os membros desse grupo podem fazer dentro do escopo de um domínio ou floresta. Um usuário adicionado ao grupo operadores de backup no AD tem a capacidade de fazer backup e restaurar arquivos e diretórios localizados em cada controlador de dominio no dominio.
+
+
+Atribua permissões a grupos de segurança para recursos
+
+ As permissões sao diferentes dos direitos do usuario. As permissoes sao atribuidas ao grupo de seguranca para o recurso compratilhado. As permissoes determinam quem  pode acessar o recurso e o nivel de acesso, como controle total.
 
 
 
 Escopos
 
- Os grupos sao caracterizados por um escopo que identifica a extensao a qual o grupo e aplicado na arvore de dominio ou floresta. o escobo do grupo define onde o grupo pode receber permissoes.
+ Os grupos são caracterizados por um escopo que identifica a extensão a qual o grupo é aplicado na árvore de domínio ou floresta. o escobo do grupo define onde o grupo pode receber permissões.
 
 
  .Universal
  .Global
- .Dominio local
+ .Domínio local
 
  
 Grupos de identidades especiais
- grupos de identidade especiais noa tem associações especificas que podem ser modificadas, mas elas podem representar usuarios diferentes em momento diferentes, dependendo das circunstancias
- Alguns desses grupos incluem proprietario criador, lote e usuario autenticado
+
+grupos de identidade especiais não tem associações específicas que podem ser modificadas, mas elas podem representar usuários diferentes em momento diferentes, dependendo das circunstâncias. Alguns desses grupos incluem proprietário criador, lote e usuário autenticado.
 
 
- Grupos de seguranca padrao
+Grupos de segurança padrão
 
- Os grupos padrao, como o grupo Domain Admins sao grupos de seguranca criados automaticamente quando cria dominio do active Directory
- Voce pode usar esse grupos predefinidos para ajudar a controlar o acesso a recursos compartilhados e para delegarfu funções administrativas especificas em todo o dominio
- os grupos padrao estao localizados no conteiner builtin e no conteiner usuarios em usuarios e computadores do active directory
- O conteiner interno inclui grupos que sao definidos com o escopo de dominio local. Os usuarios incluem grupos que sao definidos com escopo global e grupos definidos com escopo de dominio local
- Voce pode mover grupos localizadfos nesses recipientes para outros grupos ou unidades organizacionais  do dominio mas nao podemmove-los para outros dominios
+ Os grupos padrão, como o grupo Domain Admins são grupos de segurança criados automaticamente quando cria domínio do Active Directory
+ Você pode usar esse grupos predefinidos para ajudar a controlar o acesso a recursos compartilhados e para delegar funções administrativas específicas em todo o domínio
+ 
+ Os grupos padrão estao localizados no conteiner builtin e no conteiner usuários em usuários e computadores do active directory
+ O conteiner interno inclui grupos que são definidos com o escopo de dominio local. Os usuarios incluem grupos que sao definidos com escopo global e grupos definidos com escopo de dominio local
+ 
 
-O descritor de seguranca esta presente no obejto ADminSDHOlder
+O descritor de seguranÇa está presente no obejto ADminSDHOlder
 
-Isso significa que se voce quiser modificar as permissoes em um dos grupos de administradores de serviços ou em qualquer uma de suas contas de mebros sera necessario modificar o descritos de seguranca no objeto AdminSDHolder para que ele seja aplicado de forma conscistente. tenha cuidados ao fazer essas modificações porque voce tambem esta alterando as configurações padrao que serao aplicadas a todas as suas contas administrativas protegidas
-  descritor como atributo 
+ Isso significa que se você quiser modificar as permissões em um dos grupos de administradores de serviços ou em qualquer uma de suas contas de membros sera necessario  modificar o descritos de segurança no objeto AdminSDHolder para que ele seja aplicado de forma conscistente. Tenha cuidado ao fazer essas modificações, porque isto altera as configurações padrão que serão aplicadas a todas as suas contas administrativas protegidas.
+ 
+ 
+Descritor como atributo 
 
-O grupo operadores de conta concede privilegios de criaçao de conta limitados a um ususario
+ O grupo operadores de conta concede privilégios de criação de conta limitados a um usuário
 
-Os membros desse grupo podem criar e modificar a maioria dos tipos de conta, incluindo os usuarios, grupos locais e grupos globais e os membros podem fazer logon localmente em controladores de dominio
+ Os membros desse grupo podem criar e modificar a maioria dos tipos de conta, incluindo os usuários, grupos locais e grupos globais e os membros podem fazer logon localmente em controladores de domínio
 
-Os membros do grupo operadores de conta nao podem gerenciar a conta de ususario administrador, as contas usuarios de administradores ou grupos administradores, operadores de servidor, operadores de conta, operadores de backup ou operadires de impressao. os membros desse grupo nao mpodem modificar direitos de usuario
+Os membros do grupo operadores de conta nao podem gerenciar a conta de usuário administrador, as contas usuários de administradores ou grupos administradores, operadores de servidor, operadores de conta, operadores de backup ou operadores de impressão. os membros desse grupo nao podem modificar direitos de usuário.
 
-O grupo operadores de conta aplica-se as versoes do sistema operacional windows server listadas na tabela de grupos de seguranca padrao do active directory
+O grupo operadores de conta aplica-se as versões do sistema operacional windows server listadas na tabela de grupos de segurança padrao do active directory
 
 
 
 Administradores 
-Os membros do grupo administradores tem acesso completo e irrestrito ao computador ou se o computador for promovido a um controlador de dominio os membros terao acesso irrestrito do dominio
+Os membros do grupo administradores tem acesso completo e irrestrito ao computador ou se o computador for promovido a um controlador de domínio os membros terão acesso irrestrito do domínio
 
-O grupo administradores aplica-se as verspoes do sistema operacional windows server listadas na tabela de grupos de seguranca padrao do active directory
+O grupo administradores aplica-se as versões do sistema operacional windows server listadas na tabela de grupos de segurança padrão do active directory;
 
-A associação pode ser modificada poir membros dos grupos de administradores de serviço padrao administradores de dominio no dominio ou administradores 
+A associação pode ser modificada poir membros dos grupos de administradores de serviço padrao administradores de dominio no dominio ou administradores;
 
-Esse grupo tem privilegio especial para apropriar se de qualquer objeto no diretorio ou em qualquer recursos em um controlador de dominio
+Esse grupo tem privilégio especial para apropriar se de qualquer objeto no diretório ou em qualquer recursos em um controlador de domínio;
 
-Essa conta é considerada um grupo de administradores de serviços pois seus membros tem acesso completo ao controladores de dominio no dominio
-
-
-
-  gerenciador do serviador > ferramentas > usuarios e computadores > selecione a OU > aperte na area branca > novo > grupo > habilitar escobo global > habilitar seguranca no tipo de grupo > fecha
-
-
-  gerenciador do serviador > ferramentas > Centralde Admini > selecione a OU > aperte na area branca > novo > grupo > habilitar escobo global > habilitar seguranca no tipo de grupo > fecha
+Essa conta é considerada um grupo de administradores de serviços, pois seus membros tem acesso completo ao controladores de domínio no domínio
 
 
 
-criação de usuarios
+  gerenciador do serviador > ferramentas > 'Usuários e computadores' > selecione a OU > aperte na area branca > novo > grupo > habilitar escobo global > habilitar segurança no tipo de grupo > fecha
 
 
+  gerenciador do servidor > ferramentas > 'Central de Admin' > selecione a OU > aperte na area branca > novo > grupo > habilitar escobo global > habilitar segurança no tipo de grupo > fecha
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+LINKS ÚTEIS
 
+. https://www.eduardopopovici.com/
 
+. https://www.linkedin.com/in/edupopovhtbraz/
 
-22. Delegação de documentos para Active Directory
-
-A melhor maneira de controlar o acesso ao Active Directory e recursos relacionados é usar grupos de segurança.
-
-Se estiver delegando direitos a indivíduos, você está perdendo o controle de quem tem acesso.
-
-Crie grupos personalizados com nomes muito específicos, documente quem tem direitos e um processo para adicionar novos usuários.
-
-Não se limite a permitir que usuários sejam adicionados a esses grupos personalizados sem um processo de aprovação. Esta é apenas outra maneira pela qual as permissões podem ficar fora de controle.
-
-Saiba quais grupos são delegados a quais recursos, documente e certifique-se de que sua equipe esteja na mesma página.
-
-
-
-https://www.eduardopopovici.com/
-
-https://www.linkedin.com/in/edupopovhtbraz/
-
-https://learn.microsoft.com/pt-br/security/compass/overview
+. https://learn.microsoft.com/pt-br/security/compass/overview
 
