@@ -1,8 +1,0 @@
-Transferindo arquivos do Host(físico) para a máquina virtual Server2 
-
-
-   - Criar um  Novo disco 
-   - Criar uma pasta compartilhada
-
-
-  
