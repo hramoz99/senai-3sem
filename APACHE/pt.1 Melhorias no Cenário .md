@@ -12,7 +12,7 @@
 
             systemctl restart networking.service
 
-    <> Verificar se o acesso SSH está ativo
+    <> Verificar o acesso SSH está ativo
 
             systemctl status ssh.service
 
