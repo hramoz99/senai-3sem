@@ -118,7 +118,7 @@ REGIÃO - conjunto de zonas de disponibilidades em uma localidade geográfica.
 
 CAP 4 - SEGURANÇA NA NUVEM AWS
 
-AMAZON Identity and Access Managemen (IAM) - serviço que controla e gerencia o acesso aos serviços da AWS.
+AMAZON Identity and Access Managemen (IAM) - serviço que controla e gerencia de maneira centralizada o acesso aos serviços e recursos da AWS. 
       
     CONTROLE DE ACESSO:         
     
