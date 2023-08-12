@@ -1,14 +1,14 @@
-Storage S3
+STORAGE S3
 
-* AMAZON S3 Glacier = backup congelado (restauração demora alguns dias, mas em compensação o custo é menor)
+  AMAZON S3 Glacier = backup congelado (restauração demora alguns dias, mas em compensação o custo é menor)
 
-  AMAZON S3 é um serviço de armazenamento de objetos que oferece escalabilidade, disponibilidade de dados, segurança e performance líderes 
+  AMAZON S3 - serviço de armazenamento de objetos que oferece escalabilidade, disponibilidade de dados, segurança e performance líderes 
 
-    * Criar uma bucket --> Amazon S3 --> criar bucket (nome único globalmente / sem caractere especial)
+    * Criar uma bucket > Amazon S3 > criar bucket (nome único globalmente / sem caracter especial)
     OBS: Versionamento de bucket (várias versões para os arquivos)
 
-    * Selecionar a bucket (clicando no nome)--> Criar uma pasta
-    OBS: Ficará algo semelhante à Amazon S3 > hramoz99 > Assinaturas/
+    * Selecionar a bucket (clicando no nome) > Criar uma pasta
+    OBS: Ficará algo semelhante à Amazon S3 --> hramoz99 --> Assinaturas/
 
     * URL do S3
     OBS: Selecione a pasta, vá em propriedades
