@@ -172,7 +172,7 @@ AMAZON Organizations - serviço de gerenciamento e controle centralizada de múl
 
 
  
- AMAZON Config - serviço que permite visualizar, armazenar e avaliar as alterações das configurações dos recursos da AWS.
+ AMAZON Config - serviço que permite visualizar, armazenar e automatixar as alterações das configurações dos recursos da AWS.
 
     . Lista de Regras
     . Restrito a uma região
