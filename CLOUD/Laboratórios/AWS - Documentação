@@ -186,12 +186,13 @@ SERVIÇOS E RECURSOS DE SEGURANÇA ADICIONAIS
  
   AMAZON Service Catalog - serviço que cria e gerencia catálogos de serviços de TI
 
-  AMAZON Macie - serviço de segurança e privacidade de dados totalmente gerenciado por machine learning..
+  AMAZON Macie - serviço de segurança e privacidade de dados sensíveis (PII), armazenados no S3, totalmente gerenciado por machine learning.
 
   AMAZON Inspector - serviço de varredura de segurança automática que ajuda a melhorar a segurança das máquinas EC2.
 
   AMAZON GuardDuty - serviço de detecção de ameaças, que monitora continuamente atividades mal-intencionadas e comportamentos não autorizados.
 
+  AMAZON Athena - serviço sem servidor de consulta interativa que facilita a análise de dados, baseada em SQL.
 
   -----------------------------------------------------------------------------------------------------------------------------------------
 
