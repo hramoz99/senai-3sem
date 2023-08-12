@@ -6,26 +6,26 @@ EC2 Linux com SSH
 
 
 PuttyGen.exe
-
     Private Key - usuário
     Public Key - servidor
 
+
 Putty
 
-    Colocar o IP público - Criar um nome para o acesso - Ir em 'Connections' - SSH - Clicar em 'Auth Browser (upload) -
-    Voltar em 'Sessions' - Save - Open
+    Colocar o IP público > Criar um nome para o acesso > Ir em 'Connections' > SSH > Clicar em 'Auth Browser (upload) >
+    Voltar em 'Sessions' > Save - Open
 
     Por padrão nosso usuário será: ec2-user
 
     Versão do Putty - 0.75 (0.74 provocará erro no login SSH com chave)
 
-    http://ec2-54-145-24-108.compute-1.amazonaws.com/ (Link do meu site-apache)
+    (Link do meu site-apache) - http://ec2-54-145-24-108.compute-1.amazonaws.com/ 
 
 Linux 
 
-    Virar root 
+    1. Virar root 
     
-    Editar o apache = vim /var/www/html/index.html
+    2. Editar o apache = vim /var/www/html/index.html
                       nano /var/www/html/index.html    
 
-    Reiniciar / carregar a alteração = systemctl restart httpd
+    3. Reiniciar / carregar a alteração = systemctl restart httpd
