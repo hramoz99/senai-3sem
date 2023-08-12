@@ -1140,19 +1140,20 @@ CASOS DE USO DO LOAD BALANCING
   
 
 
-AMAZON CloudTrail - serviço de monitoramento e registro de log das atividades da conta (acesso, ações), oferecendo controle sobre o armazenamento, análise e ações de remediação     
+AMAZON CloudTrail - serviço de monitoramento e registros de log das atividades da conta (acesso, ações), oferecendo controle sobre o armazenamento, análise e ações de remediação     
 
-AMAZON CloudWatch -serviço de monitoramento de desempenho dos recursos e aplicativos executados na nuvem
+
+AMAZON CloudWatch -serviço de monitoramento e manutenção de desempenho dos recursos e aplicativos executados na nuvem.
         Coleta - Métricas e Logs (recursos e serviços na nuvem e on-premises)
           Exemplo
-             Amazon EC2: Utilização CPU, Status Cjeck, Rede (não RAM)
-             EBS Volume: Leitura e Gravação do disco
-             S3 Bucket: Tamanho do bucket S#, número de objetos
-             Lambda: Tempo de execução e duração
+              -> Amazon EC2: Utilização CPU, Status, Rede (não RAM)
+              -> EBS Volume: Leitura e Gravação do disco
+              -> S3 Bucket: Tamanho do bucket S#, número de objetos
+              -> Lambda: Tempo de execução e duração
 
-        Monitoramento - visualização  das aplicações e a sua infraestrutura em único local
-            Acessar um Dashboard automático
-            Configuração de alarmes 
+        Monitoramento - visualização das aplicações e de sua infraestrutura
+            1. Acessar um Dashboard automático
+            2. Configuração de alarmes 
           
 
         Atuação - criação de alarmes, baseado nas métricas de uso e desempenho
