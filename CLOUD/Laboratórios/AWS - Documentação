@@ -1143,7 +1143,7 @@ CASOS DE USO DO LOAD BALANCING
 AMAZON CloudTrail - serviço de monitoramento e registros de log das atividades da conta (acesso, ações), oferecendo controle sobre o armazenamento, análise e ações de remediação     
 
 
-AMAZON CloudWatch -serviço de monitoramento e manutenção de desempenho dos recursos e aplicativos executados na nuvem.
+AMAZON CloudWatch -serviço de monitoramento e manutenção ativo de desempenho dos recursos e aplicativos executados na nuvem.
         Coleta - Métricas e Logs (recursos e serviços na nuvem e on-premises)
           Exemplo
               -> Amazon EC2: Utilização CPU, Status, Rede (não RAM)
