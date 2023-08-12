@@ -363,8 +363,8 @@ ________________________________________________________________________________
  . AMAZON ECR 
 ___________________________________________________________________________________________________________________________________________
 
- . AWS ELASTIC BEANSTALK    . Plataforma como serviço (PaaS)    . Criação do Aplicativo          
-                            . Aplicativos WEB                   . Vinculado a outros serviços      
+ . AWS ELASTIC BEANSTALK    . Plataforma como serviço (PaaS)    . Criação automática da infraestrutura         
+                            . Aplicativos WEB Escalável         . Vinculado a outros serviços      
 
 
                                                                 
