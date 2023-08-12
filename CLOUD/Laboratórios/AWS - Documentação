@@ -807,9 +807,7 @@ AMAZON S3 Glacier - classe de armazenamento seguro, resiliente e de custo extrem
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
-CAP 8
-
-RESPONSABILIDADE COMPARTILHADA 
+CAP 8 - RESPONSABILIDADE COMPARTILHADA 
 
 AWS (OF) - servidores, infraestrutura, banco de dados, rede dos datacenters, regiões (zonas e pontos)
 
@@ -972,7 +970,7 @@ AMAZON Aurora - banco de dados relacional compatível com MySQL e PostgreSQL
 
 -------------------------------------------------------------------------------------------------------------------------------------------  
 
-CAP 9 ARQUITETURA DA NUVEM
+CAP 9 - ARQUITETURA DA NUVEM
 
 AMAZON Well-Architected Framework - serviço que permite aprimorar e evoluir sua arquitetura na nuvem. 
 
