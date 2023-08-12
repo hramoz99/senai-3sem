@@ -168,7 +168,7 @@ AMAZON Organizations - serviço de gerenciamento e controle centralizada de múl
  AMAZON Cognito - serviço que fornece autenticação e autorização de usuários para os seus aplicativos móveis e web.
 
 
- AMAZON Shield - serviço gerenciado de proteção contra ataques de DDOS
+ AMAZON Shield - serviço gerenciado de proteção contra ataques de DDOS que protege os aplicativos executados na AWS
 
 
  
@@ -799,7 +799,7 @@ AMAZON Elastic File System - sistema de arquivos elástico simples e sem servido
 AMAZON S3 Glacier - classe de armazenamento seguro, resiliente e de custo extremamente baixo para arquivamento de dados e backups de longa duração. 
 
                  . Criptografia de dados em trânsito e ociosos
-                 . Opções de recupração 
+                 . Opções de recuperação 
                      > Padrão: de 3 a 5 horas 
                        > Em Massa: de 5 horas a 12 horas 
                           > Expressa: de 1 a 5 minutos
