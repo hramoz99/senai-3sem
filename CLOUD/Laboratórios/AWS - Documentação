@@ -836,7 +836,7 @@ BANCOS DE DADOS RELACIONAIS
  
 
 
-AMAZON Relational Database Service (RDS) - banco de dados relacional (SQL) que destaca-se por sua escalabilidade, automatização na aplicação de patches, provisionamento de hardware e becape. 
+AMAZON Relational Database Service (RDS) - banco de dados relacional (SQL) que destaca-se por sua escalabilidade, automatização na aplicação de patches, provisionamento de hardware e backup. 
 
     *Banco de Dados Relacional - modela dados em tabelas. Essas tabelas se relacionam com outros. 
     *SQL - Linguagem de Consulta Estruturada
