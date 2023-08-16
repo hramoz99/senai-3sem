@@ -58,18 +58,20 @@ PAGAMENTO
 3. Pague menos quando usar mais e conforme cresce
 
 
-CUSTO TOTAL DE PROPRIEDADE (TCO) é a previsão financeira que identifica os custos diretos e indiretos de um sistema.
+CUSTO TOTAL DE PROPRIEDADE (TCO) - serviço que compara os custos diretos e indiretos de um ambiente On-premises com a Nuvem.
      - Compara os custos da execução de um ambiente
      - Cria orçamentos
 
-AMAZON Cost Explorer - interface de visualização e gerenciamento dos custos dos serviços e regiões
+
+AMAZON Pricing Calculator - serviço que permite estimar os custos dos serviços da AWS antes de implantar recursos na nuvem.
+
+
+AMAZON Cost Explorer - interface permite visualizar, entender e gerenciar os custos e o uso da AWS ao longo do tempo.
            
-          -> Relata previsões do uso ao longo do tempo. 
+          -> Relata previsões do uso ao longo do tempo
+          -> Relatórios personalizados
 
 AMAZON Budgets - serviço que envia alertas e orçamentos personalizados, quando o custo excede o valor definido.
-
-
-AMAZON Calculadora Mensal - serviço que estima custos ou  identifica modos para reduzir custos.
 
 
 AMAZON Billing and Cost Managent -  serviço usado para pagar o faturamento da AWS, controlar seus custos e monitorar seu uso
