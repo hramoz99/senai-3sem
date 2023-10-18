@@ -13,6 +13,7 @@ Este repositório contém conceitos abordados no 3º semestre do Curso Técnico 
 - Grafana
 - Zabbix
 - Cacti
+- Nuvem
 
 ## Cursos realizados neste semestre
 
