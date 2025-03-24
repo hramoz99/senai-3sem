@@ -85,9 +85,9 @@
 
   
      Parâmetros
-                  - P Policy (Define uma regra
+              - P Policy (Define uma regra
 		  - N New (Criar nova Chain)
-                  - E rEname (Renomeia a Chain Criada por N)
+              - E Rename (Renomeia a Chain Criada por N)
 	          - F Flush (Apaga todas as Regras)
 		  - X eXtract (Limpar Chain Criada por N)
 	          - Z Zero (Zerar Regras específicas)
