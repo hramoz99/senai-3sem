@@ -36,7 +36,7 @@
    **SINTAXE**
   
         iptables [-t tabela] [opção] [cadeia] [dados] -j [ação]
-        aplicativo> tabela> opção> mecanismo> condicional> pulo> ação
+        aplicativo> tabela> opção> mecanismo> condicional> ação
 
 ### TABELA
 
